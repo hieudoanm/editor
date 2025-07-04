@@ -1,27 +1,56 @@
 {
   "name": "json",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
+  "description": "JSOn",
+  "keywords": [
+    "json"
+  ],
+  "homepage": "https://github.com/hieudoanm/json#readme",
+  "bugs": {
+    "url": "https://github.com/hieudoanm/json/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hieudoanm/json.git"
+  },
+  "license": "GPL-3.0",
+  "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
   "scripts": {
+    "format": "prettier --cache --write .",
+    "predev": "kill-port 3000",
     "dev": "next dev --turbopack",
+    "prebuild": "rimraf .next docs",
     "build": "next build",
+    "postbuild": "touch docs/.nojekyll",
+    "prestart": "kill-port 3000",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky || true"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.5"
+    "jstoxml": "7.0.1",
+    "next": "15.3.5",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
+    "@eslint/eslintrc": "3.3.1",
+    "@tailwindcss/postcss": "4.1.11",
+    "@types/jstoxml": "5.0.0",
+    "@types/node": "24.0.10",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "eslint": "9.30.1",
     "eslint-config-next": "15.3.5",
-    "@eslint/eslintrc": "^3"
-  }
+    "husky": "9.1.7",
+    "kill-port": "2.0.1",
+    "prettier": "3.6.2",
+    "prettier-plugin-tailwindcss": "0.6.13",
+    "rimraf": "6.0.1",
+    "tailwindcss": "4.1.11",
+    "typescript": "5.8.3",
+    "yaml": "2.8.0"
+  },
+  "packageManager": "pnpm@10.12.4"
 }
