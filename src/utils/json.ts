@@ -70,10 +70,7 @@ const json2yaml = (json: string) => {
   return stringify(jsonParse(json, {}));
 };
 
-export const json = <T extends Record<string, string | number | boolean | Date>>(
-  data: T[],
-  defaultValue: T = {} as T,
-) => {
+export const json = <T extends Record<string, any>>(data: T | T[], defaultValue: T = {} as T) => {
   return {
     parse: () => jsonParse(JSON.stringify(data), defaultValue),
     format: () => {

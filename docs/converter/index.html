@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" data-next-head="" />
+    <meta name="viewport" content="width=device-width" data-next-head="" />
+    <title data-next-head="">JSON</title>
+    <link
+      rel="preload"
+      href="/json/_next/static/media/569ce4b8f30dc480-s.p.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      data-next-font="size-adjust" />
+    <link
+      rel="preload"
+      href="/json/_next/static/media/93f479601ee12b01-s.p.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      data-next-font="size-adjust" />
+    <link rel="preload" href="/json/_next/static/css/9fc5a132b85cc19f.css" as="style" />
+    <link rel="stylesheet" href="/json/_next/static/css/9fc5a132b85cc19f.css" data-n-g="" />
+    <noscript data-n-css=""></noscript>
+    <script defer="" nomodule="" src="/json/_next/static/chunks/polyfills-42372ed130431b0a.js"></script>
+    <script src="/json/_next/static/chunks/webpack-5124517940a2b1de.js" defer=""></script>
+    <script src="/json/_next/static/chunks/framework-15b5094acd82fa38.js" defer=""></script>
+    <script src="/json/_next/static/chunks/main-7de5480356a8aa69.js" defer=""></script>
+    <script src="/json/_next/static/chunks/pages/_app-327f0cf1570b100f.js" defer=""></script>
+    <script src="/json/_next/static/chunks/864-4dc0078801029729.js" defer=""></script>
+    <script src="/json/_next/static/chunks/230-d86e036a59babd53.js" defer=""></script>
+    <script src="/json/_next/static/chunks/pages/converter-838188f50502ff04.js" defer=""></script>
+    <script src="/json/_next/static/QUcOqCxgurHK3eWpQ4ppG/_buildManifest.js" defer=""></script>
+    <script src="/json/_next/static/QUcOqCxgurHK3eWpQ4ppG/_ssgManifest.js" defer=""></script>
+  </head>
+  <body class="antialiased">
+    <div id="__next">
+      <div class="__className_dd4576 __className_4fdc33 bg-gray-900 text-neutral-100">
+        <div class="flex h-screen w-screen flex-col">
+          <nav class="border-b border-neutral-800 shadow-sm">
+            <div class="container mx-auto px-4 py-2 md:px-8 md:py-4">
+              <div class="flex items-center justify-between gap-x-2 md:gap-x-4">
+                <a href="/json/"><h1 class="font-black">JSON</h1></a>
+                <div class="flex items-center gap-x-2 text-sm text-neutral-500 md:gap-x-4 md:text-base">
+                  <a href="/json/converter/">Converter</a><a href="/json/editor/">Editor</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <main class="container mx-auto grow p-4 md:p-8">
+            <div class="flex h-full flex-col gap-y-4 md:gap-y-8">
+              <div class="grid grid-cols-3 gap-x-4 md:gap-x-8">
+                <button type="button" class="cursor-pointer rounded-full border border-neutral-800 px-4 py-2">
+                  Beautify</button
+                ><button type="button" class="cursor-pointer rounded-full border border-neutral-800 px-4 py-2">
+                  Minify</button
+                ><button type="button" class="cursor-pointer rounded-full border border-neutral-800 px-4 py-2">
+                  Sort
+                </button>
+              </div>
+              <select
+                id="file-format"
+                name="file-format"
+                class="appearance-none rounded-full border border-neutral-800 px-4 py-2">
+                <option value="csv">CSV</option>
+                <option value="xml">XML</option>
+                <option value="yaml" selected="">YAML</option>
+              </select>
+              <div class="grid h-full grow grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
+                <div class="col-span-1">
+                  <textarea
+                    id="from"
+                    name="from"
+                    placeholder="From"
+                    class="h-full w-full resize-none rounded-xl border border-neutral-800 p-4 whitespace-nowrap shadow focus:outline-none">
+[
+  {
+    &quot;key1&quot;: &quot;value1&quot;,
+    &quot;key2&quot;: &quot;value2&quot;,
+    &quot;key3&quot;: &quot;value3&quot;,
+    &quot;key4&quot;: &quot;value4&quot;
+  },
+  {
+    &quot;key1&quot;: &quot;value1&quot;,
+    &quot;key2&quot;: &quot;value2&quot;,
+    &quot;key3&quot;: &quot;value3&quot;,
+    &quot;key4&quot;: &quot;value4&quot;
+  },
+  {
+    &quot;key1&quot;: &quot;value1&quot;,
+    &quot;key2&quot;: &quot;value2&quot;,
+    &quot;key3&quot;: &quot;value3&quot;,
+    &quot;key4&quot;: &quot;value4&quot;
+  },
+  {
+    &quot;key1&quot;: &quot;value1&quot;,
+    &quot;key2&quot;: &quot;value2&quot;,
+    &quot;key3&quot;: &quot;value3&quot;,
+    &quot;key4&quot;: &quot;value4&quot;
+  }
+]</textarea
+                  >
+                </div>
+                <div class="col-span-1">
+                  <textarea
+                    id="to"
+                    name="to"
+                    placeholder="To"
+                    class="h-full w-full resize-none rounded-xl border border-neutral-800 p-4 whitespace-nowrap shadow focus:outline-none"
+                    readonly="">
+- key1: value1
+  key2: value2
+  key3: value3
+  key4: value4
+- key1: value1
+  key2: value2
+  key3: value3
+  key4: value4
+- key1: value1
+  key2: value2
+  key3: value3
+  key4: value4
+- key1: value1
+  key2: value2
+  key3: value3
+  key4: value4
+</textarea
+                  >
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": { "pageProps": {} },
+        "page": "/converter",
+        "query": {},
+        "buildId": "QUcOqCxgurHK3eWpQ4ppG",
+        "assetPrefix": "/json",
+        "nextExport": true,
+        "autoExport": true,
+        "isFallback": false,
+        "scriptLoader": []
+      }
+    </script>
+  </body>
+</html>
