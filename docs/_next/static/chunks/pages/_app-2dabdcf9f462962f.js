@@ -83,7 +83,7 @@
           children: [
             (0, s.jsx)(u(), { children: (0, s.jsx)('title', { children: l.C3 }) }),
             (0, s.jsx)('div', {
-              className: ''.concat(o().className, ' ').concat(c().className, ' bg-gray-900 text-neutral-100'),
+              className: ''.concat(o().className, ' ').concat(c().className, ' bg-neutral-900 text-neutral-100'),
               children: (0, s.jsx)(a, { ...t }),
             }),
           ],

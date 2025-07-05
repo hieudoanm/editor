@@ -32,10 +32,10 @@
     --font-sans:
       ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-    --color-gray-900: oklch(21% 0.034 264.665);
     --color-neutral-100: oklch(97% 0 0);
     --color-neutral-500: oklch(55.6% 0 0);
     --color-neutral-800: oklch(26.9% 0 0);
+    --color-neutral-900: oklch(20.5% 0 0);
     --spacing: 0.25rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
@@ -454,8 +454,8 @@
   .border-neutral-800 {
     border-color: var(--color-neutral-800);
   }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
+  .bg-neutral-900 {
+    background-color: var(--color-neutral-900);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);

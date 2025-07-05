@@ -21,7 +21,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
       <Head>
         <title>{APP_NAME}</title>
       </Head>
-      <div className={`${geistSans.className} ${geistMono.className} bg-gray-900 text-neutral-100`}>
+      <div className={`${geistSans.className} ${geistMono.className} bg-neutral-900 text-neutral-100`}>
         <Component {...pageProps} />
       </div>
     </>
