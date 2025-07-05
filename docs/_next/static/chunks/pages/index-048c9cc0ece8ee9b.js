@@ -177,12 +177,20 @@
               className: 'flex items-center justify-between gap-x-2 md:gap-x-4',
               children: [
                 (0, r.jsx)(n(), { href: '/', children: (0, r.jsx)('h1', { className: 'font-black', children: l.C3 }) }),
-                (0, r.jsxs)('div', {
+                (0, r.jsx)('div', {
                   className: 'flex items-center gap-x-2 text-sm text-neutral-500 md:gap-x-4 md:text-base',
                   children: [
-                    (0, r.jsx)(n(), { href: '/converter', children: 'Converter' }),
-                    (0, r.jsx)(n(), { href: '/editor', children: 'Editor' }),
-                  ],
+                    { id: 'converter', href: '/converter', label: 'Converter' },
+                    { id: 'editor', href: '/editor', label: 'Editor' },
+                    { id: 'yaml', href: '/yaml', label: 'YAML' },
+                  ].map((e) => {
+                    let { id: s = '', href: t = '', label: l = '' } = e;
+                    return (0, r.jsx)(
+                      n(),
+                      { href: t, className: 'text-neutral-500 hover:text-neutral-100', children: l },
+                      s,
+                    );
+                  }),
                 }),
               ],
             }),
