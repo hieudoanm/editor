@@ -1,8 +1,8 @@
-import { CallToAction } from '@json/components/CallToAction';
-import { Features } from '@json/components/Features';
-import { Footer } from '@json/components/Footer';
-import { Hero } from '@json/components/Hero';
-import { Navbar } from '@json/components/Navbar';
+import { CallToAction } from '@converter/components/CallToAction';
+import { Features } from '@converter/components/Features';
+import { Footer } from '@converter/components/Footer';
+import { Hero } from '@converter/components/Hero';
+import { Navbar } from '@converter/components/Navbar';
 import { NextPage } from 'next';
 
 const HomePage: NextPage = () => {

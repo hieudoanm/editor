@@ -84,9 +84,10 @@
                 (0, l.jsx)('div', {
                   className: 'flex items-center gap-x-2 text-sm text-neutral-500 md:gap-x-4 md:text-base',
                   children: [
-                    { id: 'converter', href: '/converter', label: 'Converter' },
-                    { id: 'editor', href: '/editor', label: 'Editor' },
+                    { id: 'csv', href: '/csv', label: 'CSV' },
+                    { id: 'json', href: '/json', label: 'JSON' },
                     { id: 'yaml', href: '/yaml', label: 'YAML' },
+                    { id: 'manifest', href: '/manifest', label: 'Manifest' },
                   ].map((n) => {
                     let { id: a = '', href: e = '', label: r = '' } = n;
                     return (0, l.jsx)(

@@ -1,4 +1,4 @@
-export const APP_NAME = 'JSON';
+export const APP_NAME = 'Converter';
 
 export const INITIAL_JSON = [
   { key1: 'value1', key2: 'value2', key3: 'value3', key4: 'value4' },

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Navbar } from '@json/components/Navbar';
-import { INITIAL_JSON } from '@json/constants';
-import { json, jsonParse } from '@json/utils/json';
+import { Navbar } from '@converter/components/Navbar';
+import { INITIAL_JSON } from '@converter/constants';
+import { json, jsonParse } from '@converter/utils/json';
 import { NextPage } from 'next';
 import { ChangeEvent, useState } from 'react';
 
@@ -9,7 +9,7 @@ type FileFormat = 'csv' | 'xml' | 'yaml';
 
 const INITIAL_FORMAT: FileFormat = 'yaml';
 
-const ConverterPage: NextPage = () => {
+const JSONPage: NextPage = () => {
   const [
     {
       data = INITIAL_JSON,
@@ -116,4 +116,4 @@ const ConverterPage: NextPage = () => {
   );
 };
 
-export default ConverterPage;
+export default JSONPage;

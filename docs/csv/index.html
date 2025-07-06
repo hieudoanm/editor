@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" data-next-head="" />
+    <meta name="viewport" content="width=device-width" data-next-head="" />
+    <title data-next-head="">Converter</title>
+    <link
+      rel="preload"
+      href="/json/_next/static/media/569ce4b8f30dc480-s.p.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      data-next-font="size-adjust" />
+    <link
+      rel="preload"
+      href="/json/_next/static/media/93f479601ee12b01-s.p.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      data-next-font="size-adjust" />
+    <link rel="preload" href="/json/_next/static/css/2ccccd24932ea972.css" as="style" />
+    <link rel="stylesheet" href="/json/_next/static/css/2ccccd24932ea972.css" data-n-g="" />
+    <noscript data-n-css=""></noscript>
+    <script defer="" nomodule="" src="/json/_next/static/chunks/polyfills-42372ed130431b0a.js"></script>
+    <script src="/json/_next/static/chunks/webpack-5124517940a2b1de.js" defer=""></script>
+    <script src="/json/_next/static/chunks/framework-15b5094acd82fa38.js" defer=""></script>
+    <script src="/json/_next/static/chunks/main-7de5480356a8aa69.js" defer=""></script>
+    <script src="/json/_next/static/chunks/pages/_app-5094f35df7881558.js" defer=""></script>
+    <script src="/json/_next/static/chunks/864-4dc0078801029729.js" defer=""></script>
+    <script src="/json/_next/static/chunks/pages/csv-2b12e46b1954d2d4.js" defer=""></script>
+    <script src="/json/_next/static/H7OhEUBp3zm4goYhV4Zop/_buildManifest.js" defer=""></script>
+    <script src="/json/_next/static/H7OhEUBp3zm4goYhV4Zop/_ssgManifest.js" defer=""></script>
+  </head>
+  <body class="antialiased">
+    <div id="__next">
+      <div class="__className_dd4576 __className_4fdc33 bg-neutral-900 text-neutral-100">
+        <div class="flex h-screen w-screen flex-col">
+          <nav class="border-b border-neutral-800 shadow-sm">
+            <div class="container mx-auto px-4 py-2 md:px-8 md:py-4">
+              <div class="flex items-center justify-between gap-x-2 md:gap-x-4">
+                <a href="/json/"><h1 class="font-black">Converter</h1></a>
+                <div class="flex items-center gap-x-2 text-sm text-neutral-500 md:gap-x-4 md:text-base">
+                  <a class="text-neutral-500 hover:text-neutral-100" href="/json/csv/">CSV</a
+                  ><a class="text-neutral-500 hover:text-neutral-100" href="/json/json/">JSON</a
+                  ><a class="text-neutral-500 hover:text-neutral-100" href="/json/yaml/">YAML</a
+                  ><a class="text-neutral-500 hover:text-neutral-100" href="/json/manifest/">Manifest</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <main class="container mx-auto grow p-4 md:p-8">
+            <div class="flex h-full flex-col gap-y-4 md:gap-y-8">
+              <select
+                id="file-format"
+                name="file-format"
+                class="appearance-none rounded-full border border-neutral-800 px-4 py-2">
+                <option value="html">HTML</option>
+                <option value="json">JSON</option>
+                <option value="md">Markdown</option>
+                <option value="sql" selected="">SQL</option>
+              </select>
+              <div class="grid h-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
+                <div class="col-span-1">
+                  <textarea
+                    id="from"
+                    name="from"
+                    placeholder="From"
+                    class="h-full w-full resize-none rounded-xl border border-neutral-800 p-4 whitespace-nowrap shadow focus:outline-none">
+header1,header2,header3,header4
+value1,value2,value3,value4
+value1,value2,value3,value4
+value1,value2,value3,value4
+value1,value2,value3,value4</textarea
+                  >
+                </div>
+                <div class="col-span-1">
+                  <textarea
+                    id="to"
+                    name="to"
+                    placeholder="To"
+                    class="h-full w-full resize-none rounded-xl border border-neutral-800 p-4 whitespace-nowrap shadow focus:outline-none"
+                    readonly="">
+INSERT INTO schema.table (&quot;header1&quot;, &quot;header2&quot;, &quot;header3&quot;, &quot;header4&quot;) VALUES (&quot;value1&quot;, &quot;value2&quot;, &quot;value3&quot;, &quot;value4&quot;);
+INSERT INTO schema.table (&quot;header1&quot;, &quot;header2&quot;, &quot;header3&quot;, &quot;header4&quot;) VALUES (&quot;value1&quot;, &quot;value2&quot;, &quot;value3&quot;, &quot;value4&quot;);
+INSERT INTO schema.table (&quot;header1&quot;, &quot;header2&quot;, &quot;header3&quot;, &quot;header4&quot;) VALUES (&quot;value1&quot;, &quot;value2&quot;, &quot;value3&quot;, &quot;value4&quot;);
+INSERT INTO schema.table (&quot;header1&quot;, &quot;header2&quot;, &quot;header3&quot;, &quot;header4&quot;) VALUES (&quot;value1&quot;, &quot;value2&quot;, &quot;value3&quot;, &quot;value4&quot;)</textarea
+                  >
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": { "pageProps": {} },
+        "page": "/csv",
+        "query": {},
+        "buildId": "H7OhEUBp3zm4goYhV4Zop",
+        "assetPrefix": "/json",
+        "nextExport": true,
+        "autoExport": true,
+        "isFallback": false,
+        "scriptLoader": []
+      }
+    </script>
+  </body>
+</html>

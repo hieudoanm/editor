@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Navbar } from '@json/components/Navbar';
-import { INITIAL_MANIFEST_EXTENSION, INITIAL_MANIFEST_PWA } from '@json/constants';
-import { json, jsonParse } from '@json/utils/json';
+import { Navbar } from '@converter/components/Navbar';
+import { INITIAL_MANIFEST_EXTENSION, INITIAL_MANIFEST_PWA } from '@converter/constants';
+import { json, jsonParse } from '@converter/utils/json';
 import { ChangeEvent, useState } from 'react';
 
 const EditorPage = () => {

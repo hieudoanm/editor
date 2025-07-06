@@ -1,15 +1,7 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
-  [451],
+  [583],
   {
-    4463: (e, t, r) => {
-      (window.__NEXT_P = window.__NEXT_P || []).push([
-        '/editor',
-        function () {
-          return r(7434);
-        },
-      ]);
-    },
-    7434: (e, t, r) => {
+    6658: (e, t, r) => {
       'use strict';
       (r.r(t), r.d(t, { default: () => o }));
       var n = r(5640),
@@ -169,26 +161,26 @@
               _isOutputStart: x = !0,
               header: N,
               attributeReplacements: O = {},
-              attributeFilter: g,
-              attributeExplicitTrue: j = !1,
+              attributeFilter: j,
+              attributeExplicitTrue: g = !1,
               contentReplacements: _ = {},
-              contentMap: v,
-              selfCloseTags: S = !0,
+              contentMap: S,
+              selfCloseTags: v = !0,
             } = t,
             A = 'boolean' != typeof O || O ? { ...b, ...O } : {},
             E = 'boolean' != typeof _ || _ ? { ...b, ..._ } : {},
-            T = 'string' == typeof a,
-            $ = l(a, r),
-            J = i(e),
+            J = 'string' == typeof a,
+            T = l(a, r),
+            $ = i(e),
             k = y({ header: N, indent: a, depth: r, isOutputStart: x }),
             C = x && !k && u && 0 === r,
-            w = T && !C ? '\n' : '',
+            w = J && !C ? '\n' : '',
             L = '';
-          switch (J) {
+          switch ($) {
             case n.JSTOXML_OBJECT: {
               let { _name: a, _content: l } = e;
-              if (null === l && 'function' != typeof v) {
-                L = `${w}${$}${a}`;
+              if (null === l && 'function' != typeof S) {
+                L = `${w}${T}${a}`;
                 break;
               }
               if (Array.isArray(l) && l.every(m))
@@ -198,22 +190,22 @@
                 u = i(c),
                 d = p(c),
                 y = o(c),
-                b = `${w}${$}`;
+                b = `${w}${T}`;
               if ('_comment' === a) {
                 L += `${b}<!-- ${l} -->`;
                 break;
               }
               let x = 'undefined' === u || '' === c,
                 N = e._selfCloseTag,
-                O = typeof N === n.BOOLEAN ? x && N : x && S,
-                _ = f(e._attrs, A, g, j),
+                O = typeof N === n.BOOLEAN ? x && N : x && v,
+                _ = f(e._attrs, A, j, g),
                 E = `<${a}${_}${O ? '/' : ''}>`,
-                J =
-                  !T || d || y
+                $ =
+                  !J || d || y
                     ? ''
                     : `
-${$}`,
-                k = O ? '' : `${c}${J}</${a}>`;
+${T}`,
+                k = O ? '' : `${c}${$}</${a}>`;
               L += `${b}${E}${k}`;
               break;
             }
@@ -250,7 +242,7 @@ ${$}`,
                 .join('');
               break;
             default:
-              L = c(e, E, v);
+              L = c(e, E, S);
           }
           return `${k}${L}`;
         };
@@ -263,7 +255,7 @@ ${$}`,
           }
         },
         O = { delimiter: ',', headers: [], quote: '"' },
-        g = function (e) {
+        j = function (e) {
           let {
             delimiter: t = ',',
             headers: r = [],
@@ -283,7 +275,7 @@ ${$}`,
               .join('\n');
           return ''.concat(a, '\n').concat(s);
         },
-        j = (e) => {
+        g = (e) => {
           let t = JSON.parse(e),
             r = Object.keys(t).sort((e, t) => (e > t ? 1 : -1)),
             n = {};
@@ -291,8 +283,8 @@ ${$}`,
           return JSON.stringify(n, null, 2);
         },
         _ = (e) => JSON.stringify(JSON.parse(e), null, 2),
-        v = (e) => JSON.stringify(JSON.parse(e)),
-        S = (e) => h(N(e, {}), { indent: '  ' }),
+        S = (e) => JSON.stringify(JSON.parse(e)),
+        v = (e) => h(N(e, {}), { indent: '  ' }),
         A = (e) => (0, x.As)(N(e, {})),
         E = function (e) {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
@@ -300,19 +292,19 @@ ${$}`,
             parse: () => N(JSON.stringify(e), t),
             format: () => ({
               beautify: () => _(JSON.stringify(e)),
-              minify: () => v(JSON.stringify(e)),
-              sort: () => j(JSON.stringify(e)),
+              minify: () => S(JSON.stringify(e)),
+              sort: () => g(JSON.stringify(e)),
             }),
             convert: (t) => {
               try {
                 if ('csv' === t) {
                   if (Array.isArray(e)) {
                     if (0 === e.length) return 'Empty List';
-                    return g(e);
+                    return j(e);
                   }
                   return 'Not A List';
                 }
-                if ('xml' === t) return S(JSON.stringify(e));
+                if ('xml' === t) return v(JSON.stringify(e));
                 if ('yaml' === t) return A(JSON.stringify(e));
                 return 'Invalid Format';
               } catch (e) {
@@ -341,9 +333,10 @@ ${$}`,
                 (0, n.jsx)('div', {
                   className: 'flex items-center gap-x-2 text-sm text-neutral-500 md:gap-x-4 md:text-base',
                   children: [
-                    { id: 'converter', href: '/converter', label: 'Converter' },
-                    { id: 'editor', href: '/editor', label: 'Editor' },
+                    { id: 'csv', href: '/csv', label: 'CSV' },
+                    { id: 'json', href: '/json', label: 'JSON' },
                     { id: 'yaml', href: '/yaml', label: 'YAML' },
+                    { id: 'manifest', href: '/manifest', label: 'Manifest' },
                   ].map((e) => {
                     let { id: t = '', href: r = '', label: a = '' } = e;
                     return (0, n.jsx)(
@@ -358,9 +351,17 @@ ${$}`,
           }),
         });
     },
+    9719: (e, t, r) => {
+      (window.__NEXT_P = window.__NEXT_P || []).push([
+        '/manifest',
+        function () {
+          return r(6658);
+        },
+      ]);
+    },
   },
   (e) => {
     var t = (t) => e((e.s = t));
-    (e.O(0, [864, 0, 636, 593, 792], () => t(4463)), (_N_E = e.O()));
+    (e.O(0, [864, 0, 636, 593, 792], () => t(9719)), (_N_E = e.O()));
   },
 ]);

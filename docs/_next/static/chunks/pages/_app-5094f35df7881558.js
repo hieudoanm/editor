@@ -5,7 +5,7 @@
     2635: (e, a, t) => {
       'use strict';
       t.d(a, { C3: () => s, _z: () => o, lP: () => n, wY: () => l });
-      let s = 'JSON',
+      let s = 'Converter',
         l = [
           { key1: 'value1', key2: 'value2', key3: 'value3', key4: 'value4' },
           { key1: 'value1', key2: 'value2', key3: 'value3', key4: 'value4' },
@@ -74,16 +74,16 @@
       var n = t(7332),
         o = t.n(n),
         i = t(8580),
-        c = t.n(i),
-        r = t(4626),
-        u = t.n(r);
+        r = t.n(i),
+        c = t(4626),
+        u = t.n(c);
       let p = (e) => {
         let { Component: a, pageProps: t } = e;
         return (0, s.jsxs)(s.Fragment, {
           children: [
             (0, s.jsx)(u(), { children: (0, s.jsx)('title', { children: l.C3 }) }),
             (0, s.jsx)('div', {
-              className: ''.concat(o().className, ' ').concat(c().className, ' bg-neutral-900 text-neutral-100'),
+              className: ''.concat(o().className, ' ').concat(r().className, ' bg-neutral-900 text-neutral-100'),
               children: (0, s.jsx)(a, { ...t }),
             }),
           ],

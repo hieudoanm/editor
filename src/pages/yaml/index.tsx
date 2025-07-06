@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import { useState } from 'react';
-import { Navbar } from '@json/components/Navbar';
+import { Navbar } from '@converter/components/Navbar';
 import { parse } from 'yaml';
 
 const INTIIAL_YAML = `

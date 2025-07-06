@@ -1,4 +1,4 @@
-import { APP_NAME } from '@json/constants';
+import { APP_NAME } from '@converter/constants';
 import Link from 'next/link';
 import { FC } from 'react';
 
@@ -12,9 +12,10 @@ export const Navbar: FC = () => {
           </Link>
           <div className="flex items-center gap-x-2 text-sm text-neutral-500 md:gap-x-4 md:text-base">
             {[
-              { id: 'converter', href: '/converter', label: 'Converter' },
-              { id: 'editor', href: '/editor', label: 'Editor' },
+              { id: 'csv', href: '/csv', label: 'CSV' },
+              { id: 'json', href: '/json', label: 'JSON' },
               { id: 'yaml', href: '/yaml', label: 'YAML' },
+              { id: 'manifest', href: '/manifest', label: 'Manifest' },
             ].map(({ id = '', href = '', label = '' }) => {
               return (
                 <Link key={id} href={href} className="text-neutral-500 hover:text-neutral-100">
