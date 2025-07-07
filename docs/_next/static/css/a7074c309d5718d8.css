@@ -546,6 +546,14 @@
   .bg-neutral-900 {
     background-color: var(--color-neutral-900);
   }
+  .bg-neutral-900\/40 {
+    background-color: #17171766;
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-neutral-900\/40 {
+      background-color: color-mix(in oklab, var(--color-neutral-900) 40%, transparent);
+    }
+  }
   .bg-gradient-to-r {
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));

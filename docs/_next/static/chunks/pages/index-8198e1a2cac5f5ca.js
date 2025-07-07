@@ -66,7 +66,7 @@
                   className: 'mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3',
                   children: [
                     (0, r.jsxs)('div', {
-                      className: 'rounded-xl border border-neutral-800 p-6 shadow-sm',
+                      className: 'rounded-xl border border-neutral-700 bg-neutral-900/40 p-6 shadow-sm',
                       children: [
                         (0, r.jsx)('h4', { className: 'text-lg font-semibold', children: '⚡ Real-Time Formatting' }),
                         (0, r.jsx)('p', {
@@ -76,7 +76,7 @@
                       ],
                     }),
                     (0, r.jsxs)('div', {
-                      className: 'rounded-xl border border-neutral-800 p-6 shadow-sm',
+                      className: 'rounded-xl border border-neutral-700 bg-neutral-900/40 p-6 shadow-sm',
                       children: [
                         (0, r.jsx)('h4', {
                           className: 'text-lg font-semibold',
@@ -90,7 +90,7 @@
                       ],
                     }),
                     (0, r.jsxs)('div', {
-                      className: 'rounded-xl border border-neutral-800 p-6 shadow-sm',
+                      className: 'rounded-xl border border-neutral-700 bg-neutral-900/40 p-6 shadow-sm',
                       children: [
                         (0, r.jsx)('h4', {
                           className: 'text-lg font-semibold',
