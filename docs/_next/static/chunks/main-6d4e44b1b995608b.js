@@ -721,7 +721,7 @@
         }));
       let n = r(2301);
       function o(e) {
-        return (0, n.pathHasPrefix)(e, '/json');
+        return (0, n.pathHasPrefix)(e, '/converter');
       }
       ('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
         void 0 === t.default.__esModule &&
@@ -943,7 +943,7 @@
           },
         }),
         r(1296));
-      let n = '/json';
+      let n = '/converter';
       function o(e) {
         return (0 === n.length || (e = e.slice(n.length)).startsWith('/') || (e = '/' + e), e);
       }
@@ -2474,7 +2474,7 @@
       let n = r(9460),
         o = r(1092);
       function a(e, t) {
-        return (0, o.normalizePathTrailingSlash)((0, n.addPathPrefix)(e, '/json'));
+        return (0, o.normalizePathTrailingSlash)((0, n.addPathPrefix)(e, '/converter'));
       }
       ('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
         void 0 === t.default.__esModule &&
@@ -3531,7 +3531,7 @@
                         value: {
                           deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
                           imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-                          path: '/json/_next/image/',
+                          path: '/converter/_next/image/',
                           loader: 'default',
                           dangerouslyAllowSVG: !1,
                           unoptimized: !1,
@@ -5582,7 +5582,7 @@
             (this.pageLoader = o));
           let R = (0, p.isDynamicRoute)(e) && self.__NEXT_DATA__.autoExport;
           if (
-            ((this.basePath = '/json'),
+            ((this.basePath = '/converter'),
             (this.sub = c),
             (this.clc = null),
             (this._wrapApp = l),

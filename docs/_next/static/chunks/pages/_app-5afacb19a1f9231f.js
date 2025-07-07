@@ -93,8 +93,8 @@
     7332: (e) => {
       e.exports = {
         style: { fontFamily: "'Geist', 'Geist Fallback'", fontStyle: 'normal' },
-        className: '__className_dd4576',
-        variable: '__variable_dd4576',
+        className: '__className_a3e5a0',
+        variable: '__variable_a3e5a0',
       };
     },
     8462: (e, a, t) => {
@@ -108,8 +108,8 @@
     8580: (e) => {
       e.exports = {
         style: { fontFamily: "'Geist Mono', 'Geist Mono Fallback'", fontStyle: 'normal' },
-        className: '__className_4fdc33',
-        variable: '__variable_4fdc33',
+        className: '__className_443f57',
+        variable: '__variable_443f57',
       };
     },
   },
