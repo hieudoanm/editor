@@ -11,7 +11,7 @@ export const CallToAction: FC = () => {
           your browser — fast, private, and with zero setup.
         </p>
         <div className="mt-8">
-          <Link href="/csv" className="inline-block rounded-full bg-neutral-100 px-6 py-3 font-medium text-neutral-900">
+          <Link href="/csv" className="cursor-pointer rounded-full border border-neutral-700 bg-neutral-900 px-6 py-3">
             Start Converting
           </Link>
         </div>
