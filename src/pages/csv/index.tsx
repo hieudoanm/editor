@@ -1,6 +1,7 @@
-import { Navbar } from '@converter/components/Navbar';
+import { Divider } from '@converter/components/shared/Divider';
+import { Navbar } from '@converter/components/shared/Navbar';
 import { copy } from '@converter/utils/copy';
-import { csv, csv2json, csv2sql } from '@converter/utils/csv';
+import { csv, csv2json, csv2sql } from '@converter/utils/csv/csv';
 import { NextPage } from 'next';
 import { ChangeEvent, FC, useState } from 'react';
 
@@ -82,6 +83,7 @@ const CSVPage: NextPage = () => {
   return (
     <div className="flex h-screen w-screen flex-col">
       <Navbar />
+      <Divider />
       <main className="container mx-auto grow p-4 md:p-8">
         <div className="flex h-full flex-col gap-y-4 md:gap-y-8">
           <select

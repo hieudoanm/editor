@@ -1,6 +1,7 @@
+import { Divider } from '@converter/components/shared/Divider';
+import { Navbar } from '@converter/components/shared/Navbar';
 import { NextPage } from 'next';
 import { useState } from 'react';
-import { Navbar } from '@converter/components/Navbar';
 import { parse } from 'yaml';
 
 const INTIIAL_YAML = `
@@ -171,6 +172,7 @@ const YAMLPage: NextPage = () => {
   return (
     <div className="flex h-screen w-screen flex-col">
       <Navbar />
+      <Divider />
       <main className="container mx-auto grow p-4 md:p-8">
         <div className="grid h-full grow grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
           <div className="col-span-1">

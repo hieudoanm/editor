@@ -1,11 +1,19 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
   [421],
   {
-    645: (e, t, n) => {
+    78: (e, t, n) => {
+      (window.__NEXT_P = window.__NEXT_P || []).push([
+        '/500',
+        function () {
+          return n(901);
+        },
+      ]);
+    },
+    901: (e, t, n) => {
       'use strict';
       (n.r(t), n.d(t, { default: () => s }));
       var l = n(5640),
-        r = n(7864),
+        r = n(9064),
         a = n.n(r);
       let s = () =>
         (0, l.jsx)('main', {
@@ -28,17 +36,9 @@
           }),
         });
     },
-    5534: (e, t, n) => {
-      (window.__NEXT_P = window.__NEXT_P || []).push([
-        '/500',
-        function () {
-          return n(645);
-        },
-      ]);
-    },
   },
   (e) => {
     var t = (t) => e((e.s = t));
-    (e.O(0, [864, 636, 593, 792], () => t(5534)), (_N_E = e.O()));
+    (e.O(0, [64, 636, 593, 792], () => t(78)), (_N_E = e.O()));
   },
 ]);

@@ -1,17 +1,58 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
   [310],
   {
-    3725: (e, t, r) => {
+    2283: (e, t, r) => {
+      'use strict';
+      r.d(t, { c: () => a });
+      var n = r(5640);
+      let a = () => (0, n.jsx)('div', { className: 'w-full border-t border-neutral-800' });
+    },
+    2669: (e, t, r) => {
       (window.__NEXT_P = window.__NEXT_P || []).push([
         '/json',
         function () {
-          return r(9023);
+          return r(9935);
         },
       ]);
     },
-    8732: (e, t, r) => {
+    4850: (e, t, r) => {
       'use strict';
-      r.d(t, { Pq: () => A, Gl: () => N });
+      r.d(t, { F: () => i });
+      var n = r(5640),
+        a = r(4539),
+        l = r(9064),
+        o = r.n(l);
+      let s = [
+          { id: 'colors', href: '/colors', label: 'Colors' },
+          { id: 'csv', href: '/csv', label: 'CSV' },
+          { id: 'json', href: '/json', label: 'JSON' },
+          { id: 'yaml', href: '/yaml', label: 'YAML' },
+          { id: 'manifest', href: '/manifest', label: 'Manifest' },
+        ],
+        i = () =>
+          (0, n.jsx)('nav', {
+            className: 'container mx-auto px-6 py-4',
+            children: (0, n.jsxs)('div', {
+              className: 'flex items-center justify-between',
+              children: [
+                (0, n.jsx)('div', {
+                  className: 'text-xl font-bold',
+                  children: (0, n.jsx)(o(), { href: '/', children: a.C3 }),
+                }),
+                (0, n.jsx)('div', {
+                  className: 'hidden space-x-4 md:flex',
+                  children: s.map((e) => {
+                    let { id: t, href: r, label: a } = e;
+                    return (0, n.jsx)(o(), { href: r, className: 'hover:underline', children: a }, t);
+                  }),
+                }),
+              ],
+            }),
+          });
+    },
+    5494: (e, t, r) => {
+      'use strict';
+      r.d(t, { Pq: () => A, Gl: () => x });
       let n = {
           ARRAY: 'array',
           BOOLEAN: 'boolean',
@@ -25,8 +66,8 @@
         },
         a = [n.STRING, n.NUMBER, n.BOOLEAN],
         l = ['_selfCloseTag', '_attrs'],
-        s = (e = '', t = 0) => e.repeat(t),
-        o = (e) =>
+        o = (e = '', t = 0) => e.repeat(t),
+        s = (e) =>
           (Array.isArray(e) && n.ARRAY) ||
           (typeof e === n.OBJECT && null !== e && e._name && n.JSTOXML_OBJECT) ||
           (e instanceof Date && n.DATE) ||
@@ -44,12 +85,12 @@
         },
         u = (e = {}, t, r, a) =>
           (Array.isArray(e) ? e : Object.entries(e).map(([e, t]) => ({ [e]: t }))).reduce((e, l) => {
-            let s = Object.keys(l)[0],
-              o = l[s];
-            if (typeof r === n.FUNCTION && r(s, o)) return e;
-            let i = t ? c(o, t) : o,
+            let o = Object.keys(l)[0],
+              s = l[o];
+            if (typeof r === n.FUNCTION && r(o, s)) return e;
+            let i = t ? c(s, t) : s,
               u = a || !0 !== i ? `="${i}"` : '';
-            return (e.push(`${s}${u}`), e);
+            return (e.push(`${o}${u}`), e);
           }, []),
         d = (e = {}, t, r, n) => {
           let a = u(e, t, r, n);
@@ -58,21 +99,21 @@
           return ` ${l}`;
         },
         f = (e = {}) => Object.keys(e).map((t) => ({ _name: t, _content: e[t] })),
-        m = (e) => a.includes(o(e)),
+        m = (e) => a.includes(s(e)),
         p = (e) => !e.match('<'),
         y = ({ header: e, isOutputStart: t }) =>
           e && t ? (typeof e === n.BOOLEAN ? '<?xml version="1.0" encoding="UTF-8"?>' : e) : '',
         h = { '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' },
-        x = (e = {}, t = {}) => {
+        b = (e = {}, t = {}) => {
           let {
               depth: r = 0,
               indent: a,
               _isFirstItem: u,
-              _isOutputStart: b = !0,
-              header: N,
+              _isOutputStart: N = !0,
+              header: x,
               attributeReplacements: O = {},
-              attributeFilter: g,
-              attributeExplicitTrue: j = !1,
+              attributeFilter: j,
+              attributeExplicitTrue: g = !1,
               contentReplacements: v = {},
               contentMap: _,
               selfCloseTags: S = !0,
@@ -80,53 +121,53 @@
             w = 'boolean' != typeof O || O ? { ...h, ...O } : {},
             A = 'boolean' != typeof v || v ? { ...h, ...v } : {},
             T = 'string' == typeof a,
-            J = s(a, r),
-            $ = o(e),
-            C = y({ header: N, indent: a, depth: r, isOutputStart: b }),
-            E = b && !C && u && 0 === r,
+            C = o(a, r),
+            J = s(e),
+            $ = y({ header: x, indent: a, depth: r, isOutputStart: N }),
+            E = N && !$ && u && 0 === r,
             k = T && !E ? '\n' : '',
             L = '';
-          switch ($) {
+          switch (J) {
             case n.JSTOXML_OBJECT: {
-              let { _name: a, _content: s } = e;
-              if (null === s && 'function' != typeof _) {
-                L = `${k}${J}${a}`;
+              let { _name: a, _content: o } = e;
+              if (null === o && 'function' != typeof _) {
+                L = `${k}${C}${a}`;
                 break;
               }
-              if (Array.isArray(s) && s.every(m))
-                return s.map((e) => x({ _name: a, _content: e }, { ...t, depth: r, _isOutputStart: !1 })).join('');
+              if (Array.isArray(o) && o.every(m))
+                return o.map((e) => b({ _name: a, _content: e }, { ...t, depth: r, _isOutputStart: !1 })).join('');
               if (l.includes(a)) break;
-              let c = x(s, { ...t, depth: r + 1, _isOutputStart: E }),
-                u = o(c),
+              let c = b(o, { ...t, depth: r + 1, _isOutputStart: E }),
+                u = s(c),
                 f = p(c),
                 y = i(c),
-                h = `${k}${J}`;
+                h = `${k}${C}`;
               if ('_comment' === a) {
-                L += `${h}<!-- ${s} -->`;
+                L += `${h}<!-- ${o} -->`;
                 break;
               }
-              let b = 'undefined' === u || '' === c,
-                N = e._selfCloseTag,
-                O = typeof N === n.BOOLEAN ? b && N : b && S,
-                v = d(e._attrs, w, g, j),
+              let N = 'undefined' === u || '' === c,
+                x = e._selfCloseTag,
+                O = typeof x === n.BOOLEAN ? N && x : N && S,
+                v = d(e._attrs, w, j, g),
                 A = `<${a}${v}${O ? '/' : ''}>`,
-                $ =
+                J =
                   !T || f || y
                     ? ''
                     : `
-${J}`,
-                C = O ? '' : `${c}${$}</${a}>`;
-              L += `${h}${A}${C}`;
+${C}`,
+                $ = O ? '' : `${c}${J}</${a}>`;
+              L += `${h}${A}${$}`;
               break;
             }
             case n.OBJECT: {
               let r = Object.keys(e);
               L = r
-                .map((a, s) => {
-                  let i = { ...t, _isFirstItem: 0 === s, _isLastItem: s + 1 === r.length, _isOutputStart: E },
+                .map((a, o) => {
+                  let i = { ...t, _isFirstItem: 0 === o, _isLastItem: o + 1 === r.length, _isOutputStart: E },
                     c = { _name: a };
                   if (
-                    o(e[a]) === n.OBJECT &&
+                    s(e[a]) === n.OBJECT &&
                     (l.forEach((t) => {
                       let r = e[a][t];
                       void 0 !== r && ((c[t] = r), delete e[a][t]);
@@ -136,28 +177,28 @@ ${J}`,
                     let t = Object.assign({}, e[a]);
                     (delete t._content, (c._content = [...f(t), e[a]._content]));
                   }
-                  return (void 0 === c._content && (c._content = e[a]), x(c, i));
+                  return (void 0 === c._content && (c._content = e[a]), b(c, i));
                 }, t)
                 .join('');
               break;
             }
             case n.FUNCTION:
-              L = x(e(t), t);
+              L = b(e(t), t);
               break;
             case n.ARRAY:
               L = e
                 .map((r, n) =>
-                  x(r, { ...t, _isFirstItem: 0 === n, _isLastItem: n + 1 === e.length, _isOutputStart: E }),
+                  b(r, { ...t, _isFirstItem: 0 === n, _isLastItem: n + 1 === e.length, _isOutputStart: E }),
                 )
                 .join('');
               break;
             default:
               L = c(e, A, _);
           }
-          return `${C}${L}`;
+          return `${$}${L}`;
         };
-      var b = r(9e3);
-      let N = (e, t) => {
+      var N = r(9e3);
+      let x = (e, t) => {
           try {
             return JSON.parse(e);
           } catch (e) {
@@ -165,7 +206,7 @@ ${J}`,
           }
         },
         O = { delimiter: ',', headers: [], quote: '"' },
-        g = function (e) {
+        j = function (e) {
           let {
             delimiter: t = ',',
             headers: r = [],
@@ -185,7 +226,7 @@ ${J}`,
               .join('\n');
           return ''.concat(a, '\n').concat(l);
         },
-        j = (e) => {
+        g = (e) => {
           let t = JSON.parse(e),
             r = Object.keys(t).sort((e, t) => (e > t ? 1 : -1)),
             n = {};
@@ -194,23 +235,23 @@ ${J}`,
         },
         v = (e) => JSON.stringify(JSON.parse(e), null, 2),
         _ = (e) => JSON.stringify(JSON.parse(e)),
-        S = (e) => x(N(e, {}), { indent: '  ' }),
-        w = (e) => (0, b.As)(N(e, {})),
+        S = (e) => b(x(e, {}), { indent: '  ' }),
+        w = (e) => (0, N.As)(x(e, {})),
         A = function (e) {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
           return {
-            parse: () => N(JSON.stringify(e), t),
+            parse: () => x(JSON.stringify(e), t),
             format: () => ({
               beautify: () => v(JSON.stringify(e)),
               minify: () => _(JSON.stringify(e)),
-              sort: () => j(JSON.stringify(e)),
+              sort: () => g(JSON.stringify(e)),
             }),
             convert: (t) => {
               try {
                 if ('csv' === t) {
                   if (Array.isArray(e)) {
                     if (0 === e.length) return 'Empty List';
-                    return g(e);
+                    return j(e);
                   }
                   return 'Not A List';
                 }
@@ -224,34 +265,36 @@ ${J}`,
           };
         };
     },
-    9023: (e, t, r) => {
+    9935: (e, t, r) => {
       'use strict';
-      (r.r(t), r.d(t, { default: () => c }));
+      (r.r(t), r.d(t, { default: () => u }));
       var n = r(5640),
-        a = r(9524),
-        l = r(2635),
-        s = r(8732),
-        o = r(148);
-      let i = 'yaml',
-        c = () => {
+        a = r(2283),
+        l = r(4850),
+        o = r(4539),
+        s = r(5494),
+        i = r(148);
+      let c = 'yaml',
+        u = () => {
           let [
             {
-              data: e = l.wY,
-              from: t = (0, s.Pq)(l.wY).format().beautify(),
-              to: r = (0, s.Pq)(l.wY).convert(i),
-              format: c = i,
+              data: e = o.wY,
+              from: t = (0, s.Pq)(o.wY).format().beautify(),
+              to: r = (0, s.Pq)(o.wY).convert(c),
+              format: u = c,
             },
-            u,
-          ] = (0, o.useState)({
-            data: l.wY,
-            from: (0, s.Pq)(l.wY).format().beautify(),
-            to: (0, s.Pq)(l.wY).convert(i),
-            format: i,
+            d,
+          ] = (0, i.useState)({
+            data: o.wY,
+            from: (0, s.Pq)(o.wY).format().beautify(),
+            to: (0, s.Pq)(o.wY).convert(c),
+            format: c,
           });
           return (0, n.jsxs)('div', {
             className: 'flex h-screen w-screen flex-col',
             children: [
-              (0, n.jsx)(a.F, {}),
+              (0, n.jsx)(l.F, {}),
+              (0, n.jsx)(a.c, {}),
               (0, n.jsx)('main', {
                 className: 'container mx-auto grow p-4 md:p-8',
                 children: (0, n.jsxs)('div', {
@@ -265,7 +308,7 @@ ${J}`,
                           className: 'cursor-pointer rounded-full border border-neutral-800 px-4 py-2',
                           onClick: () => {
                             let t = (0, s.Pq)(e).format().beautify();
-                            u((e) => ({ ...e, from: t }));
+                            d((e) => ({ ...e, from: t }));
                           },
                           children: 'Beautify',
                         }),
@@ -274,7 +317,7 @@ ${J}`,
                           className: 'cursor-pointer rounded-full border border-neutral-800 px-4 py-2',
                           onClick: () => {
                             let t = (0, s.Pq)(e).format().minify();
-                            u((e) => ({ ...e, from: t }));
+                            d((e) => ({ ...e, from: t }));
                           },
                           children: 'Minify',
                         }),
@@ -283,7 +326,7 @@ ${J}`,
                           className: 'cursor-pointer rounded-full border border-neutral-800 px-4 py-2',
                           onClick: () => {
                             let t = (0, s.Pq)(e).format().sort();
-                            u((e) => ({ ...e, from: t }));
+                            d((e) => ({ ...e, from: t }));
                           },
                           children: 'Sort',
                         }),
@@ -293,9 +336,9 @@ ${J}`,
                       id: 'file-format',
                       name: 'file-format',
                       className: 'appearance-none rounded-full border border-neutral-800 px-4 py-2',
-                      value: c,
+                      value: u,
                       onChange: (e) =>
-                        u((r) => {
+                        d((r) => {
                           let n = e.target.value,
                             a = (0, s.Gl)(t, []),
                             l = (0, s.Pq)(a).convert(n);
@@ -322,8 +365,8 @@ ${J}`,
                             onChange: (e) => {
                               let t = e.target.value,
                                 r = (0, s.Gl)(t, []),
-                                n = (0, s.Pq)(r).convert(c);
-                              u((e) => ({ ...e, from: t, to: n, data: r }));
+                                n = (0, s.Pq)(r).convert(u);
+                              d((e) => ({ ...e, from: t, to: n, data: r }));
                             },
                           }),
                         }),
@@ -348,46 +391,9 @@ ${J}`,
           });
         };
     },
-    9524: (e, t, r) => {
-      'use strict';
-      r.d(t, { F: () => o });
-      var n = r(5640),
-        a = r(2635),
-        l = r(7864),
-        s = r.n(l);
-      let o = () =>
-        (0, n.jsx)('nav', {
-          className: 'border-b border-neutral-800 shadow-sm',
-          children: (0, n.jsx)('div', {
-            className: 'container mx-auto px-4 py-2 md:px-8 md:py-4',
-            children: (0, n.jsxs)('div', {
-              className: 'flex items-center justify-between gap-x-2 md:gap-x-4',
-              children: [
-                (0, n.jsx)(s(), { href: '/', children: (0, n.jsx)('h1', { className: 'font-black', children: a.C3 }) }),
-                (0, n.jsx)('div', {
-                  className: 'flex items-center gap-x-2 text-sm text-neutral-500 md:gap-x-4 md:text-base',
-                  children: [
-                    { id: 'csv', href: '/csv', label: 'CSV' },
-                    { id: 'json', href: '/json', label: 'JSON' },
-                    { id: 'yaml', href: '/yaml', label: 'YAML' },
-                    { id: 'manifest', href: '/manifest', label: 'Manifest' },
-                  ].map((e) => {
-                    let { id: t = '', href: r = '', label: a = '' } = e;
-                    return (0, n.jsx)(
-                      s(),
-                      { href: r, className: 'text-neutral-500 hover:text-neutral-100', children: a },
-                      t,
-                    );
-                  }),
-                }),
-              ],
-            }),
-          }),
-        });
-    },
   },
   (e) => {
     var t = (t) => e((e.s = t));
-    (e.O(0, [864, 0, 636, 593, 792], () => t(3725)), (_N_E = e.O()));
+    (e.O(0, [64, 0, 636, 593, 792], () => t(2669)), (_N_E = e.O()));
   },
 ]);

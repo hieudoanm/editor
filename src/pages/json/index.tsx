@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Navbar } from '@converter/components/Navbar';
+import { Divider } from '@converter/components/shared/Divider';
+import { Navbar } from '@converter/components/shared/Navbar';
 import { INITIAL_JSON } from '@converter/constants';
-import { json, jsonParse } from '@converter/utils/json';
+import { json, jsonParse } from '@converter/utils/json/json';
 import { NextPage } from 'next';
 import { ChangeEvent, useState } from 'react';
 
@@ -33,6 +34,7 @@ const JSONPage: NextPage = () => {
   return (
     <div className="flex h-screen w-screen flex-col">
       <Navbar />
+      <Divider />
       <main className="container mx-auto grow p-4 md:p-8">
         <div className="flex h-full flex-col gap-y-4 md:gap-y-8">
           <div className="grid grid-cols-3 gap-x-4 md:gap-x-8">
