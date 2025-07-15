@@ -1,6 +1,0 @@
-
-
-> @converter/cli@0.0.1 lint /Users/hieudoan/git/github.com/hieudoanm/apps/converter/packages/cli
-> make lint || true
-
-go vet ./...

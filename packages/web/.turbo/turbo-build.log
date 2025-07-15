@@ -7,31 +7,34 @@
 > converter@0.0.1 build /Users/hieudoan/git/github.com/hieudoanm/apps/converter/packages/web
 > next build
 
-   [1m[38;2;173;127;168m▲ Next.js 15.3.5[39m[22m
+   [1m[38;2;173;127;168m▲ Next.js 15.4.1[39m[22m
 
 [?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G[1A[2K[1G[?25h [37m[1m [22m[39m Linting and checking validity of types     [32m[1m✓[22m[39m Linting and checking validity of types 
  [37m[1m [22m[39m Creating an optimized production build ...
  [32m[1m✓[22m[39m Compiled successfully in 2000ms
 [?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m..[39m[2K[1G[?25h [37m[1m [22m[39m Collecting page data     [32m[1m✓[22m[39m Collecting page data 
-[?25l [37m[1m [22m[39m Generating static pages (0/8)  [36m[    ][39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Generating static pages (0/8)  [36m[=   ][39m[2K[1G[1A[2K[1G[?25h [32m[1m✓[22m[39m Generating static pages (8/8)
-[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[?25l [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Collecting build traces     [32m[1m✓[22m[39m Collecting build traces 
-[?25l [37m[1m [22m[39m Exporting (0/9)  [36m[    ][39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Exporting (0/9)  [36m[=   ][39m[2K[1G[?25h[2K[1G[1A[2K[1G[?25h [32m[1m✓[22m[39m Exporting (9/9)
+[?25l [37m[1m [22m[39m Generating static pages (0/11)  [36m[    ][39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Generating static pages (0/11)  [36m[=   ][39m[2K[1G[1A[2K[1G[?25h [32m[1m✓[22m[39m Generating static pages (11/11)
+[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[?25l [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Collecting build traces     [32m[1m✓[22m[39m Collecting build traces 
+[?25l [37m[1m [22m[39m Exporting (0/12)  [36m[    ][39m[2K[1G[1A[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G[?25h[2K[1G[1A[2K[1G[?25h [32m[1m✓[22m[39m Exporting (12/12)
 [?25l [36m.[39m [2K[1G [36m..[39m [2K[1G[?25h    [32m[1m✓[22m[39m Finalizing page optimization 
 
 [4mRoute (pages)[24m                                [4mSize[24m  [4mFirst Load JS[24m  [4m[24m  [4m[24m
-┌ ○ /                                     2.16 kB          [37m[1m98 kB[22m[39m
-├   /_app                                     0 B        [37m[1m93.5 kB[22m[39m
-├ ○ /404                                    580 B        [37m[1m96.4 kB[22m[39m
-├ ○ /500                                    580 B        [37m[1m96.4 kB[22m[39m
-├ ○ /colors                               1.98 kB        [37m[1m97.8 kB[22m[39m
-├ ○ /csv                                  2.07 kB        [37m[1m97.9 kB[22m[39m
-├ ○ /json                                 3.12 kB         [37m[1m129 kB[22m[39m
-├ ○ /manifest                             3.03 kB         [37m[1m129 kB[22m[39m
-└ ○ /yaml                                 2.67 kB         [37m[1m128 kB[22m[39m
-+ First Load JS shared by all             [37m[1m98.5 kB[22m[39m
-  ├ chunks/framework-3b1a4837f977a962.js  57.6 kB
-  ├ chunks/main-ea81656d395a6d18.js       33.9 kB
-  └ other shared chunks (total)           6.99 kB
+┌ ○ /                                      2.2 kB        [37m[1m97.4 kB[22m[39m
+├   /_app                                     0 B        [37m[1m92.9 kB[22m[39m
+├ ○ /404                                    572 B        [37m[1m95.8 kB[22m[39m
+├ ○ /500                                    576 B        [37m[1m95.8 kB[22m[39m
+├ ○ /code                                 1.83 kB        [37m[1m97.1 kB[22m[39m
+├ ○ /colors                               2.02 kB        [37m[1m97.3 kB[22m[39m
+├ ○ /data/csv                             2.11 kB        [37m[1m97.4 kB[22m[39m
+├ ○ /data/json                            3.12 kB         [37m[1m128 kB[22m[39m
+├ ○ /data/yaml                            2.71 kB         [37m[1m128 kB[22m[39m
+├ ○ /manifest                             3.02 kB         [37m[1m128 kB[22m[39m
+├ ○ /strings                              1.19 kB        [37m[1m96.4 kB[22m[39m
+└ ○ /uuid                                 2.16 kB        [37m[1m97.4 kB[22m[39m
++ First Load JS shared by all             [37m[1m97.9 kB[22m[39m
+  ├ chunks/framework-61e65ab8082d6901.js  57.6 kB
+  ├ chunks/main-7b30bbc347fc9d9a.js       33.3 kB
+  └ other shared chunks (total)           7.03 kB
 
 ○  (Static)  prerendered as static content
 

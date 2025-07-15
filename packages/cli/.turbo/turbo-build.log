@@ -1,8 +1,0 @@
-
-
-> @converter/cli@0.0.1 build /Users/hieudoan/git/github.com/hieudoanm/apps/converter/packages/cli
-> make build || true
-
-go vet ./...
-go fmt ./...
-go build -o ./bin/convert ./main.go

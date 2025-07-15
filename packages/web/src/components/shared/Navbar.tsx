@@ -3,11 +3,14 @@ import Link from 'next/link';
 import { FC } from 'react';
 
 const links: { id: string; href: string; label: string }[] = [
+  { id: 'code', href: '/code', label: 'Code' },
   { id: 'colors', href: '/colors', label: 'Colors' },
-  { id: 'csv', href: '/csv', label: 'CSV' },
-  { id: 'json', href: '/json', label: 'JSON' },
-  { id: 'yaml', href: '/yaml', label: 'YAML' },
+  { id: 'data-csv', href: '/data/csv', label: 'CSV' },
+  { id: 'data-json', href: '/data/json', label: 'JSON' },
+  { id: 'data-yaml', href: '/data/yaml', label: 'YAML' },
   { id: 'manifest', href: '/manifest', label: 'Manifest' },
+  { id: 'strings', href: '/strings', label: 'Strings' },
+  { id: 'uuid', href: '/uuid', label: 'UUID' },
 ];
 
 export const Navbar: FC = () => {

@@ -34,6 +34,11 @@
     }
   ],
   "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
   "dynamicRoutes": [],
   "staticRoutes": [
     {
@@ -55,22 +60,34 @@
       "namedRegex": "^/500(?:/)?$"
     },
     {
+      "page": "/code",
+      "regex": "^/code(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/code(?:/)?$"
+    },
+    {
       "page": "/colors",
       "regex": "^/colors(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/colors(?:/)?$"
     },
     {
-      "page": "/csv",
-      "regex": "^/csv(?:/)?$",
+      "page": "/data/csv",
+      "regex": "^/data/csv(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/csv(?:/)?$"
+      "namedRegex": "^/data/csv(?:/)?$"
     },
     {
-      "page": "/json",
-      "regex": "^/json(?:/)?$",
+      "page": "/data/json",
+      "regex": "^/data/json(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/json(?:/)?$"
+      "namedRegex": "^/data/json(?:/)?$"
+    },
+    {
+      "page": "/data/yaml",
+      "regex": "^/data/yaml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/data/yaml(?:/)?$"
     },
     {
       "page": "/manifest",
@@ -79,10 +96,16 @@
       "namedRegex": "^/manifest(?:/)?$"
     },
     {
-      "page": "/yaml",
-      "regex": "^/yaml(?:/)?$",
+      "page": "/strings",
+      "regex": "^/strings(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/yaml(?:/)?$"
+      "namedRegex": "^/strings(?:/)?$"
+    },
+    {
+      "page": "/uuid",
+      "regex": "^/uuid(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uuid(?:/)?$"
     }
   ],
   "dataRoutes": [],
@@ -101,6 +124,5 @@
   "rewriteHeaders": {
     "pathHeader": "x-nextjs-rewritten-path",
     "queryHeader": "x-nextjs-rewritten-query"
-  },
-  "rewrites": []
+  }
 }

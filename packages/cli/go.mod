@@ -3,8 +3,10 @@ module convert
 go 1.24.5
 
 require (
+	github.com/google/uuid v1.6.0
 	github.com/mbndr/figlet4go v0.0.0-20190224160619-d6cef5b186ea
 	github.com/spf13/cobra v1.9.1
+	golang.org/x/text v0.27.0
 )
 
 require (
