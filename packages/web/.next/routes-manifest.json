@@ -60,6 +60,42 @@
       "namedRegex": "^/500(?:/)?$"
     },
     {
+      "page": "/calc/base",
+      "regex": "^/calc/base(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/calc/base(?:/)?$"
+    },
+    {
+      "page": "/calc/crypto",
+      "regex": "^/calc/crypto(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/calc/crypto(?:/)?$"
+    },
+    {
+      "page": "/calc/forex",
+      "regex": "^/calc/forex(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/calc/forex(?:/)?$"
+    },
+    {
+      "page": "/calc/length",
+      "regex": "^/calc/length(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/calc/length(?:/)?$"
+    },
+    {
+      "page": "/calc/roman",
+      "regex": "^/calc/roman(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/calc/roman(?:/)?$"
+    },
+    {
+      "page": "/calc/weight",
+      "regex": "^/calc/weight(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/calc/weight(?:/)?$"
+    },
+    {
       "page": "/code",
       "regex": "^/code(?:/)?$",
       "routeKeys": {},

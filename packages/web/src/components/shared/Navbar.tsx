@@ -3,6 +3,12 @@ import Link from 'next/link';
 import { FC } from 'react';
 
 const links: { id: string; href: string; label: string }[] = [
+  { id: 'calc-base', href: '/calc/base', label: 'Base' },
+  { id: 'calc-crypto', href: '/calc/crypto', label: 'Crypto' },
+  { id: 'calc-forex', href: '/calc/forex', label: 'Forex' },
+  { id: 'calc-length', href: '/calc/length', label: 'Length' },
+  { id: 'calc-roman', href: '/calc/roman', label: 'Roman' },
+  { id: 'calc-weight', href: '/calc/weight', label: 'Weight' },
   { id: 'code', href: '/code', label: 'Code' },
   { id: 'colors', href: '/colors', label: 'Colors' },
   { id: 'data-csv', href: '/data/csv', label: 'CSV' },
