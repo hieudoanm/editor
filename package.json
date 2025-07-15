@@ -1,8 +1,7 @@
 {
-  "name": "converter",
+  "name": "@converter/app",
   "version": "0.0.1",
-  "private": true,
-  "description": "Converter",
+  "description": "converter",
   "keywords": [
     "converter"
   ],
@@ -17,44 +16,18 @@
   "license": "GPL-3.0",
   "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
   "scripts": {
-    "format": "prettier --cache --write .",
-    "predev": "kill-port 3000",
-    "dev": "next dev --turbopack",
-    "prebuild": "rimraf .next docs",
-    "build": "next build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "prebuild": "rimraf docs",
+    "build": "turbo run build",
     "postbuild": "touch docs/.nojekyll",
-    "prestart": "kill-port 3000",
-    "start": "next start",
-    "lint": "next lint",
+    "format": "turbo run format",
     "prepare": "husky || true"
   },
-  "dependencies": {
-    "jstoxml": "7.0.1",
-    "next": "15.3.5",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
-  },
   "devDependencies": {
-    "@eslint/eslintrc": "3.3.1",
-    "@tailwindcss/postcss": "4.1.11",
-    "@tauri-apps/cli": "2.6.2",
-    "@types/jest": "30.0.0",
-    "@types/jstoxml": "5.0.0",
-    "@types/node": "24.0.10",
-    "@types/react": "19.1.8",
-    "@types/react-dom": "19.1.6",
-    "eslint": "9.30.1",
-    "eslint-config-next": "15.3.5",
     "husky": "9.1.7",
-    "jest": "30.0.4",
-    "kill-port": "2.0.1",
-    "prettier": "3.6.2",
-    "prettier-plugin-tailwindcss": "0.6.13",
     "rimraf": "6.0.1",
-    "tailwindcss": "4.1.11",
-    "ts-jest": "29.4.0",
-    "typescript": "5.8.3",
-    "yaml": "2.8.0"
+    "turbo": "2.5.4"
   },
   "packageManager": "pnpm@10.13.1"
 }

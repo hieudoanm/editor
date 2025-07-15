@@ -1,0 +1,19 @@
+lint:
+	go vet ./...
+
+format:
+	go fmt ./...
+
+build:
+	go vet ./...
+	go fmt ./...
+	go build -o ./bin/convert ./main.go
+
+install:
+	go vet ./...
+	go fmt ./...
+	go build -o ./bin/convert ./main.go
+	mkdir -p ~/bin
+	cp ./bin/convert ~/bin/
+	chmod +x ~/bin/convert
+	export PATH="$(HOME)/bin:$(PATH)"

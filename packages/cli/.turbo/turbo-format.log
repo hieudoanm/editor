@@ -1,0 +1,6 @@
+
+
+> @converter/cli@0.0.1 format /Users/hieudoan/git/github.com/hieudoanm/apps/converter/packages/cli
+> make format || true
+
+go fmt ./...
