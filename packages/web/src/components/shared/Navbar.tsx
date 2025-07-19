@@ -1,4 +1,4 @@
-import { APP_NAME } from '@editor/constants';
+import { APP_NAME } from '@editor/constants/app';
 import Link from 'next/link';
 import { FC } from 'react';
 import { Dropdown } from './Dropdown';
@@ -32,9 +32,9 @@ export const Navbar: FC = () => {
           <Dropdown
             title="Converter"
             options={[
-              { id: 'code', href: '/code', label: 'Code' },
-              { id: 'colors', href: '/colors', label: 'Colors' },
-              { id: 'strings', href: '/strings', label: 'Strings' },
+              { id: 'code', href: '/converter/code', label: 'Code' },
+              { id: 'colors', href: '/converter/colors', label: 'Colors' },
+              { id: 'strings', href: '/converter/strings', label: 'Strings' },
             ]}
           />
           <Dropdown
@@ -52,7 +52,13 @@ export const Navbar: FC = () => {
               { id: 'markup', href: '/editor/markup', label: 'Markup' },
             ]}
           />{' '}
-          <Dropdown title="Generator" options={[{ id: 'uuid', href: '/uuid', label: 'UUID' }]} />
+          <Dropdown
+            title="Generator"
+            options={[
+              { id: 'qrcode', href: '/generator/qrcode', label: 'QRCode' },
+              { id: 'uuid', href: '/generator/uuid', label: 'UUID' },
+            ]}
+          />
         </div>
       </div>
     </nav>

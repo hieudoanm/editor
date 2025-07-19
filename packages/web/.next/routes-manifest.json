@@ -108,16 +108,22 @@
       "namedRegex": "^/clock/timezones(?:/)?$"
     },
     {
-      "page": "/code",
-      "regex": "^/code(?:/)?$",
+      "page": "/converter/code",
+      "regex": "^/converter/code(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/code(?:/)?$"
+      "namedRegex": "^/converter/code(?:/)?$"
     },
     {
-      "page": "/colors",
-      "regex": "^/colors(?:/)?$",
+      "page": "/converter/colors",
+      "regex": "^/converter/colors(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/colors(?:/)?$"
+      "namedRegex": "^/converter/colors(?:/)?$"
+    },
+    {
+      "page": "/converter/strings",
+      "regex": "^/converter/strings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/converter/strings(?:/)?$"
     },
     {
       "page": "/data/csv",
@@ -150,16 +156,16 @@
       "namedRegex": "^/editor/markup(?:/)?$"
     },
     {
-      "page": "/strings",
-      "regex": "^/strings(?:/)?$",
+      "page": "/generator/qrcode",
+      "regex": "^/generator/qrcode(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/strings(?:/)?$"
+      "namedRegex": "^/generator/qrcode(?:/)?$"
     },
     {
-      "page": "/uuid",
-      "regex": "^/uuid(?:/)?$",
+      "page": "/generator/uuid",
+      "regex": "^/generator/uuid(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/uuid(?:/)?$"
+      "namedRegex": "^/generator/uuid(?:/)?$"
     }
   ],
   "dataRoutes": [],

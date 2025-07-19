@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Divider } from '@editor/components/shared/Divider';
 import { Navbar } from '@editor/components/shared/Navbar';
-import { INITIAL_MANIFEST_EXTENSION, INITIAL_MANIFEST_PWA } from '@editor/constants';
+import { INITIAL_MANIFEST_EXTENSION, INITIAL_MANIFEST_PWA } from '@editor/constants/initial';
 import { json, jsonParse } from '@editor/utils/json/json';
 import { ChangeEvent, useState } from 'react';
 

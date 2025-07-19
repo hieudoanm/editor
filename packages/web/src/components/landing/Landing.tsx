@@ -14,19 +14,23 @@ const content = {
       tagline:
         'Instantly convert and edit .csv, .json, and .yaml files — all locally in your browser with no setup, no uploads.',
       action: 'Start Converting',
+      href: '/editor/markup',
     },
     features: [
       {
+        href: '',
         id: 'real-time-formatting',
         title: '⚡ Real-Time Formatting',
         description: 'Clean and beautify your JSON or YAML as you type — no extra tools needed.',
       },
       {
+        href: '',
         id: 'local-processing',
         title: '🔄 Convert Between Formats',
         description: 'Easily switch between CSV, JSON, and YAML with a single click — all processed locally.',
       },
       {
+        href: '',
         id: 'smart-editing-tools',
         title: '🧩 Smart Editing Tools',
         description:
@@ -38,6 +42,7 @@ const content = {
       subtitle:
         'Seamlessly convert between .csv, .json, and .yaml formats directly in your browser — fast, private, and with zero setup.',
       action: 'Start Converting',
+      href: '/editor/markup',
     },
   },
 };
@@ -53,6 +58,7 @@ export const Landing: FC = () => {
           headline={content.landing.hero.headline}
           tagline={content.landing.hero.tagline}
           action={content.landing.hero.action}
+          href={content.landing.hero.href}
         />
         <Divider />
         <Features features={content.landing.features} />
@@ -61,6 +67,7 @@ export const Landing: FC = () => {
           title={content.landing.callToAction.title}
           subtitle={content.landing.callToAction.subtitle}
           action={content.landing.callToAction.action}
+          href={content.landing.callToAction.href}
         />
         <Divider />
         <Footer />

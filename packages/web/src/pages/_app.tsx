@@ -1,4 +1,4 @@
-import { APP_NAME } from '@editor/constants';
+import { APP_NAME } from '@editor/constants/app';
 import '@editor/styles/globals.css';
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
 import type { AppProps } from 'next/app';
