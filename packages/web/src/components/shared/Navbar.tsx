@@ -52,7 +52,7 @@ export const Navbar: FC = () => {
               { id: 'markup', href: '/editor/markup', label: 'Markup' },
               { id: 'redact', href: '/editor/redact', label: 'Redact' },
             ]}
-          />{' '}
+          />
           <Dropdown
             title="Generator"
             options={[
@@ -60,7 +60,13 @@ export const Navbar: FC = () => {
               { id: 'uuid', href: '/generator/uuid', label: 'UUID' },
             ]}
           />
-          <Link href="/status">Status</Link>
+          <Dropdown
+            title="Other"
+            options={[
+              { id: 'status', href: '/other/status', label: 'Status' },
+              { id: 'periodic-table', href: '/other/periodic-table', label: 'Periodic Table' },
+            ]}
+          />
         </div>
       </div>
     </nav>

@@ -21,7 +21,8 @@
   "/generator/qrcode": "pages/generator/qrcode.html",
   "/generator/uuid": "pages/generator/uuid.html",
   "/": "pages/index.html",
-  "/status": "pages/status.html",
+  "/other/periodic-table": "pages/other/periodic-table.html",
+  "/other/status": "pages/other/status.html",
   "/_error": "pages/_error.js",
   "/converter/colors": "pages/converter/colors.html",
   "/data/csv": "pages/data/csv.html"

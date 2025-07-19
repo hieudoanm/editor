@@ -174,10 +174,16 @@
       "namedRegex": "^/generator/uuid(?:/)?$"
     },
     {
-      "page": "/status",
-      "regex": "^/status(?:/)?$",
+      "page": "/other/periodic-table",
+      "regex": "^/other/periodic\\-table(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/status(?:/)?$"
+      "namedRegex": "^/other/periodic\\-table(?:/)?$"
+    },
+    {
+      "page": "/other/status",
+      "regex": "^/other/status(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/other/status(?:/)?$"
     }
   ],
   "dataRoutes": [],
