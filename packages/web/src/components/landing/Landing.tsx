@@ -17,14 +17,17 @@ const content = {
     },
     features: [
       {
+        id: 'real-time-formatting',
         title: '⚡ Real-Time Formatting',
         description: 'Clean and beautify your JSON or YAML as you type — no extra tools needed.',
       },
       {
+        id: 'local-processing',
         title: '🔄 Convert Between Formats',
         description: 'Easily switch between CSV, JSON, and YAML with a single click — all processed locally.',
       },
       {
+        id: 'smart-editing-tools',
         title: '🧩 Smart Editing Tools',
         description:
           'Edit structured data with syntax highlighting, validation, and smart helpers for common file types.',

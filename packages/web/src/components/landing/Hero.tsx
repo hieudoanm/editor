@@ -12,7 +12,7 @@ export const Hero: FC<HeroProps> = ({ headline = '', tagline = '', action = '' }
         <Linear.Text>{headline}</Linear.Text>
       </h1>
       <p className="mb-8 max-w-xl text-neutral-100">{tagline}</p>
-      <Link href="/csv" className="w-full md:w-auto">
+      <Link href="/editor/markup" className="w-full md:w-auto">
         <Glass.Button>{action}</Glass.Button>
       </Link>
     </header>

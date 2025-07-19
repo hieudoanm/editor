@@ -126,10 +126,16 @@
       "namedRegex": "^/data/yaml(?:/)?$"
     },
     {
-      "page": "/manifest",
-      "regex": "^/manifest(?:/)?$",
+      "page": "/editor/manifest",
+      "regex": "^/editor/manifest(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/manifest(?:/)?$"
+      "namedRegex": "^/editor/manifest(?:/)?$"
+    },
+    {
+      "page": "/editor/markup",
+      "regex": "^/editor/markup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/editor/markup(?:/)?$"
     },
     {
       "page": "/strings",
