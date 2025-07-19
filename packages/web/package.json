@@ -29,7 +29,7 @@
   "dependencies": {
     "@tanstack/react-query": "5.83.0",
     "jstoxml": "7.0.1",
-    "next": "15.4.1",
+    "next": "15.4.2",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "uuid": "11.1.0"
@@ -44,7 +44,7 @@
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
     "eslint": "9.31.0",
-    "eslint-config-next": "15.4.1",
+    "eslint-config-next": "15.4.2",
     "husky": "9.1.7",
     "jest": "30.0.4",
     "kill-port": "2.0.1",
