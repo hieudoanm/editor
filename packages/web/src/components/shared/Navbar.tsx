@@ -34,15 +34,11 @@ export const Navbar: FC = () => {
             options={[
               { id: 'code', href: '/converter/code', label: 'Code' },
               { id: 'colors', href: '/converter/colors', label: 'Colors' },
+              { id: 'csv', href: '/converter/csv', label: 'CSV' },
+              { id: 'json', href: '/converter/json', label: 'JSON' },
+              { id: 'openapi2postmanv2', href: '/converter/openapi2postmanv2', label: 'OpenAPI to PostmanV2' },
               { id: 'strings', href: '/converter/strings', label: 'Strings' },
-            ]}
-          />
-          <Dropdown
-            title="Data"
-            options={[
-              { id: 'csv', href: '/data/csv', label: 'CSV' },
-              { id: 'json', href: '/data/json', label: 'JSON' },
-              { id: 'yaml', href: '/data/yaml', label: 'YAML' },
+              { id: 'yaml', href: '/converter/yaml', label: 'YAML' },
             ]}
           />
           <Dropdown

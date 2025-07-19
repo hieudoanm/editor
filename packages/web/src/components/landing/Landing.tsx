@@ -37,26 +37,25 @@ const content = {
         description: 'Redact sensitive content visually or permanently — all offline.',
         href: '/editor/redact',
       },
-      // Data
+      // Converter
       {
-        id: 'csv-data',
+        id: 'csv-converter',
         title: '📂 CSV Tools',
         description: 'Edit, preview, and convert CSV files with ease.',
-        href: '/data/csv',
+        href: '/converter/csv',
       },
       {
-        id: 'json-data',
+        id: 'json-converter',
         title: '🧾 JSON Tools',
         description: 'Clean, format, and validate JSON in-browser.',
-        href: '/data/json',
+        href: '/converter/json',
       },
       {
-        id: 'yaml-data',
+        id: 'yaml-converter',
         title: '📄 YAML Tools',
         description: 'Edit and convert YAML safely with real-time linting.',
-        href: '/data/yaml',
+        href: '/converter/yaml',
       },
-      // Converter
       {
         id: 'braille-morse-converter',
         title: '💬 Braille & Morse Code Converter',

@@ -120,28 +120,34 @@
       "namedRegex": "^/converter/colors(?:/)?$"
     },
     {
+      "page": "/converter/csv",
+      "regex": "^/converter/csv(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/converter/csv(?:/)?$"
+    },
+    {
+      "page": "/converter/json",
+      "regex": "^/converter/json(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/converter/json(?:/)?$"
+    },
+    {
+      "page": "/converter/openapi2postmanv2",
+      "regex": "^/converter/openapi2postmanv2(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/converter/openapi2postmanv2(?:/)?$"
+    },
+    {
       "page": "/converter/strings",
       "regex": "^/converter/strings(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/converter/strings(?:/)?$"
     },
     {
-      "page": "/data/csv",
-      "regex": "^/data/csv(?:/)?$",
+      "page": "/converter/yaml",
+      "regex": "^/converter/yaml(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/data/csv(?:/)?$"
-    },
-    {
-      "page": "/data/json",
-      "regex": "^/data/json(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/data/json(?:/)?$"
-    },
-    {
-      "page": "/data/yaml",
-      "regex": "^/data/yaml(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/data/yaml(?:/)?$"
+      "namedRegex": "^/converter/yaml(?:/)?$"
     },
     {
       "page": "/editor/manifest",

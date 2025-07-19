@@ -1,8 +1,9 @@
 {
-  "/_document": "pages/_document.js",
   "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
   "/404": "pages/404.html",
   "/500": "pages/500.html",
+  "/api/openapi/postmanv2": "pages/api/openapi/postmanv2.js",
   "/calc/base": "pages/calc/base.html",
   "/calc/crypto": "pages/calc/crypto.html",
   "/calc/forex": "pages/calc/forex.html",
@@ -12,9 +13,9 @@
   "/clock/pomodoro": "pages/clock/pomodoro.html",
   "/clock/timezones": "pages/clock/timezones.html",
   "/converter/code": "pages/converter/code.html",
+  "/converter/json": "pages/converter/json.html",
   "/converter/strings": "pages/converter/strings.html",
-  "/data/json": "pages/data/json.html",
-  "/data/yaml": "pages/data/yaml.html",
+  "/converter/yaml": "pages/converter/yaml.html",
   "/editor/manifest": "pages/editor/manifest.html",
   "/editor/markup": "pages/editor/markup.html",
   "/editor/redact": "pages/editor/redact.html",
@@ -25,5 +26,6 @@
   "/other/status": "pages/other/status.html",
   "/_error": "pages/_error.js",
   "/converter/colors": "pages/converter/colors.html",
-  "/data/csv": "pages/data/csv.html"
+  "/converter/openapi2postmanv2": "pages/converter/openapi2postmanv2.html",
+  "/converter/csv": "pages/converter/csv.html"
 }
