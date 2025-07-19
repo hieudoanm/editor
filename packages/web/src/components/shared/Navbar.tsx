@@ -50,6 +50,7 @@ export const Navbar: FC = () => {
             options={[
               { id: 'manifest', href: '/editor/manifest', label: 'Manifest' },
               { id: 'markup', href: '/editor/markup', label: 'Markup' },
+              { id: 'redact', href: '/editor/redact', label: 'Redact' },
             ]}
           />{' '}
           <Dropdown

@@ -156,6 +156,12 @@
       "namedRegex": "^/editor/markup(?:/)?$"
     },
     {
+      "page": "/editor/redact",
+      "regex": "^/editor/redact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/editor/redact(?:/)?$"
+    },
+    {
       "page": "/generator/qrcode",
       "regex": "^/generator/qrcode(?:/)?$",
       "routeKeys": {},
