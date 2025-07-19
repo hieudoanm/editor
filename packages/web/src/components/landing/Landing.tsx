@@ -10,126 +10,156 @@ import { FC } from 'react';
 const content = {
   landing: {
     hero: {
-      headline: 'The Ultimate In-Browser Editor for Structured Data & Utilities',
+      headline: 'The Ultimate In-Browser Editor & Utility Suite',
       tagline:
-        'Edit, convert, generate, and redact all types of structured data — from CSV and JSON to UUIDs and QR codes. Everything runs privately in your browser.',
+        'Edit, convert, redact, calculate, and generate — all in one blazing-fast, privacy-first web app. No signups. No uploads. No nonsense.',
       action: 'Launch the Editor',
       href: '/editor/markup',
     },
     features: [
+      // Editor
       {
-        id: 'real-time-formatting',
-        title: '⚡ Real-Time Formatting',
-        description: 'Beautify JSON, YAML, and CSV instantly as you type.',
+        id: 'markdown-editor',
+        title: '📝 Markdown Editor',
+        description: 'Write and preview Markdown with live formatting, syntax highlighting, and export support.',
         href: '/editor/markup',
       },
       {
-        id: 'one-click-conversion',
-        title: '🔄 Format Conversion',
-        description: 'Convert between CSV, JSON, and YAML locally with a single click.',
-        href: '/data/csv',
-      },
-      {
-        id: 'smart-validation',
-        title: '🧠 Validation & Auto-Correction',
-        description: 'Fix common syntax issues and validate structured data formats.',
+        id: 'manifest-editor',
+        title: '📘 Manifest Editor for PWA & Extensions',
+        description:
+          'Edit and validate manifest.json files for Progressive Web Apps and browser extensions with intelligent suggestions and structure-aware editing.',
         href: '/editor/manifest',
       },
       {
         id: 'pdf-redaction',
         title: '🛡️ PDF Redaction',
-        description: 'Redact text in PDFs visually or permanently — safely and offline.',
+        description: 'Redact sensitive content visually or permanently — all offline.',
         href: '/editor/redact',
       },
+      // Data
       {
-        id: 'schema-aware-editing',
-        title: '📘 Schema-Aware Editing',
-        description: 'Edit config files and manifests with tailored schema support.',
-        href: '/editor/manifest',
+        id: 'csv-data',
+        title: '📂 CSV Tools',
+        description: 'Edit, preview, and convert CSV files with ease.',
+        href: '/data/csv',
       },
       {
-        id: 'string-utilities',
-        title: '🔠 String Tools',
-        description: 'Clean, transform, and analyze text or encoded data.',
-        href: '/converter/strings',
+        id: 'json-data',
+        title: '🧾 JSON Tools',
+        description: 'Clean, format, and validate JSON in-browser.',
+        href: '/data/json',
+      },
+      {
+        id: 'yaml-data',
+        title: '📄 YAML Tools',
+        description: 'Edit and convert YAML safely with real-time linting.',
+        href: '/data/yaml',
+      },
+      // Converter
+      {
+        id: 'braille-morse-converter',
+        title: '💬 Braille & Morse Code Converter',
+        description: 'Convert text to and from Braille or Morse code with accurate formatting and symbol support.',
+        href: '/converter/code',
       },
       {
         id: 'color-tools',
         title: '🎨 Color Converter',
-        description: 'Work with HEX, RGB, HSL, and generate color palettes.',
+        description: 'Convert HEX, RGB, and HSL formats — visually.',
         href: '/converter/colors',
       },
       {
-        id: 'code-helpers',
-        title: '💻 Code Converter',
-        description: 'Convert code snippets, encode content, or sanitize safely.',
-        href: '/converter/code',
+        id: 'string-tools',
+        title: '🔤 String Utilities',
+        description: 'Transform, decode, and clean text or encoded strings.',
+        href: '/converter/strings',
       },
+
+      // Generator
       {
         id: 'uuid-generator',
         title: '🆔 UUID Generator',
-        description: 'Generate UUID v4 identifiers securely with no server.',
+        description: 'Generate secure UUIDs locally with zero tracking.',
         href: '/generator/uuid',
       },
       {
-        id: 'qrcode-creator',
+        id: 'qrcode-generator',
         title: '📷 QR Code Generator',
-        description: 'Create QR codes from URLs, text, or contact info.',
+        description: 'Generate QR codes from text, links, or contact info.',
         href: '/generator/qrcode',
       },
-      {
-        id: 'timezones-clock',
-        title: '🌍 Timezone Viewer',
-        description: 'View and compare global timezones — perfect for remote teams.',
-        href: '/clock/timezones',
-      },
-      {
-        id: 'pomodoro-timer',
-        title: '⏳ Pomodoro Timer',
-        description: 'Focus better with built-in Pomodoro cycles and task reminders.',
-        href: '/clock/pomodoro',
-      },
+
+      // Calculator
       {
         id: 'base-calculator',
         title: '🧮 Base Calculator',
-        description: 'Convert between decimal, binary, octal, and hex effortlessly.',
+        description: 'Convert between binary, decimal, hex, and more.',
         href: '/calc/base',
       },
       {
         id: 'crypto-calculator',
         title: '🪙 Crypto Calculator',
-        description: 'Convert between crypto assets and fiat currencies in real time.',
+        description: 'Calculate crypto-to-fiat values using real-time rates.',
         href: '/calc/crypto',
       },
       {
         id: 'forex-calculator',
         title: '💱 Forex Calculator',
-        description: 'Accurate foreign exchange rate conversions in your browser.',
+        description: 'Convert between currencies using up-to-date forex rates.',
         href: '/calc/forex',
       },
       {
-        id: 'length-converter',
+        id: 'length-calculator',
         title: '📏 Length Converter',
-        description: 'Switch between metric and imperial length units on the fly.',
+        description: 'Easily convert between metric and imperial length units.',
         href: '/calc/length',
       },
       {
-        id: 'weight-converter',
+        id: 'weight-calculator',
         title: '⚖️ Weight Converter',
-        description: 'Quickly convert between kilograms, pounds, grams, and more.',
+        description: 'Switch between kilograms, grams, pounds, and more.',
         href: '/calc/weight',
       },
       {
-        id: 'roman-numerals',
+        id: 'roman-converter',
         title: '🏛️ Roman Numeral Converter',
-        description: 'Convert between Roman and Arabic numerals instantly.',
+        description: 'Convert to and from Roman numerals instantly.',
         href: '/calc/roman',
+      },
+
+      // Clock
+      {
+        id: 'pomodoro-timer',
+        title: '⏳ Pomodoro Timer',
+        description: 'Boost focus and productivity with guided Pomodoro sessions.',
+        href: '/clock/pomodoro',
+      },
+      {
+        id: 'timezone-viewer',
+        title: '🌍 Timezone Viewer',
+        description: 'Compare global timezones at a glance.',
+        href: '/clock/timezones',
+      },
+
+      // Other
+      {
+        id: 'periodic-table',
+        title: '🧪 Periodic Table Explorer',
+        description: 'Explore detailed info about all chemical elements.',
+        href: '/other/periodic-table',
+      },
+      {
+        id: 'status-dashboard',
+        title: '📊 Status Monitor',
+        description: 'Check the current system status and service uptime.',
+        href: '/other/status',
       },
     ],
     callToAction: {
-      title: 'All-in-One Tool for Developers, Writers & Data Wranglers',
+      title: 'Your All-in-One Productivity & Dev Toolkit',
       subtitle:
-        'From simple conversions to advanced redaction, editing, and smart data transformations — get everything you need in one fast, privacy-first platform.',
+        'Whether editing JSON, converting YAML, redacting PDFs, or generating QR codes — everything runs privately, locally, and instantly in your browser.',
       action: 'Launch the Editor',
       href: '/editor/markup',
     },

@@ -12,7 +12,7 @@ export const Features: FC<{ features: Feature[] }> = ({ features }) => {
           <Link key={id} href={href}>
             <Glass.Card>
               <h3 className="text-xl font-semibold">{title}</h3>
-              <p className="mt-2 text-neutral-400">{description}</p>
+              <p className="mt-2 line-clamp-2 text-neutral-400">{description}</p>
             </Glass.Card>
           </Link>
         ))}
