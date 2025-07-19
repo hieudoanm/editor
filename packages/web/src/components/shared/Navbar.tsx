@@ -18,8 +18,8 @@ export const Navbar: FC = () => {
               { id: 'crypto', href: '/calc/crypto', label: 'Crypto' },
               { id: 'forex', href: '/calc/forex', label: 'Forex' },
               { id: 'length', href: '/calc/length', label: 'Length' },
-              { id: 'calc-roman', href: '/calc/roman', label: 'Roman' },
-              { id: 'calc-weight', href: '/calc/weight', label: 'Weight' },
+              { id: 'roman', href: '/calc/roman', label: 'Roman' },
+              { id: 'weight', href: '/calc/weight', label: 'Weight' },
             ]}
           />
           <Dropdown
@@ -59,6 +59,7 @@ export const Navbar: FC = () => {
               { id: 'uuid', href: '/generator/uuid', label: 'UUID' },
             ]}
           />
+          <Link href="/status">Status</Link>
         </div>
       </div>
     </nav>

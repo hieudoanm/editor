@@ -166,6 +166,12 @@
       "regex": "^/generator/uuid(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/generator/uuid(?:/)?$"
+    },
+    {
+      "page": "/status",
+      "regex": "^/status(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/status(?:/)?$"
     }
   ],
   "dataRoutes": [],
