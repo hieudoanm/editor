@@ -5,7 +5,7 @@ import { Dropdown } from './Dropdown';
 
 export const Navbar: FC = () => {
   return (
-    <nav className="container mx-auto px-6 py-4">
+    <nav className="container mx-auto px-8 py-4">
       <div className="flex items-center justify-between">
         <div className="text-xl font-bold">
           <Link href="/">{APP_NAME}</Link>
@@ -20,6 +20,13 @@ export const Navbar: FC = () => {
               { id: 'length', href: '/calc/length', label: 'Length' },
               { id: 'calc-roman', href: '/calc/roman', label: 'Roman' },
               { id: 'calc-weight', href: '/calc/weight', label: 'Weight' },
+            ]}
+          />
+          <Dropdown
+            title="Clock"
+            options={[
+              { id: 'pomodoro', href: '/clock/pomodoro', label: 'Pomodoro' },
+              { id: 'timezones', href: '/clock/timezones', label: 'Timezones' },
             ]}
           />
           <Dropdown

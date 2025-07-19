@@ -96,6 +96,18 @@
       "namedRegex": "^/calc/weight(?:/)?$"
     },
     {
+      "page": "/clock/pomodoro",
+      "regex": "^/clock/pomodoro(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/clock/pomodoro(?:/)?$"
+    },
+    {
+      "page": "/clock/timezones",
+      "regex": "^/clock/timezones(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/clock/timezones(?:/)?$"
+    },
+    {
       "page": "/code",
       "regex": "^/code(?:/)?$",
       "routeKeys": {},
