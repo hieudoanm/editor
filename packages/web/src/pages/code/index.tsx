@@ -1,6 +1,6 @@
-import { Navbar } from '@converter/components/shared/Navbar';
-import { braillify } from '@converter/utils/braille';
-import { morsify } from '@converter/utils/morse';
+import { Navbar } from '@editor/components/shared/Navbar';
+import { braillify } from '@editor/utils/braille';
+import { morsify } from '@editor/utils/morse';
 import { useState } from 'react';
 
 const FormatPage = () => {

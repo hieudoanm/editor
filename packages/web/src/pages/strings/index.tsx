@@ -1,5 +1,5 @@
-import { Navbar } from '@converter/components/shared/Navbar';
-import { strings } from '@converter/utils/strings';
+import { Navbar } from '@editor/components/shared/Navbar';
+import { strings } from '@editor/utils/strings';
 import { useState } from 'react';
 
 const FormatPage = () => {

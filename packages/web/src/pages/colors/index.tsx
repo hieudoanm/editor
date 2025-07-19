@@ -1,7 +1,7 @@
-import { Divider } from '@converter/components/shared/Divider';
-import { Navbar } from '@converter/components/shared/Navbar';
-import { hex2hsl, hex2oklch, hex2rgb } from '@converter/utils/colors/code/hex';
-import { getBrightness, randomHexColorCode } from '@converter/utils/colors/utils';
+import { Divider } from '@editor/components/shared/Divider';
+import { Navbar } from '@editor/components/shared/Navbar';
+import { hex2hsl, hex2oklch, hex2rgb } from '@editor/utils/colors/code/hex';
+import { getBrightness, randomHexColorCode } from '@editor/utils/colors/utils';
 import { NextPage } from 'next';
 import { useEffect, useState } from 'react';
 

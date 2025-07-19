@@ -1,4 +1,4 @@
-import { Glass } from '@converter/components/shared/Glass';
+import { Glass } from '@editor/components/shared/Glass';
 import Link from 'next/link';
 import { FC } from 'react';
 

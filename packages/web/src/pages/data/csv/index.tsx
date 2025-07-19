@@ -1,7 +1,7 @@
-import { Divider } from '@converter/components/shared/Divider';
-import { Navbar } from '@converter/components/shared/Navbar';
-import { copy } from '@converter/utils/copy';
-import { csv, csv2json, csv2sql } from '@converter/utils/csv/csv';
+import { Divider } from '@editor/components/shared/Divider';
+import { Navbar } from '@editor/components/shared/Navbar';
+import { copy } from '@editor/utils/copy';
+import { csv, csv2json, csv2sql } from '@editor/utils/csv/csv';
 import { NextPage } from 'next';
 import { ChangeEvent, FC, useState } from 'react';
 

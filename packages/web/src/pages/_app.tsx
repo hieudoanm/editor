@@ -1,5 +1,5 @@
-import { APP_NAME } from '@converter/constants';
-import '@converter/styles/globals.css';
+import { APP_NAME } from '@editor/constants';
+import '@editor/styles/globals.css';
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
 import type { AppProps } from 'next/app';
 import { Geist, Geist_Mono } from 'next/font/google';

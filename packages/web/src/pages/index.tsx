@@ -1,4 +1,4 @@
-import { Landing } from '@converter/components/landing/Landing';
+import { Landing } from '@editor/components/landing/Landing';
 import { NextPage } from 'next';
 
 const HomePage: NextPage = () => {

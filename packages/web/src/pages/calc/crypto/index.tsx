@@ -1,5 +1,5 @@
-import { Crypto } from '@converter/components/apps/Crypto';
-import { Navbar } from '@converter/components/shared/Navbar';
+import { Crypto } from '@editor/components/apps/Crypto';
+import { Navbar } from '@editor/components/shared/Navbar';
 import { NextPage } from 'next';
 
 const CryptoPage: NextPage = () => {

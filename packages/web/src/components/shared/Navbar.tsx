@@ -1,4 +1,4 @@
-import { APP_NAME } from '@converter/constants';
+import { APP_NAME } from '@editor/constants';
 import Link from 'next/link';
 import { FC } from 'react';
 import { Dropdown } from './Dropdown';

@@ -1,4 +1,4 @@
-import { Glass } from '@converter/components/shared/Glass';
+import { Glass } from '@editor/components/shared/Glass';
 import { FC } from 'react';
 
 type Feature = { id: string; title: string; description: string };

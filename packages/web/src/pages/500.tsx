@@ -1,4 +1,4 @@
-import { ErrorTemplate } from '@converter/templates/ErrorTemplate';
+import { ErrorTemplate } from '@editor/templates/ErrorTemplate';
 import { NextPage } from 'next';
 
 const ServerErrorPage: NextPage = () => {

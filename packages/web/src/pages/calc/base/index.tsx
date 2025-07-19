@@ -1,5 +1,5 @@
-import { Navbar } from '@converter/components/shared/Navbar';
-import { base } from '@converter/utils/base';
+import { Navbar } from '@editor/components/shared/Navbar';
+import { base } from '@editor/utils/base';
 import { NextPage } from 'next';
 import { useState } from 'react';
 

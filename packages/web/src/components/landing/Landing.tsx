@@ -1,10 +1,10 @@
-import { CallToAction } from '@converter/components/landing/CallToAction';
-import { Features } from '@converter/components/landing/Features';
-import { Footer } from '@converter/components/landing/Footer';
-import { Hero } from '@converter/components/landing/Hero';
-import { Divider } from '@converter/components/shared/Divider';
-import { Linear } from '@converter/components/shared/Linear';
-import { Navbar } from '@converter/components/shared/Navbar';
+import { CallToAction } from '@editor/components/landing/CallToAction';
+import { Features } from '@editor/components/landing/Features';
+import { Footer } from '@editor/components/landing/Footer';
+import { Hero } from '@editor/components/landing/Hero';
+import { Divider } from '@editor/components/shared/Divider';
+import { Linear } from '@editor/components/shared/Linear';
+import { Navbar } from '@editor/components/shared/Navbar';
 import { FC } from 'react';
 
 const content = {

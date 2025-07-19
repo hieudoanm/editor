@@ -1,5 +1,5 @@
-import { Forex } from '@converter/components/apps/Forex';
-import { Navbar } from '@converter/components/shared/Navbar';
+import { Forex } from '@editor/components/apps/Forex';
+import { Navbar } from '@editor/components/shared/Navbar';
 import { NextPage } from 'next';
 
 const ForexPage: NextPage = () => {

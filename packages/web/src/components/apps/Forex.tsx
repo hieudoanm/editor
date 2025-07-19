@@ -1,5 +1,5 @@
-import { formatCurrency } from '@converter/utils/format';
-import { tryCatch } from '@converter/utils/try-catch';
+import { formatCurrency } from '@editor/utils/format';
+import { tryCatch } from '@editor/utils/try-catch';
 import { useQuery } from '@tanstack/react-query';
 import { FC, useState } from 'react';
 

@@ -1,5 +1,5 @@
-import { Divider } from '@converter/components/shared/Divider';
-import { Navbar } from '@converter/components/shared/Navbar';
+import { Divider } from '@editor/components/shared/Divider';
+import { Navbar } from '@editor/components/shared/Navbar';
 import { NextPage } from 'next';
 import { useState } from 'react';
 import { parse } from 'yaml';
@@ -143,7 +143,7 @@ YAML Frameworks and Tools:
 
 Related Projects:
   - Rx            # Multi-Language Schemata Tool for JSON/YAML
-  - Kwalify       # Ruby Schemata Tool for JSON/YAML 
+  - Kwalify       # Ruby Schemata Tool for JSON/YAML
   - pyKwalify     # Python Schemata Tool for JSON/YAML
   - yatools.net   # Visual Studio editor for YAML
   - JSON          # Official JSON Website

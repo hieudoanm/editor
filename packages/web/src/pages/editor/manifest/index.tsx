@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Divider } from '@converter/components/shared/Divider';
-import { Navbar } from '@converter/components/shared/Navbar';
-import { INITIAL_MANIFEST_EXTENSION, INITIAL_MANIFEST_PWA } from '@converter/constants';
-import { json, jsonParse } from '@converter/utils/json/json';
+import { Divider } from '@editor/components/shared/Divider';
+import { Navbar } from '@editor/components/shared/Navbar';
+import { INITIAL_MANIFEST_EXTENSION, INITIAL_MANIFEST_PWA } from '@editor/constants';
+import { json, jsonParse } from '@editor/utils/json/json';
 import { ChangeEvent, useState } from 'react';
 
 const EditorPage = () => {

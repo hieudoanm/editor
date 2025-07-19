@@ -1,5 +1,5 @@
-import { Navbar } from '@converter/components/shared/Navbar';
-import { arabic2roman, roman2arabic } from '@converter/utils/roman';
+import { Navbar } from '@editor/components/shared/Navbar';
+import { arabic2roman, roman2arabic } from '@editor/utils/roman';
 import { NextPage } from 'next';
 import { useState } from 'react';
 

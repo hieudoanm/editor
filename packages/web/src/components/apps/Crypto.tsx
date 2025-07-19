@@ -1,4 +1,4 @@
-import { tryCatch } from '@converter/utils/try-catch';
+import { tryCatch } from '@editor/utils/try-catch';
 import { useQuery } from '@tanstack/react-query';
 
 type CoinRanking = {

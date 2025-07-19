@@ -1,4 +1,4 @@
-import { Navbar } from '@converter/components/shared/Navbar';
+import { Navbar } from '@editor/components/shared/Navbar';
 import { NextPage } from 'next';
 import { useState } from 'react';
 

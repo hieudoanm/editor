@@ -1,6 +1,6 @@
-import { MarkdownPreviewer } from '@converter/components/apps/MarkdownPreviewer';
-import { Navbar } from '@converter/components/shared/Navbar';
-import { INITIAL_MARKDOWN } from '@converter/constants';
+import { MarkdownPreviewer } from '@editor/components/apps/MarkdownPreviewer';
+import { Navbar } from '@editor/components/shared/Navbar';
+import { INITIAL_MARKDOWN } from '@editor/constants';
 import 'github-markdown-css/github-markdown.css';
 import { marked } from 'marked';
 import { NextPage } from 'next';

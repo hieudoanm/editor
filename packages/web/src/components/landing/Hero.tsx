@@ -1,5 +1,5 @@
-import { Glass } from '@converter/components/shared/Glass';
-import { Linear } from '@converter/components/shared/Linear';
+import { Glass } from '@editor/components/shared/Glass';
+import { Linear } from '@editor/components/shared/Linear';
 import Link from 'next/link';
 import { FC } from 'react';
 
