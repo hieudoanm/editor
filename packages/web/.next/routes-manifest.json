@@ -180,6 +180,18 @@
       "namedRegex": "^/generator/uuid(?:/)?$"
     },
     {
+      "page": "/github/languages",
+      "regex": "^/github/languages(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/github/languages(?:/)?$"
+    },
+    {
+      "page": "/github/preview",
+      "regex": "^/github/preview(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/github/preview(?:/)?$"
+    },
+    {
       "page": "/other/periodic-table",
       "regex": "^/other/periodic\\-table(?:/)?$",
       "routeKeys": {},

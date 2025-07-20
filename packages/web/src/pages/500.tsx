@@ -1,7 +1,7 @@
 import { ErrorTemplate } from '@editor/templates/ErrorTemplate';
 import { NextPage } from 'next';
 
-const ServerErrorPage: NextPage = () => {
+const InternalServerErrorPage: NextPage = () => {
   return (
     <ErrorTemplate
       code="500"
@@ -11,4 +11,4 @@ const ServerErrorPage: NextPage = () => {
   );
 };
 
-export default ServerErrorPage;
+export default InternalServerErrorPage;

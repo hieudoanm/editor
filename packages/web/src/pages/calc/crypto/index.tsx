@@ -1,4 +1,4 @@
-import { Crypto } from '@editor/components/apps/Crypto';
+import { Crypto } from '@editor/components/apps/finance/Crypto';
 import { Navbar } from '@editor/components/shared/Navbar';
 import { NextPage } from 'next';
 
