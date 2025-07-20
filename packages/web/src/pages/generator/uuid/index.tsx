@@ -1,3 +1,5 @@
+import { Divider } from '@editor/components/shared/Divider';
+import { Glass } from '@editor/components/shared/Glass';
 import { Navbar } from '@editor/components/shared/Navbar';
 import { useState } from 'react';
 import { v1, v4, v7 } from 'uuid';
@@ -15,7 +17,7 @@ const UUIDPage = () => {
   return (
     <div className="flex h-screen w-screen flex-col">
       <Navbar />
-      <div className="w-full border-t border-neutral-800"></div>
+      <Divider />
       <div className="container mx-auto flex flex-col gap-y-4 p-4 md:gap-y-8 md:p-8">
         {[
           { version: 'uuidV1', label: 'uuid.v1', value: uuidV1 },
@@ -23,28 +25,30 @@ const UUIDPage = () => {
           { version: 'uuidV7', label: 'uuid.v7', value: uuidV7 },
         ].map(({ version, label, value }) => {
           return (
-            <div key={version} className="flex items-center gap-x-4 rounded-lg border border-neutral-800 px-4">
-              <span className="text-sm md:text-base">{label}</span>
-              <input
-                id="v4"
-                name="v4"
-                placeholder="V4"
-                className="grow py-2 text-sm focus:outline-none md:text-base"
-                value={value}
-              />
-              <button
-                type="button"
-                className="cursor-pointer py-2 text-sm md:text-base"
-                onClick={() => {
-                  let newUUID = '';
-                  if (version === 'uuidV1') newUUID = v1();
-                  if (version === 'uuidV4') newUUID = v4();
-                  if (version === 'uuidV7') newUUID = v7();
-                  setState((previous) => ({ ...previous, [version]: newUUID }));
-                }}>
-                Refresh
-              </button>
-            </div>
+            <>
+              <div key={version} className="flex flex-col items-center gap-4 md:flex-row">
+                <Glass.Input
+                  id="v4"
+                  name="v4"
+                  placeholder="V4"
+                  className="grow text-center text-sm md:text-base"
+                  defaultValue={value}
+                />
+                <Glass.Button
+                  type="button"
+                  className="w-full text-sm md:w-auto md:text-base"
+                  onClick={() => {
+                    let newUUID = '';
+                    if (version === 'uuidV1') newUUID = v1();
+                    if (version === 'uuidV4') newUUID = v4();
+                    if (version === 'uuidV7') newUUID = v7();
+                    setState((previous) => ({ ...previous, [version]: newUUID }));
+                  }}>
+                  {label}
+                </Glass.Button>
+              </div>
+              <Divider />
+            </>
           );
         })}
       </div>

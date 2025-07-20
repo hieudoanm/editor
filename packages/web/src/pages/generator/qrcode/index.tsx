@@ -1,4 +1,5 @@
 import { Divider } from '@editor/components/shared/Divider';
+import { Glass } from '@editor/components/shared/Glass';
 import { Navbar } from '@editor/components/shared/Navbar';
 import { download } from '@editor/utils/download';
 import { toDataURL } from 'qrcode';
@@ -34,16 +35,14 @@ const QRCode: FC = () => {
       {/* Divider */}
       <Divider />
       <div className="container mx-auto flex w-full grow flex-col items-center justify-center gap-y-8 p-8">
-        <div className="flex w-full justify-center gap-4 gap-x-4 rounded-full border border-neutral-800 px-4 py-2">
-          <input id="url" name="url" placeholder="URL" className="grow" value={url} />
-          <button
-            type="button"
-            className="cursor-pointer"
+        <div className="flex w-full justify-center gap-x-4">
+          <Glass.Input id="url" name="url" placeholder="URL" className="grow" value={url} />
+          <Glass.Button
             onClick={() => {
               generate();
             }}>
             Generate
-          </button>
+          </Glass.Button>
         </div>
         {dataURL && (
           <div className="mx-auto flex w-full flex-col gap-y-8">
@@ -51,14 +50,14 @@ const QRCode: FC = () => {
               className="mx-auto aspect-square w-full max-w-72 overflow-hidden rounded-2xl border border-neutral-800 bg-contain bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${dataURL})` }}
             />
-            <button
+            <Glass.Button
               type="button"
               className="cursor-pointer rounded-full border border-neutral-800 px-4 py-2"
               onClick={() => {
                 download({ content: dataURL, format: 'jpg', filename: 'qrcode' }).image();
               }}>
               Download
-            </button>
+            </Glass.Button>
           </div>
         )}
       </div>

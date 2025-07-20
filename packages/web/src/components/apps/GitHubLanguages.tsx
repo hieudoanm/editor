@@ -30,7 +30,7 @@ export const GitHubLanguages: FC<{
   if (JSON.stringify(data) === '{}') return <p className="text-center">No Data</p>;
 
   return (
-    <div ref={ref} className="mx-auto flex w-full max-w-xs flex-col overflow-hidden rounded-lg">
+    <div ref={ref} className="mx-auto flex w-full flex-col overflow-hidden rounded-xl">
       {Object.keys(data ?? {})
         .filter((languageKey: string) => {
           const language: GitHubLanguage =

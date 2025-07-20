@@ -1,4 +1,6 @@
 import { Divider } from '@editor/components/shared/Divider';
+import { Glass } from '@editor/components/shared/Glass';
+import { Linear } from '@editor/components/shared/Linear';
 import { Navbar } from '@editor/components/shared/Navbar';
 import { useQueries } from '@tanstack/react-query';
 import { NextPage } from 'next';
@@ -87,43 +89,48 @@ const TimeZonesPage: NextPage = () => {
   });
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <Navbar />
-      <Divider />
-      <main className="container mx-auto flex grow flex-col space-y-8 p-8">
-        <h1 className="text-center text-3xl font-bold tracking-tight md:text-4xl">World Clock & Weather</h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
-          {timezones.map(({ label }, index) => {
-            const weather = weatherQueries[index].data;
-            return (
-              <div
-                key={label}
-                className="rounded-2xl bg-neutral-800 p-6 shadow-md ring-1 ring-neutral-700 transition ring-inset hover:ring-neutral-500">
-                <div className="flex flex-col justify-between sm:flex-row sm:items-center sm:gap-6">
-                  {/* Left: City + Time */}
-                  <div>
-                    <h2 className="text-lg font-semibold tracking-wide whitespace-nowrap text-neutral-200">{label}</h2>
-                    <p className="mt-1 font-mono text-xl font-medium tabular-nums">{times[index]}</p>
+    <div className="min-h-screen">
+      <Linear.Background />
+      <div className="relative z-10 flex flex-col">
+        <Navbar />
+        <Divider />
+        <main className="container mx-auto flex grow flex-col space-y-8 p-8">
+          <h1 className="text-center text-3xl font-bold tracking-tight md:text-4xl">World Clock & Weather</h1>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
+            {timezones.map(({ label }, index) => {
+              const weather = weatherQueries[index].data;
+              return (
+                <Glass.Card key={label}>
+                  <div className="flex flex-col justify-between sm:flex-row sm:items-center sm:gap-6">
+                    {/* Left: City + Time */}
+                    <div>
+                      <h2 className="text-lg font-semibold tracking-wide whitespace-nowrap text-neutral-200">
+                        {label}
+                      </h2>
+                      <p className="mt-1 font-mono text-xl font-medium tabular-nums">{times[index]}</p>
+                    </div>
+                    {/* Right: Weather */}
+                    <div className="mt-4 text-right text-sm sm:mt-0">
+                      {weather ? (
+                        <>
+                          <p className="text-neutral-300">
+                            🌡️ <span className="font-medium">{weather.temperature_2m}°C</span>
+                          </p>
+                          <p className="whitespace-nowrap text-neutral-400">
+                            {weatherCodeToText(weather.weather_code)}
+                          </p>
+                        </>
+                      ) : (
+                        <p className="text-neutral-500 italic">Loading weather...</p>
+                      )}
+                    </div>
                   </div>
-                  {/* Right: Weather */}
-                  <div className="mt-4 text-right text-sm sm:mt-0">
-                    {weather ? (
-                      <>
-                        <p className="text-neutral-300">
-                          🌡️ <span className="font-medium">{weather.temperature_2m}°C</span>
-                        </p>
-                        <p className="whitespace-nowrap text-neutral-400">{weatherCodeToText(weather.weather_code)}</p>
-                      </>
-                    ) : (
-                      <p className="text-neutral-500 italic">Loading weather...</p>
-                    )}
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </main>
+                </Glass.Card>
+              );
+            })}
+          </div>
+        </main>
+      </div>
     </div>
   );
 };

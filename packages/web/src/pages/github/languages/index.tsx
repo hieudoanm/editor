@@ -1,5 +1,6 @@
 import { GitHubLanguages } from '@editor/components/apps/GitHubLanguages';
 import { Divider } from '@editor/components/shared/Divider';
+import { Glass } from '@editor/components/shared/Glass';
 import { Navbar } from '@editor/components/shared/Navbar';
 import { NextPage } from 'next';
 import { ChangeEvent, useRef, useState } from 'react';
@@ -15,12 +16,11 @@ const LanguagesPage: NextPage = () => {
       <Navbar />
       <Divider />
       <div className="container mx-auto p-8">
-        <div className="mx-auto flex max-w-xs flex-col gap-y-8">
-          <input
+        <div className="mx-auto flex max-w-md flex-col gap-y-8">
+          <Glass.Input
             id="repository"
             name="repository"
             placeholder="GitHub Repository"
-            className="rounded-lg border border-neutral-800 px-4 py-2"
             value={repository}
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
               setState((previous) => ({ ...previous, repository: event.target.value }));

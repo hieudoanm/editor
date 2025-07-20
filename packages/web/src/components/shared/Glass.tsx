@@ -1,4 +1,4 @@
-import { FC, ReactNode, ButtonHTMLAttributes } from 'react';
+import { FC, ReactNode, ButtonHTMLAttributes, InputHTMLAttributes } from 'react';
 
 export const Button: FC<
   {
@@ -42,4 +42,20 @@ const Card: FC<{ children: ReactNode; className?: string }> = ({ children, class
   return <div className={`${baseClasses} ${className}`}>{children}</div>;
 };
 
-export const Glass = { Button, Card };
+const Input: FC<InputHTMLAttributes<HTMLInputElement>> = ({ className = '', ...props }) => {
+  const baseClasses = `
+    w-full rounded-full
+    border border-white/20
+    bg-white/10
+    backdrop-blur-lg
+    text-white placeholder:text-neutral-400
+    px-4 py-2
+    shadow-lg shadow-black/30
+    focus:outline-none focus:ring-2 focus:ring-white/30
+    transition duration-300
+  `;
+
+  return <input className={`${baseClasses} ${className}`} {...props} />;
+};
+
+export const Glass = { Button, Card, Input };
