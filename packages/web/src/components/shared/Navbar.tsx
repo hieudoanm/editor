@@ -74,6 +74,7 @@ export const Navbar: FC = () => {
               id: 'other',
               title: 'Other',
               options: [
+                { id: 'images', href: '/other/images', label: 'Images' },
                 { id: 'status', href: '/other/status', label: 'Status' },
                 { id: 'periodic-table', href: '/other/periodic-table', label: 'Periodic Table' },
               ],
