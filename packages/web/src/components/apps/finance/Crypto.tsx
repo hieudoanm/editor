@@ -1,3 +1,4 @@
+import { Glass } from '@editor/components/shared/Glass';
 import { tryCatch } from '@editor/utils/try-catch';
 import { useQuery } from '@tanstack/react-query';
 
@@ -49,31 +50,33 @@ export const Crypto = () => {
   const { coins = [] } = responseData ?? { coins: [] };
 
   return (
-    <div className="flex h-full w-full max-w-md flex-col gap-2 overflow-hidden border-t border-neutral-800 p-4 md:p-8">
-      <div className="h-full grow divide-y divide-neutral-800 overflow-auto">
-        {coins.map((coin) => {
-          const { rank = 0, uuid = '', name = '', symbol = '', marketCap = '0', price = '0' } = coin;
+    <div className="h-full w-full max-w-md p-8">
+      <Glass.Card className="h-full">
+        <div className="scrollbar-none h-full divide-y divide-neutral-100 overflow-auto">
+          {coins.map((coin) => {
+            const { rank = 0, uuid = '', name = '', symbol = '', marketCap = '0', price = '0' } = coin;
 
-          return (
-            <div key={uuid} className="flex items-center justify-between gap-2 py-2">
-              <div>
-                <p className="text-xs">
-                  {rank}. {symbol}
-                </p>
-                <h3 title={name} className="w-32 truncate font-bold whitespace-nowrap">
-                  {name}
-                </h3>
+            return (
+              <div key={uuid} className="flex items-center justify-between gap-2 py-2">
+                <div>
+                  <p className="text-xs">
+                    {rank}. {symbol}
+                  </p>
+                  <h3 title={name} className="w-32 truncate font-bold whitespace-nowrap">
+                    {name}
+                  </h3>
+                </div>
+                <div className="text-right">
+                  <p className="text-xs">${parseFloat(marketCap).toLocaleString('en-US')}</p>
+                  <p title={price} className="font-bold whitespace-nowrap">
+                    ${parseFloat(price).toLocaleString('en-US')}
+                  </p>
+                </div>
               </div>
-              <div className="text-right">
-                <p className="text-xs">${parseFloat(marketCap).toLocaleString('en-US')}</p>
-                <p title={price} className="font-bold whitespace-nowrap">
-                  ${parseFloat(price).toLocaleString('en-US')}
-                </p>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      </Glass.Card>
     </div>
   );
 };

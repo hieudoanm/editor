@@ -1,3 +1,4 @@
+import { Glass } from '@editor/components/shared/Glass';
 import { formatCurrency } from '@editor/utils/number/format';
 import { tryCatch } from '@editor/utils/try-catch';
 import { useQuery } from '@tanstack/react-query';
@@ -10,11 +11,7 @@ type Frankfurter = {
   rates: Record<string, number>;
 };
 
-export const Forex: FC = () => {
-  const [{ amount: queryAmount = 1, base: queryBase = 'EUR' }, setState] = useState<{ amount: number; base: string }>({
-    amount: 1,
-    base: 'EUR',
-  });
+const ForexQuery: FC<{ amount: number; base: string }> = ({ amount: queryAmount = 1, base: queryBase = 'EUR' }) => {
   const url: string = `https://api.frankfurter.dev/v1/latest?amount=${queryAmount}&base=${queryBase}`;
   const urlSearchParams: URLSearchParams = new URLSearchParams();
   urlSearchParams.set('url', url);
@@ -39,32 +36,43 @@ export const Forex: FC = () => {
   const { amount = 1, base = '', rates = {} } = data ?? { amount: 1, base: '', rates: {} };
 
   return (
-    <div className="flex h-full w-full max-w-md flex-col gap-2 overflow-hidden border-t border-neutral-800 p-4 md:p-8">
-      <div className="flex h-full flex-col overflow-hidden">
-        <input
-          type="number"
-          id="amount"
-          name="amount"
-          placeholder="Amount"
-          className="w-full appearance-none rounded border border-neutral-800 px-3 py-1 text-sm focus:outline-none"
-          value={queryAmount}
-          onChange={(event) => {
-            setState((previous) => ({ ...previous, amount: parseFloat(event.target.value ?? '0') ?? 0 }));
-          }}
-        />
-        <div className="h-full grow divide-y divide-neutral-800 overflow-auto">
-          {Object.entries(rates).map(([key, value]) => {
-            return (
-              <div key={key} className="flex items-center justify-between gap-2 py-2">
-                <span className="text-sm">
-                  {amount} {base} to {key}
-                </span>
-                <span className="text-sm">{formatCurrency(value, key)}</span>
-              </div>
-            );
-          })}
-        </div>
+    <Glass.Card className="h-full">
+      <div className="scrollbar-none h-full divide-y divide-neutral-100 overflow-auto">
+        {Object.entries(rates).map(([key, value]) => {
+          return (
+            <div key={key} className="flex items-center justify-between gap-2 py-2">
+              <span className="">
+                {amount} {base} to {key}
+              </span>
+              <span className="font-bold whitespace-nowrap">{formatCurrency(value, key)}</span>
+            </div>
+          );
+        })}
       </div>
+    </Glass.Card>
+  );
+};
+
+export const Forex: FC = () => {
+  const [{ amount = 1, base = 'EUR' }, setState] = useState<{ amount: number; base: string }>({
+    amount: 1,
+    base: 'EUR',
+  });
+
+  return (
+    <div className="flex h-full w-full max-w-md flex-col gap-y-4 p-8">
+      <Glass.Input
+        type="number"
+        id="amount"
+        name="amount"
+        placeholder="Amount"
+        className="appearance-none"
+        value={amount}
+        onChange={(event) => {
+          setState((previous) => ({ ...previous, amount: parseFloat(event.target.value ?? '0') ?? 0 }));
+        }}
+      />
+      <ForexQuery amount={amount} base={base} />
     </div>
   );
 };

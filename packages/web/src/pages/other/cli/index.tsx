@@ -16,7 +16,7 @@ const CommandLineInterfacePage: NextPage = () => {
             {[
               {
                 id: 'bash',
-                link: 'https://github.com/hieudoanm/mark/tree/master/packages/cli/bash/bin',
+                link: 'https://github.com/hieudoanm/mark/tree/master/packages/cli/bash/dist',
                 emoji: '🐚',
                 label: 'Bash',
               },
