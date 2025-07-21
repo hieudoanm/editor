@@ -79,6 +79,7 @@ const links = [
     title: 'Other',
     options: [
       { id: 'chat', href: '/other/chat', label: 'Chat' },
+      { id: 'cli', href: '/other/cli', label: 'CLI' },
       { id: 'images', href: '/other/images', label: 'Images' },
       { id: 'status', href: '/other/status', label: 'Status' },
       { id: 'periodic-table', href: '/other/periodic-table', label: 'Periodic Table' },
