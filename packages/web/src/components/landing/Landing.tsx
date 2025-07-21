@@ -2,6 +2,7 @@ import { CallToAction } from '@editor/components/landing/CallToAction';
 import { Features } from '@editor/components/landing/Features';
 import { Footer } from '@editor/components/landing/Footer';
 import { Hero } from '@editor/components/landing/Hero';
+import { Logos } from '@editor/components/landing/Logos';
 import { Divider } from '@editor/components/shared/Divider';
 import { Linear } from '@editor/components/shared/Linear';
 import { Navbar } from '@editor/components/shared/Navbar';
@@ -10,19 +11,56 @@ import { FC } from 'react';
 const content = {
   landing: {
     hero: {
-      headline: 'The Ultimate In-Browser Editor & Utility Suite',
+      headline: 'The Ultimate In-Browser Toolkit for Devs & Makers',
       tagline:
-        'Edit, convert, redact, calculate, and generate — all in one blazing-fast, privacy-first web app. No signups. No uploads. No nonsense.',
-      action: 'Launch the Editor',
-      href: '/editor/markup',
+        'Edit JSON, convert YAML, redact PDFs, analyze GitHub, generate UUIDs, and more — all locally, instantly, and without signups.',
+      action: 'Go to Chat',
+      href: '/other/chat',
     },
     features: {
-      title: 'Powerful Tools for Developers & Creatives',
+      title: 'Blazing-Fast Tools — All in Your Browser',
       subtitle:
-        'From editing JSON to converting YAML, redacting PDFs, or generating QR codes — everything runs privately, locally, and instantly in your browser.',
+        'From chess utilities to text converters, calculators, redaction tools, and GitHub preview generators — every feature works offline, with privacy built-in. No accounts. No uploads.',
       // List of features with descriptions and links
       // Each feature has an id, href, title, and description
       features: [
+        // Calculator
+        {
+          id: 'base-calculator',
+          title: '🧮 Base Calculator',
+          description: 'Convert between binary, decimal, hex, and more.',
+          href: '/calc/base',
+        },
+        {
+          id: 'crypto-calculator',
+          title: '🪙 Crypto Calculator',
+          description: 'Calculate crypto-to-fiat values using real-time rates.',
+          href: '/calc/crypto',
+        },
+        {
+          id: 'forex-calculator',
+          title: '💱 Forex Calculator',
+          description: 'Convert between currencies using up-to-date forex rates.',
+          href: '/calc/forex',
+        },
+        {
+          id: 'length-calculator',
+          title: '📏 Length Converter',
+          description: 'Easily convert between metric and imperial length units.',
+          href: '/calc/length',
+        },
+        {
+          id: 'weight-calculator',
+          title: '⚖️ Weight Converter',
+          description: 'Switch between kilograms, grams, pounds, and more.',
+          href: '/calc/weight',
+        },
+        {
+          id: 'roman-converter',
+          title: '🏛️ Roman Numeral Converter',
+          description: 'Convert to and from Roman numerals instantly.',
+          href: '/calc/roman',
+        },
         // Chess
         {
           id: 'chess-converter-fen2png',
@@ -60,25 +98,18 @@ const content = {
           description: 'A sleek, configurable chess clock — perfect for online or over-the-board play.',
           href: '/chess/tools/clock',
         },
-        // Editor
+        // Clock
         {
-          id: 'markdown-editor',
-          title: '📝 Markdown Editor',
-          description: 'Write and preview Markdown with live formatting, syntax highlighting, and export support.',
-          href: '/editor/markup',
+          id: 'pomodoro-timer',
+          title: '⏳ Pomodoro Timer',
+          description: 'Boost focus and productivity with guided Pomodoro sessions.',
+          href: '/clock/pomodoro',
         },
         {
-          id: 'manifest-editor',
-          title: '📘 Manifest Editor for PWA & Extensions',
-          description:
-            'Edit and validate manifest.json files for Progressive Web Apps and browser extensions with intelligent suggestions and structure-aware editing.',
-          href: '/editor/manifest',
-        },
-        {
-          id: 'pdf-redaction',
-          title: '🛡️ PDF Redaction',
-          description: 'Redact sensitive content visually or permanently — all offline.',
-          href: '/editor/redact',
+          id: 'timezone-viewer',
+          title: '🌍 Timezone Viewer',
+          description: 'Compare global timezones at a glance.',
+          href: '/clock/timezones',
         },
         // Converter
         {
@@ -124,6 +155,26 @@ const content = {
             'Convert OpenAPI specifications to Postman Collection V2.1 format in-browser — no upload needed.',
           href: '/converter/openapi2postmanv2',
         },
+        // Editor
+        {
+          id: 'markdown-editor',
+          title: '📝 Markdown Editor',
+          description: 'Write and preview Markdown with live formatting, syntax highlighting, and export support.',
+          href: '/editor/markup',
+        },
+        {
+          id: 'manifest-editor',
+          title: '📘 Manifest Editor for PWA & Extensions',
+          description:
+            'Edit and validate manifest.json files for Progressive Web Apps and browser extensions with intelligent suggestions and structure-aware editing.',
+          href: '/editor/manifest',
+        },
+        {
+          id: 'pdf-redaction',
+          title: '🛡️ PDF Redaction',
+          description: 'Redact sensitive content visually or permanently — all offline.',
+          href: '/editor/redact',
+        },
         // Generator
         {
           id: 'uuid-generator',
@@ -150,59 +201,20 @@ const content = {
           description: 'Generate sleek Open Graph preview images for your GitHub repositories.',
           href: '/github/preview',
         },
-        // Calculator
-        {
-          id: 'base-calculator',
-          title: '🧮 Base Calculator',
-          description: 'Convert between binary, decimal, hex, and more.',
-          href: '/calc/base',
-        },
-        {
-          id: 'crypto-calculator',
-          title: '🪙 Crypto Calculator',
-          description: 'Calculate crypto-to-fiat values using real-time rates.',
-          href: '/calc/crypto',
-        },
-        {
-          id: 'forex-calculator',
-          title: '💱 Forex Calculator',
-          description: 'Convert between currencies using up-to-date forex rates.',
-          href: '/calc/forex',
-        },
-        {
-          id: 'length-calculator',
-          title: '📏 Length Converter',
-          description: 'Easily convert between metric and imperial length units.',
-          href: '/calc/length',
-        },
-        {
-          id: 'weight-calculator',
-          title: '⚖️ Weight Converter',
-          description: 'Switch between kilograms, grams, pounds, and more.',
-          href: '/calc/weight',
-        },
-        {
-          id: 'roman-converter',
-          title: '🏛️ Roman Numeral Converter',
-          description: 'Convert to and from Roman numerals instantly.',
-          href: '/calc/roman',
-        },
-
-        // Clock
-        {
-          id: 'pomodoro-timer',
-          title: '⏳ Pomodoro Timer',
-          description: 'Boost focus and productivity with guided Pomodoro sessions.',
-          href: '/clock/pomodoro',
-        },
-        {
-          id: 'timezone-viewer',
-          title: '🌍 Timezone Viewer',
-          description: 'Compare global timezones at a glance.',
-          href: '/clock/timezones',
-        },
-
         // Other
+        {
+          id: 'chat-tool',
+          title: '💬 AI Chat',
+          description:
+            'Use a built-in AI chat assistant for productivity, questions, or coding help — locally in your browser.',
+          href: '/other/chat',
+        },
+        {
+          id: 'image-tools',
+          title: '🖼️ Image Tools',
+          description: 'Optimize, convert, and preview images — all securely in your browser.',
+          href: '/other/images',
+        },
         {
           id: 'periodic-table',
           title: '🧪 Periodic Table Explorer',
@@ -218,11 +230,11 @@ const content = {
       ],
     },
     callToAction: {
-      title: 'Your All-in-One Productivity & Dev Toolkit',
+      title: 'All-in-One Productivity & Dev Suite — No Installs Required',
       subtitle:
-        'Whether editing JSON, converting YAML, redacting PDFs, or generating QR codes — everything runs privately, locally, and instantly in your browser.',
-      action: 'Launch the Editor',
-      href: '/editor/markup',
+        'Whether you’re editing code, converting formats, redacting PDFs, exploring chess theory, or generating visuals — do it all, instantly, right in your browser.',
+      action: 'Go to Chat',
+      href: '/other/chat',
     },
   },
 };
@@ -246,6 +258,8 @@ export const Landing: FC = () => {
           subtitle={content.landing.features.subtitle}
           features={content.landing.features.features}
         />
+        <Divider />
+        <Logos />
         <Divider />
         <CallToAction
           title={content.landing.callToAction.title}

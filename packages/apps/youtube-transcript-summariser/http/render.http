@@ -1,0 +1,8 @@
+### Summarise YouTube Video Transcript (Prod)
+POST https://youtube-transcript-summariser.onrender.com/api/transcript/summarise
+Content-Type: application/json
+
+{
+  "video_id": "z3prA1py3vU",
+  "language": "en"
+}

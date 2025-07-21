@@ -1,4 +1,4 @@
-import { GitHubSocialPreview } from '@editor/components/apps/GitHubSocialPreview';
+import { GitHubSocialPreview } from '@editor/components/apps/github/GitHubSocialPreview';
 import { Divider } from '@editor/components/shared/Divider';
 import { Navbar } from '@editor/components/shared/Navbar';
 import { NextPage } from 'next';

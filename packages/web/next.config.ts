@@ -6,6 +6,7 @@ const VERCEL_ENV = process.env.VERCEL_ENV ?? 'development';
 const partialNextConfig: Partial<NextConfig> =
   VERCEL_ENV === 'development'
     ? {
+        images: { unoptimized: true },
         basePath: NODE_ENV === 'development' ? '' : '/editor',
         output: NODE_ENV === 'development' ? 'standalone' : 'export',
         distDir: NODE_ENV === 'development' ? '.next' : '../../docs',

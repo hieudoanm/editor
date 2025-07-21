@@ -18,7 +18,7 @@ const RESPONSE_BODY = "Response Body"
 type Options struct {
 	Header http.Header
 	Query  map[string]string
-	Body   map[string]string
+	Body   map[string]interface{}
 }
 
 // Get ...

@@ -32,7 +32,7 @@ export const Features: FC<{ title: string; subtitle: string; features: Feature[]
         placeholder="Filter features..."
         className="mb-8 w-full"
       />
-      <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-4">
         {filteredFeatures.map(({ id, href, title, description }) => (
           <Link key={id} href={href}>
             <Glass.Card>

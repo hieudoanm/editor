@@ -1,4 +1,4 @@
-import { GitHubLanguages } from '@editor/components/apps/GitHubLanguages';
+import { GitHubLanguages } from '@editor/components/apps/github/GitHubLanguages';
 import { Divider } from '@editor/components/shared/Divider';
 import { Glass } from '@editor/components/shared/Glass';
 import { Navbar } from '@editor/components/shared/Navbar';
