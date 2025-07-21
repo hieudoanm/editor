@@ -25,6 +25,18 @@ export const Navbar: FC = () => {
               ],
             },
             {
+              id: 'chess',
+              title: 'Chess',
+              options: [
+                { id: 'chess-fen2png', href: '/chess/converter/fen2png', label: 'FEN to PNG' },
+                { id: 'chess-pgn2gif', href: '/chess/converter/pgn2gif', label: 'PGN to GIF' },
+                { id: 'chess-chess960', href: '/chess/theory/chess960', label: 'Chess960' },
+                { id: 'chess-openings', href: '/chess/theory/openings', label: 'Openings' },
+                { id: 'chess-clock', href: '/chess/tools/clock', label: 'Clock' },
+                { id: 'chess-elo', href: '/chess/tools/elo', label: 'ELO' },
+              ],
+            },
+            {
               id: 'clock',
               title: 'Clock',
               options: [

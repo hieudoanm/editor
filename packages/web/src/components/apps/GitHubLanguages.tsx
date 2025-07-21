@@ -1,4 +1,4 @@
-import languages from '@editor/json/languages.json';
+import languages from '@editor/json/github/languages.json';
 import { getBrightness } from '@editor/utils/colors/utils';
 import { tryCatch } from '@editor/utils/try-catch';
 import { useQuery } from '@tanstack/react-query';

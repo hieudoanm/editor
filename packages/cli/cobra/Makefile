@@ -7,13 +7,15 @@ format:
 build:
 	go vet ./...
 	go fmt ./...
-	go build -o ./bin/convert ./main.go
+	rm -rf ./bin
+	go build -o ./bin/mark ./main.go
 
 install:
 	go vet ./...
 	go fmt ./...
-	go build -o ./bin/convert ./main.go
+	rm -rf ./bin
+	go build -o ./bin/mark ./main.go
 	mkdir -p ~/bin
-	cp ./bin/convert ~/bin/
-	chmod +x ~/bin/convert
+	cp ./bin/mark ~/bin/
+	chmod +x ~/bin/mark
 	export PATH="$(HOME)/bin:$(PATH)"

@@ -23,6 +23,43 @@ const content = {
       // List of features with descriptions and links
       // Each feature has an id, href, title, and description
       features: [
+        // Chess
+        {
+          id: 'chess-converter-fen2png',
+          title: '🧩 FEN to PNG',
+          description: 'Render beautiful board images from FEN strings — great for sharing positions.',
+          href: '/chess/converter/fen2png',
+        },
+        {
+          id: 'chess-converter-pgn2gif',
+          title: '🎞️ PGN to GIF',
+          description: 'Convert entire games into animated GIFs to showcase key moments or tactics.',
+          href: '/chess/converter/pgn2gif',
+        },
+        {
+          id: 'chess-theory-chess960',
+          title: '🔀 Chess960 Generator',
+          description: 'Explore randomized Chess960 starting positions and understand their dynamics.',
+          href: '/chess/theory/chess960',
+        },
+        {
+          id: 'chess-theory-openings',
+          title: '📚 Opening Explorer',
+          description: 'Study and compare popular chess openings with rich visualizations and stats.',
+          href: '/chess/theory/openings',
+        },
+        {
+          id: 'chess-tools-elo',
+          title: '📈 ELO Calculator',
+          description: 'Estimate your new rating after a game or tournament using customizable ELO formulas.',
+          href: '/chess/tools/elo',
+        },
+        {
+          id: 'chess-tools-clock',
+          title: '⏱️ Chess Clock',
+          description: 'A sleek, configurable chess clock — perfect for online or over-the-board play.',
+          href: '/chess/tools/clock',
+        },
         // Editor
         {
           id: 'markdown-editor',

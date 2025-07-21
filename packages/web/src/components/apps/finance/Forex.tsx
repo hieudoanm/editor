@@ -1,4 +1,4 @@
-import { formatCurrency } from '@editor/utils/format';
+import { formatCurrency } from '@editor/utils/number/format';
 import { tryCatch } from '@editor/utils/try-catch';
 import { useQuery } from '@tanstack/react-query';
 import { FC, useState } from 'react';

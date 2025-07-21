@@ -1,5 +1,5 @@
 import { Navbar } from '@editor/components/shared/Navbar';
-import { base } from '@editor/utils/base';
+import { base } from '@editor/utils/number/base';
 import { NextPage } from 'next';
 import { useState } from 'react';
 
