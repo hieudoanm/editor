@@ -1,115 +1,189 @@
-# 🔄 [Converter](https://hieudoanm.github.io/converter)
+# 🔄 [Mark](https://markzuck.vercel.app)
 
-A fast, privacy-friendly tool to convert between CSV, JSON, and YAML formats — all directly in your browser.
+**The Ultimate In-Browser Toolkit for Devs & Makers**
+Edit, convert, calculate, redact, preview — all locally and securely in your browser.
+
+---
 
 ## 📚 Table of Contents
 
-- [🔄 Converter](#-converter)
+- [🔄 Mark](#-mark)
   - [📚 Table of Contents](#-table-of-contents)
   - [✨ Features](#-features)
-    - [🔧 1. Clone the repository](#-1-clone-the-repository)
-    - [📦 2. Install dependencies](#-2-install-dependencies)
-    - [⚙️ 3. Install Tauri CLI (optional)](#️-3-install-tauri-cli-optional)
-    - [💻 4. Start the development server](#-4-start-the-development-server)
+    - [🔧 1. Clone the Repository](#-1-clone-the-repository)
+    - [📦 2. Install Dependencies](#-2-install-dependencies)
+    - [⚙️ 3. Install Tauri CLI (Optional)](#️-3-install-tauri-cli-optional)
+    - [💻 4. Start the Development Server](#-4-start-the-development-server)
   - [🧰 Tech Stack](#-tech-stack)
-  - [🗂 File Upload \& Conversion](#-file-upload--conversion)
+  - [🚀 Available Tools](#-available-tools)
+    - [🔄 Converters](#-converters)
+    - [📝 Editors](#-editors)
+    - [♟️ Chess Tools](#️-chess-tools)
+    - [🧮 Calculators](#-calculators)
+    - [⏰ Time \& Utility Tools](#-time--utility-tools)
+    - [🔧 Generators](#-generators)
+    - [🐙 GitHub Tools](#-github-tools)
+    - [🧪 Other](#-other)
   - [📦 Build for Production](#-build-for-production)
   - [🛠️ Build Desktop App with Tauri](#️-build-desktop-app-with-tauri)
   - [📄 License](#-license)
   - [🙌 Acknowledgements](#-acknowledgements)
 
+---
+
 ## ✨ Features
 
-- 🔄 Convert between CSV, JSON, and YAML
-- 🖥️ Fully client-side — runs entirely in the browser
-- 📤 Upload files in .csv, .json, or .yaml / .yml formats
-- 📥 Download converted results instantly
-- 🔒 No server or API usage — 100% privacy guaranteed
+- 🧾 Convert between CSV, JSON, and YAML formats
+- 📄 Redact PDFs visually or permanently — all offline
+- 🧮 Convert values (length, weight, numeral systems, currencies)
+- 🧠 Analyze GitHub repos, generate Open Graph images
+- 🔁 Convert OpenAPI specs to Postman collections
+- ♟️ Render chess boards, generate Chess960, convert PGNs to GIFs
+- 🔤 Encode/decode strings, Braille, Morse
+- 📝 Markdown & manifest.json editors
+- 🔒 100% client-side. No uploads. No sign-ups.
 
-### 🔧 1. Clone the repository
+---
 
-```bash
+### 🔧 1. Clone the Repository
+
+```shell
 git clone git@github.com:hieudoanm/openapi-to-postmanv2.git
 cd openapi-to-postmanv2
 ```
 
-### 📦 2. Install dependencies
+### 📦 2. Install Dependencies
 
-```bash
+```shell
 pnpm install
 ```
 
-### ⚙️ 3. Install Tauri CLI (optional)
+### ⚙️ 3. Install Tauri CLI (Optional)
 
-```bash
+```shell
 cargo install tauri-cli
 ```
 
-You also need to have Rust installed.
+> You’ll also need [Rust](https://www.rust-lang.org/tools/install)
 
-### 💻 4. Start the development server
+### 💻 4. Start the Development Server
 
-```bash
+```shell
 pnpm run dev
 ```
 
-The app will be available at [http://localhost:3000](http://localhost:3000).
+> Open [http://localhost:3000](http://localhost:3000) to view the app.
+
+---
 
 ## 🧰 Tech Stack
 
 - [Next.js](https://nextjs.org/)
 - [React](https://react.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- `js-yaml` — for YAML parsing
-- [Tauri](https://v2.tauri.app/) — lightweight desktop app framework for Rust + frontend
+- [Tauri](https://tauri.app/)
+- [`js-yaml`](https://github.com/nodeca/js-yaml), [`papaparse`](https://www.papaparse.com/), `uuid`, and more
 
-## 🗂 File Upload & Conversion
+---
 
-- Files are parsed and converted in-browser using js-yaml, JSON.stringify/parse, and papaparse.
-- Automatic format detection based on file extension.
-- Output can be previewed and downloaded in the selected target format.
+## 🚀 Available Tools
+
+### 🔄 Converters
+
+- [📂 CSV Tools](/converter/csv)
+- [🧾 JSON Tools](/converter/json)
+- [📄 YAML Tools](/converter/yaml)
+- [💬 Braille & Morse Converter](/converter/code)
+- [🎨 Color Converter](/converter/colors)
+- [🔤 String Utilities](/converter/strings)
+- [🔁 OpenAPI to Postman V2](/converter/openapi2postmanv2)
+
+### 📝 Editors
+
+- [📝 Markdown Editor](/editor/markup)
+- [📘 Manifest Editor (PWA/Extensions)](/editor/manifest)
+- [🛡️ PDF Redaction](/editor/redact)
+
+### ♟️ Chess Tools
+
+- [🧩 FEN to PNG](/chess/converter/fen2png)
+- [🎞️ PGN to GIF](/chess/converter/pgn2gif)
+- [🔀 Chess960 Generator](/chess/theory/chess960)
+- [📚 Opening Explorer](/chess/theory/openings)
+- [📈 ELO Calculator](/chess/tools/elo)
+- [⏱️ Chess Clock](/chess/tools/clock)
+
+### 🧮 Calculators
+
+- [🧮 Base Converter](/calc/base)
+- [💱 Forex Calculator](/calc/forex)
+- [🪙 Crypto Calculator](/calc/crypto)
+- [📏 Length Converter](/calc/length)
+- [⚖️ Weight Converter](/calc/weight)
+- [🏛️ Roman Numeral Converter](/calc/roman)
+
+### ⏰ Time & Utility Tools
+
+- [⏳ Pomodoro Timer](/clock/pomodoro)
+- [🌍 Timezone Viewer](/clock/timezones)
+
+### 🔧 Generators
+
+- [🆔 UUID Generator](/generator/uuid)
+- [📷 QR Code Generator](/generator/qrcode)
+
+### 🐙 GitHub Tools
+
+- [📊 GitHub Language Stats](/github/languages)
+- [🖼️ Social Preview Generator](/github/preview)
+
+### 🧪 Other
+
+- [🧪 Periodic Table Explorer](/other/periodic-table)
+- [📊 Status Monitor](/other/status)
+- [💬 AI Chat](/other/chat)
+- [🖼️ Image Tools](/other/images)
+
+---
 
 ## 📦 Build for Production
 
-```bash
+```shell
 pnpm run build
-```
-
-Then run:
-
-```bash
 pnpm run start
 ```
 
+---
+
 ## 🛠️ Build Desktop App with Tauri
 
-After installing Tauri CLI and Rust:
+After installing the Tauri CLI:
 
-```bash
+```shell
 pnpm tauri build
 ```
 
-This will generate native executables for Windows, macOS, or Linux, depending on your OS.
+To run in desktop development mode:
 
-You can also run the desktop app in development mode:
-
-```bash
+```shell
 pnpm tauri dev
 ```
 
+---
+
 ## 📄 License
 
-This project is licensed under the **GNU General Public License v3.0**.
-You may copy, distribute, and modify the software as long as you track changes/dates in source files.
-Any derivative work must also be licensed under GPL-3.0.
-
-See the full license text in the [LICENSE](./LICENSE) file or visit:
-
+Licensed under **GNU General Public License v3.0**
+See [LICENSE](./LICENSE) or visit:
 [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)
+
+---
 
 ## 🙌 Acknowledgements
 
-- [js-yaml](https://github.com/nodeca/js-yaml)
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Tauri](https://v2.tauri.app/)
+- [Tauri](https://tauri.app/)
+- [js-yaml](https://github.com/nodeca/js-yaml)
+- [papaparse](https://www.papaparse.com/)
+- [uuid](https://github.com/uuidjs/uuid)
