@@ -10,7 +10,7 @@ const FEN2PNGPage: NextPage = () => {
       <Head>
         <title>FEN to PNG</title>
       </Head>
-      <div className="flex h-screen w-screen flex-col">
+      <div className="flex h-screen w-screen flex-col overflow-hidden">
         <Navbar />
         <Divider />
         <div className="container mx-auto flex grow items-center justify-center p-8">

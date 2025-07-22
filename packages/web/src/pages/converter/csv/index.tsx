@@ -1,4 +1,5 @@
 import { Divider } from '@editor/components/shared/Divider';
+import { Glass } from '@editor/components/shared/Glass';
 import { Navbar } from '@editor/components/shared/Navbar';
 import { copy } from '@editor/utils/copy';
 import { csv, csv2json, csv2sql } from '@editor/utils/csv/csv';
@@ -81,12 +82,12 @@ const CSVPage: NextPage = () => {
   });
 
   return (
-    <div className="flex h-screen w-screen flex-col">
+    <div className="flex h-screen w-screen flex-col overflow-hidden">
       <Navbar />
       <Divider />
       <main className="container mx-auto grow p-4 md:p-8">
         <div className="flex h-full flex-col gap-y-4 md:gap-y-8">
-          <select
+          <Glass.Select
             id="file-format"
             name="file-format"
             className="appearance-none rounded-full border border-neutral-800 px-4 py-2"
@@ -101,14 +102,14 @@ const CSVPage: NextPage = () => {
             <option value="json">JSON</option>
             <option value="md">Markdown</option>
             <option value="sql">SQL</option>
-          </select>
+          </Glass.Select>
           <div className="grid h-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
             <div className="col-span-1">
-              <textarea
+              <Glass.TextArea
                 id="from"
                 name="from"
                 placeholder="From"
-                className="h-full w-full resize-none rounded-xl border border-neutral-800 p-4 whitespace-nowrap shadow focus:outline-none"
+                className="h-full w-full resize-none p-4 whitespace-nowrap"
                 value={from}
                 onChange={(event) => {
                   setState((previous) => {
@@ -122,11 +123,11 @@ const CSVPage: NextPage = () => {
               {format === 'html' ? (
                 <Table csv={from} />
               ) : (
-                <textarea
+                <Glass.TextArea
                   id="to"
                   name="to"
                   placeholder="To"
-                  className="h-full w-full resize-none rounded-xl border border-neutral-800 p-4 whitespace-nowrap shadow focus:outline-none"
+                  className="h-full w-full resize-none p-4 whitespace-nowrap"
                   value={to}
                   readOnly
                 />

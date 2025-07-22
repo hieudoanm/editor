@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Divider } from '@editor/components/shared/Divider';
+import { Glass } from '@editor/components/shared/Glass';
 import { Navbar } from '@editor/components/shared/Navbar';
 import { INITIAL_JSON } from '@editor/constants/initial';
 import { json, jsonParse } from '@editor/utils/json/json';
@@ -38,38 +39,35 @@ const JSONPage: NextPage = () => {
       <main className="container mx-auto grow p-4 md:p-8">
         <div className="flex h-full flex-col gap-y-4 md:gap-y-8">
           <div className="grid grid-cols-3 gap-x-4 md:gap-x-8">
-            <button
+            <Glass.Button
               type="button"
-              className="cursor-pointer rounded-full border border-neutral-800 px-4 py-2"
               onClick={() => {
                 const newFrom = json(data).format().beautify();
                 setState((previous) => ({ ...previous, from: newFrom }));
               }}>
               Beautify
-            </button>
-            <button
+            </Glass.Button>
+            <Glass.Button
               type="button"
-              className="cursor-pointer rounded-full border border-neutral-800 px-4 py-2"
               onClick={() => {
                 const newFrom = json(data).format().minify();
                 setState((previous) => ({ ...previous, from: newFrom }));
               }}>
               Minify
-            </button>
-            <button
+            </Glass.Button>
+            <Glass.Button
               type="button"
-              className="cursor-pointer rounded-full border border-neutral-800 px-4 py-2"
               onClick={() => {
                 const newFrom = json(data).format().sort();
                 setState((previous) => ({ ...previous, from: newFrom }));
               }}>
               Sort
-            </button>
+            </Glass.Button>
           </div>
-          <select
+          <Glass.Select
             id="file-format"
             name="file-format"
-            className="appearance-none rounded-full border border-neutral-800 px-4 py-2"
+            className="appearance-none px-4 py-2"
             value={format}
             onChange={(event: ChangeEvent<HTMLSelectElement>) =>
               setState((previous) => {
@@ -82,14 +80,14 @@ const JSONPage: NextPage = () => {
             <option value="csv">CSV</option>
             <option value="xml">XML</option>
             <option value="yaml">YAML</option>
-          </select>
+          </Glass.Select>
           <div className="grid h-full grow grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
             <div className="col-span-1">
-              <textarea
+              <Glass.TextArea
                 id="from"
                 name="from"
                 placeholder="From"
-                className="h-full w-full resize-none rounded-xl border border-neutral-800 p-4 whitespace-nowrap shadow focus:outline-none"
+                className="scrollbar-none h-full w-full resize-none p-4 whitespace-nowrap"
                 value={from}
                 onChange={(event) => {
                   const newFrom = event.target.value;
@@ -102,11 +100,11 @@ const JSONPage: NextPage = () => {
               />
             </div>
             <div className="col-span-1">
-              <textarea
+              <Glass.TextArea
                 id="to"
                 name="to"
                 placeholder="To"
-                className="h-full w-full resize-none rounded-xl border border-neutral-800 p-4 whitespace-nowrap shadow focus:outline-none"
+                className="scrollbar-none h-full w-full resize-none p-4 whitespace-nowrap"
                 value={to}
                 readOnly
               />

@@ -1,3 +1,4 @@
+import { Glass } from '@editor/components/shared/Glass';
 import { Navbar } from '@editor/components/shared/Navbar';
 import { NextPage } from 'next';
 import { useEffect, useState } from 'react';
@@ -56,16 +57,8 @@ const PomodoroPage: NextPage = () => {
           <p className="mb-2 text-lg text-neutral-400">{isBreak ? 'Break Time' : 'Focus Time'}</p>
           <div className="mb-6 font-mono text-6xl tabular-nums">{formatTime(timeLeft)}</div>
           <div className="flex gap-4">
-            <button
-              onClick={() => setIsRunning((r) => !r)}
-              className="rounded-full border border-neutral-700 bg-neutral-800 px-6 py-2 transition hover:bg-neutral-700">
-              {isRunning ? 'Pause' : 'Start'}
-            </button>
-            <button
-              onClick={handleReset}
-              className="rounded-full border border-neutral-700 bg-neutral-800 px-6 py-2 transition hover:bg-neutral-700">
-              Reset
-            </button>
+            <Glass.Button onClick={() => setIsRunning((r) => !r)}>{isRunning ? 'Pause' : 'Start'}</Glass.Button>
+            <Glass.Button onClick={handleReset}>Reset</Glass.Button>
           </div>
         </div>
       </div>

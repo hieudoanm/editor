@@ -35,7 +35,7 @@ const BasePage: NextPage = () => {
         <Navbar />
         <Divider />
         <div className="flex w-full grow items-center justify-center">
-          <Glass.Card className="flex w-full max-w-sm flex-col gap-y-2 divide-y divide-neutral-100">
+          <Glass.Card className="flex w-full max-w-sm flex-col gap-y-2 divide-y divide-white/10">
             {[
               { fromBase: 2, value: base2 },
               { fromBase: 8, value: base8 },

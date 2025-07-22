@@ -52,7 +52,7 @@ export const Crypto = () => {
   return (
     <div className="h-full w-full max-w-md p-8">
       <Glass.Card className="h-full">
-        <div className="scrollbar-none h-full divide-y divide-neutral-100 overflow-auto">
+        <div className="scrollbar-none h-full divide-y divide-neutral-300 overflow-auto">
           {coins.map((coin) => {
             const { rank = 0, uuid = '', name = '', symbol = '', marketCap = '0', price = '0' } = coin;
 

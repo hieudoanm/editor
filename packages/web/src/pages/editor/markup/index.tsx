@@ -30,7 +30,7 @@ const AppPage: NextPage = () => {
             id="markdown"
             name="markdown"
             placeholder="Markdown"
-            className="h-full w-full resize-none p-4 focus:outline-none md:p-8"
+            className="scrollbar-none h-full w-full resize-none p-4 focus:outline-none md:p-8"
             value={markdown}
             onChange={(event) => {
               setState((previous) => ({ ...previous, markdown: event.target.value }));
@@ -38,7 +38,7 @@ const AppPage: NextPage = () => {
           />
         </div>
         <div className="h-full overflow-hidden md:col-span-1">
-          <div className="h-full w-full overflow-auto p-4 md:p-8">
+          <div className="scrollbar-none h-full w-full overflow-auto p-4 md:p-8">
             <MarkdownPreviewer html={html} />
           </div>
         </div>

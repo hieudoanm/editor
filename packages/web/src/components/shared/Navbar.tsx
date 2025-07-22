@@ -9,11 +9,9 @@ const links = [
     title: 'Calculator',
     options: [
       { id: 'base', href: '/calc/base', label: 'Base' },
-      { id: 'crypto', href: '/calc/crypto', label: 'Crypto' },
-      { id: 'forex', href: '/calc/forex', label: 'Forex' },
-      { id: 'length', href: '/calc/length', label: 'Length' },
       { id: 'roman', href: '/calc/roman', label: 'Roman' },
-      { id: 'weight', href: '/calc/weight', label: 'Weight' },
+      { id: 'crypto', href: '/calc/finance/crypto', label: 'Crypto' },
+      { id: 'forex', href: '/calc/finance/forex', label: 'Forex' },
     ],
   },
   {
@@ -50,6 +48,11 @@ const links = [
     ],
   },
   {
+    id: 'downloads',
+    title: 'Downloads',
+    options: [{ id: 'cli', href: '/downloads/cli', label: 'CLI' }],
+  },
+  {
     id: 'editor',
     title: 'Editor',
     options: [
@@ -75,11 +78,22 @@ const links = [
     ],
   },
   {
+    id: 'measurement',
+    title: 'Measurement',
+    options: [
+      { id: 'angle', href: '/measurement/angle', label: 'Angle' },
+      { id: 'data', href: '/measurement/data', label: 'Data' },
+      { id: 'length', href: '/measurement/length', label: 'Length' },
+      { id: 'temperature', href: '/measurement/temperature', label: 'Temperature' },
+      { id: 'time', href: '/measurement/time', label: 'Time' },
+      { id: 'weight', href: '/measurement/weight', label: 'Weight' },
+    ],
+  },
+  {
     id: 'other',
     title: 'Other',
     options: [
       { id: 'chat', href: '/other/chat', label: 'Chat' },
-      { id: 'cli', href: '/other/cli', label: 'CLI' },
       { id: 'images', href: '/other/images', label: 'Images' },
       { id: 'status', href: '/other/status', label: 'Status' },
       { id: 'periodic-table', href: '/other/periodic-table', label: 'Periodic Table' },
@@ -94,7 +108,7 @@ export const Navbar: FC = () => {
         <div className="text-xl font-bold">
           <Link href="/">{APP_NAME}</Link>
         </div>
-        <div className="hidden space-x-4 md:flex">
+        <div className="hidden space-x-4 lg:flex">
           {links.map(({ id, title, options }) => {
             return <Dropdown key={id} title={title} options={options} />;
           })}

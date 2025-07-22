@@ -1,4 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { Divider } from '@editor/components/shared/Divider';
+import { Glass } from '@editor/components/shared/Glass';
 import { Navbar } from '@editor/components/shared/Navbar';
 import { NextPage } from 'next';
 import { useState } from 'react';
@@ -79,9 +81,9 @@ const OpenAPI2PostmanV2Page: NextPage = () => {
   };
 
   return (
-    <div className="flex h-screen flex-col">
+    <div className="flex h-screen flex-col overflow-hidden">
       <Navbar />
-      <div className="w-full border-t border-neutral-800" />
+      <Divider />
       <div className="flex h-full grow flex-col">
         <div className="grid grow grid-cols-2 divide-x divide-neutral-800">
           <div className="col-span-1 h-full">
@@ -104,20 +106,14 @@ const OpenAPI2PostmanV2Page: NextPage = () => {
         <div className="w-full border-t border-neutral-800" />
         <div className="grid grid-cols-2 gap-2 p-2 md:gap-4 md:p-4">
           <div className="col-span-1">
-            <button
-              onClick={handleConvert}
-              disabled={loading}
-              className="w-full cursor-pointer rounded-full border border-neutral-800 px-4 py-2">
+            <Glass.Button className="w-full" onClick={handleConvert} disabled={loading}>
               {loading ? 'Converting...' : 'Convert'}
-            </button>
+            </Glass.Button>
           </div>
           <div className="col-span-1">
-            <button
-              onClick={handleDownload}
-              disabled={!output || output.startsWith('Error:')}
-              className="w-full cursor-pointer rounded-full border border-neutral-800 px-4 py-2">
+            <Glass.Button className="w-full" onClick={handleDownload} disabled={!output || output.startsWith('Error:')}>
               Download
-            </button>
+            </Glass.Button>
           </div>
         </div>
       </div>
