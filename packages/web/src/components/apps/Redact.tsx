@@ -6,7 +6,7 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import { Navbar } from '@editor/components/shared/Navbar';
 import { Divider } from '../shared/Divider';
 const NODE_ENV: 'development' | 'production' | 'test' = process.env.NODE_ENV ?? 'development';
-const BASE_PATH: string = NODE_ENV === 'development' ? '' : '/editor';
+const BASE_PATH: string = NODE_ENV === 'development' ? '' : '/micro';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `${BASE_PATH}/workers/pdf.worker.min.js`;
 
