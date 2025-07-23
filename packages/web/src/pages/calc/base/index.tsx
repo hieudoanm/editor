@@ -34,7 +34,7 @@ const BasePage: NextPage = () => {
       <div className="relative z-100 flex h-full flex-col">
         <Navbar />
         <Divider />
-        <div className="flex w-full grow items-center justify-center">
+        <div className="container mx-auto flex w-full grow items-center justify-center p-4 md:p-8">
           <Glass.Card className="flex w-full max-w-sm flex-col gap-y-2 divide-y divide-white/10">
             {[
               { fromBase: 2, value: base2 },
@@ -44,12 +44,13 @@ const BasePage: NextPage = () => {
             ].map(({ fromBase, value }) => {
               return (
                 <div key={fromBase} className="flex items-center justify-center gap-x-2 px-4 py-2">
-                  <span>Base {fromBase}</span>
+                  <span className="whitespace-nowrap">Base {fromBase}</span>
                   <input
                     type="text"
                     id={`base${fromBase}`}
                     placeholder={`Base ${fromBase}`}
                     value={value}
+                    className="grow text-right focus:outline-none"
                     onChange={(event) => {
                       const newValue = event.target.value;
                       const newNumber: number = parseInt(newValue);
@@ -61,7 +62,6 @@ const BasePage: NextPage = () => {
                         base16: base(newNumber).from(fromBase).to(16),
                       }));
                     }}
-                    className="grow text-right focus:outline-none"
                   />
                 </div>
               );

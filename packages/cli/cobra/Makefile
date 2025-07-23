@@ -8,14 +8,14 @@ build:
 	go vet ./...
 	go fmt ./...
 	rm -rf ./bin
-	go build -o ./bin/mark ./main.go
+	go build -o ./bin/micro ./main.go
 
 install:
 	go vet ./...
 	go fmt ./...
 	rm -rf ./bin
-	go build -o ./bin/mark ./main.go
+	go build -o ./bin/micro ./main.go
 	mkdir -p ~/bin
-	cp ./bin/mark ~/bin/
-	chmod +x ~/bin/mark
+	cp ./bin/micro ~/bin/
+	chmod +x ~/bin/micro
 	export PATH="$(HOME)/bin:$(PATH)"

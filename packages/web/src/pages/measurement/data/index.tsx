@@ -60,7 +60,7 @@ const DataPage: NextPage = () => {
       <div className="relative z-10 flex h-full flex-col">
         <Navbar />
         <Divider />
-        <div className="flex w-full grow items-center justify-center">
+        <div className="container mx-auto flex w-full grow items-center justify-center p-4 md:p-8">
           <Glass.Card className="flex w-full max-w-md flex-col gap-y-2 divide-y divide-white/10">
             {[
               { type: 'bit' as DataUnit, value: bit },
