@@ -1,4 +1,4 @@
-# 🔄 [Mark](https://markzuck.vercel.app)
+# 🔬 [Micro](https://microscope.vercel.app)
 
 **The Ultimate In-Browser Toolkit for Devs & Makers**
 Edit, convert, calculate, redact, preview — all locally and securely in your browser.
@@ -7,7 +7,7 @@ Edit, convert, calculate, redact, preview — all locally and securely in your b
 
 ## 📚 Table of Contents
 
-- [🔄 Mark](#-mark)
+- [🔬 Micro](#-micro)
   - [📚 Table of Contents](#-table-of-contents)
   - [✨ Features](#-features)
     - [🔧 1. Clone the Repository](#-1-clone-the-repository)
