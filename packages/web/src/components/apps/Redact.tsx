@@ -1,10 +1,11 @@
 import * as fabric from 'fabric';
 import { saveAs } from 'file-saver';
-import { PDFDocument, rgb } from 'pdf-lib';
+import { PDFDocument, PDFImage, rgb } from 'pdf-lib';
 import { FC, useRef, useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import { Navbar } from '@editor/components/shared/Navbar';
 import { Divider } from '../shared/Divider';
+import { Glass } from '../shared/Glass';
 const NODE_ENV: 'development' | 'production' | 'test' = process.env.NODE_ENV ?? 'development';
 const BASE_PATH: string = NODE_ENV === 'development' ? '' : '/micro';
 
@@ -206,29 +207,23 @@ const Redact: FC = () => {
       <Navbar />
       <Divider />
       <div className="mt-8 flex justify-center gap-4">
-        <label className="inline-block cursor-pointer rounded-full border border-neutral-800 px-6 py-3">
-          <span>Upload PDF</span>
-          <input type="file" accept="application/pdf" onChange={handleFile} className="hidden" />
-        </label>
+        <Glass.Button>
+          <label className="cursor-pointer">
+            <span>Upload PDF</span>
+            <input type="file" accept="application/pdf" onChange={handleFile} className="hidden" />
+          </label>
+        </Glass.Button>
         {file && (
           <>
-            <button
-              type="button"
-              onClick={handleUndo}
-              className="rounded-full border border-neutral-800 px-6 py-3 transition hover:bg-neutral-900">
+            <Glass.Button type="button" onClick={handleUndo}>
               Undo Redaction
-            </button>
-            <button
-              type="button"
-              onClick={handleRedo}
-              className="rounded-full border border-neutral-800 px-6 py-3 transition hover:bg-neutral-900">
+            </Glass.Button>
+            <Glass.Button type="button" onClick={handleRedo}>
               Redo Redaction
-            </button>
-            <button
-              onClick={handleExport}
-              className="rounded-full border border-neutral-800 px-6 py-3 transition hover:bg-neutral-900">
+            </Glass.Button>
+            <Glass.Button type="button" onClick={handleExport}>
               Export PDF
-            </button>
+            </Glass.Button>
           </>
         )}
       </div>
