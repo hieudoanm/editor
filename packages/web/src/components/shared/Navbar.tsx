@@ -78,6 +78,14 @@ const links = [
     ],
   },
   {
+    id: 'images',
+    title: 'Images',
+    options: [
+      { id: 'filter', href: '/images/filter', label: 'Filter' },
+      { id: 'ocr', href: '/images/ocr', label: 'OCR' },
+    ],
+  },
+  {
     id: 'measurement',
     title: 'Measurement',
     options: [
@@ -94,7 +102,7 @@ const links = [
     title: 'Other',
     options: [
       { id: 'chat', href: '/other/chat', label: 'Chat' },
-      { id: 'images', href: '/other/images', label: 'Images' },
+      { id: 'doi', href: '/other/doi', label: 'DOI' },
       { id: 'status', href: '/other/status', label: 'Status' },
       { id: 'periodic-table', href: '/other/periodic-table', label: 'Periodic Table' },
     ],

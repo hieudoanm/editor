@@ -189,6 +189,19 @@ const content = {
           description: 'Generate sleek Open Graph preview images for your GitHub repositories.',
           href: '/github/preview',
         },
+        // Images
+        {
+          id: 'image-filter',
+          title: '🎨 Image Filter',
+          description: 'Apply artistic filters and effects to enhance or stylize your photos.',
+          href: '/images/filter',
+        },
+        {
+          id: 'image-ocr',
+          title: '🔎 Image OCR',
+          description: 'Extract and copy text from images using built-in OCR technology.',
+          href: '/images/ocr',
+        },
         // Measurement
         {
           id: 'measurement-angle',
@@ -235,10 +248,10 @@ const content = {
           href: '/other/chat',
         },
         {
-          id: 'image-tools',
-          title: '🖼️ Image Tools',
-          description: 'Optimize, convert, and preview images — all securely in your browser.',
-          href: '/other/images',
+          id: 'doi-tool',
+          title: '🔗 DOI Reference Lookup',
+          description: 'Retrieve and format scholarly references from DOI links in APA style.',
+          href: '/other/doi',
         },
         {
           id: 'periodic-table',
