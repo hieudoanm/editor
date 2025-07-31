@@ -74,7 +74,6 @@ export const appRouter = router({
         return { text: output };
       }),
   },
-
   youtube: {
     transcript: {
       summarise: procedure.input(z.object({ videoId: z.string().default('') })).mutation(async (options) => {
