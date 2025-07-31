@@ -25,13 +25,13 @@ const CommandLineInterfacePage: NextPage = () => {
                 },
                 {
                   id: 'cobra',
-                  link: 'https://github.com/hieudoanm/mark/tree/master/packages/cli/cobra/bin',
+                  link: 'https://github.com/hieudoanm/mark/tree/master/packages/cli/go.dev/cobra/bin',
                   emoji: '🐍',
                   label: 'Cobra',
                 },
                 {
                   id: 'gh',
-                  link: 'https://github.com/hieudoanm/mark/tree/master/packages/cli/gh/bin',
+                  link: 'https://github.com/hieudoanm/mark/tree/master/packages/cli/go.dev/gh/bin',
                   emoji: '🐙',
                   label: 'GitHub',
                 },
