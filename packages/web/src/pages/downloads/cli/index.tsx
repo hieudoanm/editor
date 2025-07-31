@@ -24,6 +24,12 @@ const CommandLineInterfacePage: NextPage = () => {
                   label: 'Bash',
                 },
                 {
+                  id: 'ytts',
+                  link: 'https://github.com/hieudoanm/mark/tree/master/packages/cli/python.org/ytts/bin',
+                  emoji: '🎥',
+                  label: 'YTTS',
+                },
+                {
                   id: 'cobra',
                   link: 'https://github.com/hieudoanm/mark/tree/master/packages/cli/go.dev/cobra/bin',
                   emoji: '🐍',
