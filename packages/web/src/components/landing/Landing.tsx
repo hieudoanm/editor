@@ -111,12 +111,19 @@ const content = {
           description: 'Transform, decode, and clean text or encoded strings.',
           href: '/converter/strings',
         },
+        // Dev
+        {
+          id: 'reverse-proxy',
+          title: '🔀 Reverse Proxy',
+          description: 'Securely route and manage external API calls through a single, unified gateway.',
+          href: '/dev/reverse/proxy',
+        },
         {
           id: 'openapi2postmanv2',
           title: '🔁 OpenAPI to Postman V2',
           description:
             'Convert OpenAPI specifications to Postman Collection V2.1 format in-browser — no upload needed.',
-          href: '/converter/openapi2postmanv2',
+          href: '/dev/openapi/postmanv2',
         },
         // Editor
         {

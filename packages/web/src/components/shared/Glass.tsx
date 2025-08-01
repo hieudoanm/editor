@@ -50,17 +50,13 @@ const Card: FC<{ children: ReactNode; className?: string }> = ({ children, class
 
 /* ---------------- INPUT ---------------- */
 const Input: FC<InputHTMLAttributes<HTMLInputElement>> = ({ className = '', ...props }) => {
-  return <input className={`w-full rounded-full px-4 py-2 ${baseSharedClasses} ${className}`} {...props} />;
+  return <input className={`rounded-full px-4 py-2 ${baseSharedClasses} ${className}`} {...props} />;
 };
 
 /* ---------------- TEXTAREA ---------------- */
 const TextArea: FC<TextareaHTMLAttributes<HTMLTextAreaElement>> = ({ className = '', ...props }) => {
   return (
-    <textarea
-      rows={4}
-      className={`w-full resize-none rounded-xl px-4 py-3 ${baseSharedClasses} ${className}`}
-      {...props}
-    />
+    <textarea rows={4} className={`resize-none rounded-xl px-4 py-3 ${baseSharedClasses} ${className}`} {...props} />
   );
 };
 
@@ -68,7 +64,7 @@ const TextArea: FC<TextareaHTMLAttributes<HTMLTextAreaElement>> = ({ className =
 const Select: FC<SelectHTMLAttributes<HTMLSelectElement>> = ({ className = '', children, ...props }) => {
   return (
     <select
-      className={`w-full rounded-full bg-white/10 px-4 py-2 text-white ${baseSharedClasses} appearance-none ${className}`}
+      className={`rounded-full bg-white/10 px-4 py-2 text-white ${baseSharedClasses} appearance-none ${className}`}
       {...props}>
       {children}
     </select>

@@ -32,9 +32,16 @@ const links = [
       { id: 'colors', href: '/converter/colors', label: 'Colors' },
       { id: 'csv', href: '/converter/csv', label: 'CSV' },
       { id: 'json', href: '/converter/json', label: 'JSON' },
-      { id: 'openapi2postmanv2', href: '/converter/openapi2postmanv2', label: 'OpenAPI to PostmanV2' },
       { id: 'strings', href: '/converter/strings', label: 'Strings' },
       { id: 'yaml', href: '/converter/yaml', label: 'YAML' },
+    ],
+  },
+  {
+    id: 'dev',
+    title: 'Dev',
+    options: [
+      { id: 'openapi2postmanv2', href: '/dev/openapi/postmanv2', label: 'OpenAPI to PostmanV2' },
+      { id: 'reverse-proxy', href: '/dev/reverse/proxy', label: 'Reverse Proxy' },
     ],
   },
   {

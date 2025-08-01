@@ -255,6 +255,9 @@ importers:
       openapi-to-postmanv2:
         specifier: 5.0.1
         version: 5.0.1(encoding@0.1.13)
+      pino:
+        specifier: 9.7.0
+        version: 9.7.0
       qrcode:
         specifier: 1.5.4
         version: 1.5.4
