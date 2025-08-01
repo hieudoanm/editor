@@ -26,18 +26,6 @@ const content = {
       features: [
         // Calculator
         {
-          id: 'base-calculator',
-          title: '🧮 Base Calculator',
-          description: 'Convert between binary, decimal, hex, and more.',
-          href: '/calc/base',
-        },
-        {
-          id: 'roman-converter',
-          title: '🏛️ Roman Numeral Converter',
-          description: 'Convert to and from Roman numerals instantly.',
-          href: '/calc/roman',
-        },
-        {
           id: 'calculator-finance-crypto',
           title: '🪙 Crypto Calculator',
           description: 'Calculate crypto-to-fiat values using real-time rates.',
@@ -48,6 +36,13 @@ const content = {
           title: '💱 Forex Calculator',
           description: 'Convert between currencies using up-to-date forex rates.',
           href: '/calc/finance/forex',
+        },
+        {
+          id: 'calculator-measurement',
+          title: '📏 Measurement Converter',
+          description:
+            'Convert between base, length, weight, angle, temperature, data (bits/bytes), and time units quickly and easily.',
+          href: '/calc/measurement',
         },
         // Chess
         {
@@ -201,43 +196,6 @@ const content = {
           title: '🔎 Image OCR',
           description: 'Extract and copy text from images using built-in OCR technology.',
           href: '/images/ocr',
-        },
-        // Measurement
-        {
-          id: 'measurement-angle',
-          title: '📐 Angle Converter',
-          description: 'Convert between degrees, radians, and gradians with ease.',
-          href: '/measurement/angle',
-        },
-        {
-          id: 'measurement-data',
-          title: '💾 Data Size Converter',
-          description: 'Convert between bits, bytes, KB, MB, GB, and more.',
-          href: '/measurement/data',
-        },
-        {
-          id: 'measurement-length',
-          title: '📏 Length Converter',
-          description: 'Easily convert between metric and imperial length units.',
-          href: '/measurement/length',
-        },
-        {
-          id: 'measurement-temperature',
-          title: '🌡️ Temperature Converter',
-          description: 'Quickly convert between Celsius, Fahrenheit, and Kelvin.',
-          href: '/measurement/temperature',
-        },
-        {
-          id: 'measurement-time',
-          title: '⏳ Date & Time Converter',
-          description: 'Convert between milliseconds, seconds, days, and human-readable dates.',
-          href: '/measurement/time',
-        },
-        {
-          id: 'measurement-weight',
-          title: '⚖️ Weight Converter',
-          description: 'Switch between kilograms, grams, pounds, and more.',
-          href: '/measurement/weight',
         },
         // Other
         {

@@ -11,7 +11,7 @@ export const Footer: FC = () => {
         </p>
         <div className="space-x-4">
           <Link
-            href="https://github.com/hieudoanm/editor"
+            href="https://github.com/hieudoanm/micro"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline">

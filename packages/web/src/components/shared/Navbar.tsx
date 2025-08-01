@@ -8,10 +8,9 @@ const links = [
     id: 'calculator',
     title: 'Calculator',
     options: [
-      { id: 'base', href: '/calc/base', label: 'Base' },
-      { id: 'roman', href: '/calc/roman', label: 'Roman' },
       { id: 'crypto', href: '/calc/finance/crypto', label: 'Crypto' },
       { id: 'forex', href: '/calc/finance/forex', label: 'Forex' },
+      { id: 'measurement', href: '/calc/measurement', label: 'Measurement' },
     ],
   },
   {
@@ -83,18 +82,6 @@ const links = [
     options: [
       { id: 'filter', href: '/images/filter', label: 'Filter' },
       { id: 'ocr', href: '/images/ocr', label: 'OCR' },
-    ],
-  },
-  {
-    id: 'measurement',
-    title: 'Measurement',
-    options: [
-      { id: 'angle', href: '/measurement/angle', label: 'Angle' },
-      { id: 'data', href: '/measurement/data', label: 'Data' },
-      { id: 'length', href: '/measurement/length', label: 'Length' },
-      { id: 'temperature', href: '/measurement/temperature', label: 'Temperature' },
-      { id: 'time', href: '/measurement/time', label: 'Time' },
-      { id: 'weight', href: '/measurement/weight', label: 'Weight' },
     ],
   },
   {
