@@ -24,20 +24,6 @@ const content = {
       // List of features with descriptions and links
       // Each feature has an id, href, title, and description
       features: [
-        // Calculator
-        {
-          id: 'calculator-finance-crypto',
-          title: '🪙 Crypto Calculator',
-          description: 'Calculate crypto-to-fiat values using real-time rates.',
-          href: '/calc/finance/crypto',
-        },
-        {
-          id: 'calculator-measurement',
-          title: '📏 Measurement Converter',
-          description:
-            'Convert between base, forex, length, weight, angle, temperature, data (bits/bytes), and time units quickly and easily.',
-          href: '/calc/measurement',
-        },
         // Chess
         {
           id: 'chess-converter-fen2png',
@@ -192,6 +178,13 @@ const content = {
           href: '/images/ocr',
         },
         // Other
+        {
+          id: 'calculator',
+          title: '📏 Universal Calculator',
+          description:
+            'All-in-one converter for bases, currencies, and measurements — including crypto, forex, length, weight, angle, temperature, data (bits/bytes), and time units.',
+          href: '/other/calculator',
+        },
         {
           id: 'chat-tool',
           title: '💬 AI Chat',

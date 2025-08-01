@@ -20,12 +20,13 @@
     "format": "prettier --cache --write .",
     "predev": "kill-port 3000",
     "dev": "next dev --turbopack",
-    "prebuild": "rimraf .next && pnpm get:forex",
+    "prebuild": "rimraf .next && pnpm get:coinranking && pnpm get:frankfurter",
     "build": "next build",
     "prestart": "kill-port 3000",
     "start": "next start",
     "lint": "next lint",
-    "get:forex": "pnpm ts-node ./scripts/forex.ts"
+    "get:coinranking": "pnpm ts-node ./scripts/coinranking.ts",
+    "get:frankfurter": "pnpm ts-node ./scripts/frankfurter.ts"
   },
   "dependencies": {
     "@capacitor/android": "7.4.2",

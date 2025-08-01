@@ -5,14 +5,6 @@ import { Dropdown } from './Dropdown';
 
 const links = [
   {
-    id: 'calculator',
-    title: 'Calculator',
-    options: [
-      { id: 'crypto', href: '/calc/finance/crypto', label: 'Crypto' },
-      { id: 'measurement', href: '/calc/measurement', label: 'Measurement' },
-    ],
-  },
-  {
     id: 'chess',
     title: 'Chess',
     options: [
@@ -87,6 +79,7 @@ const links = [
     id: 'other',
     title: 'Other',
     options: [
+      { id: 'calculator', href: '/other/calculator', label: 'Calculator' },
       { id: 'chat', href: '/other/chat', label: 'Chat' },
       { id: 'doi', href: '/other/doi', label: 'DOI' },
       { id: 'status', href: '/other/status', label: 'Status' },
