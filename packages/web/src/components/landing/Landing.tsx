@@ -32,16 +32,10 @@ const content = {
           href: '/calc/finance/crypto',
         },
         {
-          id: 'calculator-finance-forex',
-          title: '💱 Forex Calculator',
-          description: 'Convert between currencies using up-to-date forex rates.',
-          href: '/calc/finance/forex',
-        },
-        {
           id: 'calculator-measurement',
           title: '📏 Measurement Converter',
           description:
-            'Convert between base, length, weight, angle, temperature, data (bits/bytes), and time units quickly and easily.',
+            'Convert between base, forex, length, weight, angle, temperature, data (bits/bytes), and time units quickly and easily.',
           href: '/calc/measurement',
         },
         // Chess

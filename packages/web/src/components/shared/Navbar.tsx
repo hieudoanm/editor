@@ -9,7 +9,6 @@ const links = [
     title: 'Calculator',
     options: [
       { id: 'crypto', href: '/calc/finance/crypto', label: 'Crypto' },
-      { id: 'forex', href: '/calc/finance/forex', label: 'Forex' },
       { id: 'measurement', href: '/calc/measurement', label: 'Measurement' },
     ],
   },

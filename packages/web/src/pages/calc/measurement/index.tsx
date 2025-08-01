@@ -1,3 +1,4 @@
+import { Forex } from '@editor/components/apps/measurement/Forex';
 import { Angle } from '@editor/components/apps/measurement/Angle';
 import { Base } from '@editor/components/apps/measurement/Base';
 import { Data } from '@editor/components/apps/measurement/Data';
@@ -17,6 +18,7 @@ enum Measurement {
   Angle = 'angle',
   Base = 'base',
   Data = 'data',
+  Forex = 'forex',
   Length = 'length',
   Roman = 'roman',
   Temperature = 'temperature',
@@ -44,6 +46,7 @@ const AnglePage: NextPage = () => {
               <option value={Measurement.Angle}>Angle</option>
               <option value={Measurement.Base}>Base</option>
               <option value={Measurement.Data}>Data</option>
+              <option value={Measurement.Forex}>Forex</option>
               <option value={Measurement.Length}>Length</option>
               <option value={Measurement.Roman}>Roman</option>
               <option value={Measurement.Temperature}>Temperature</option>
@@ -53,6 +56,7 @@ const AnglePage: NextPage = () => {
             {measurement === Measurement.Angle && <Angle />}
             {measurement === Measurement.Base && <Base />}
             {measurement === Measurement.Data && <Data />}
+            {measurement === Measurement.Forex && <Forex />}
             {measurement === Measurement.Length && <Length />}
             {measurement === Measurement.Roman && <Roman />}
             {measurement === Measurement.Temperature && <Temperature />}
