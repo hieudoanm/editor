@@ -120,8 +120,8 @@ export const ChessClock: FC = () => {
             setClock((previous) => ({ ...previous, full: true }));
           }}
           className="flex w-full flex-col gap-y-4 md:gap-y-8">
-          <div className="flex items-center">
-            <label htmlFor="white" className="px-4">
+          <div className="flex items-center gap-x-4 md:gap-x-8">
+            <label htmlFor="white">
               <strong>White</strong>
             </label>
             <Glass.Select
@@ -174,8 +174,8 @@ export const ChessClock: FC = () => {
               </optgroup>
             </Glass.Select>
           </div>
-          <div className="flex items-center">
-            <label htmlFor="black" className="px-4">
+          <div className="flex items-center gap-x-4 md:gap-x-8">
+            <label htmlFor="black">
               <strong>Black</strong>
             </label>
             <Glass.Select

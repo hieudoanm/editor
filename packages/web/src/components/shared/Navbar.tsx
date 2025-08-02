@@ -8,9 +8,8 @@ const links = [
     id: 'chess',
     title: 'Chess',
     options: [
-      { id: 'chess-chess960', href: '/chess/theory/chess960', label: 'Chess960' },
-      { id: 'chess-openings', href: '/chess/theory/openings', label: 'Openings' },
-      { id: 'chess-elo', href: '/chess/tools/elo', label: 'ELO' },
+      { id: 'chessboard', href: '/chess/board', label: 'Board' },
+      { id: 'chess-elo', href: '/chess/elo', label: 'ELO' },
     ],
   },
   {
@@ -25,7 +24,6 @@ const links = [
     id: 'converter',
     title: 'Converter',
     options: [
-      { id: 'code', href: '/converter/code', label: 'Code' },
       { id: 'colors', href: '/converter/colors', label: 'Colors' },
       { id: 'csv', href: '/converter/csv', label: 'CSV' },
       { id: 'json', href: '/converter/json', label: 'JSON' },

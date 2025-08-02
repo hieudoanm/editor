@@ -26,22 +26,16 @@ const content = {
       features: [
         // Chess
         {
-          id: 'chess-theory-chess960',
-          title: '🔀 Chess960 Generator',
+          id: 'chess-board',
+          title: '🔀 Chessboard',
           description: 'Explore randomized Chess960 starting positions and understand their dynamics.',
-          href: '/chess/theory/chess960',
+          href: '/chess/board',
         },
         {
-          id: 'chess-theory-openings',
-          title: '📚 Opening Explorer',
-          description: 'Study and compare popular chess openings with rich visualizations and stats.',
-          href: '/chess/theory/openings',
-        },
-        {
-          id: 'chess-tools-elo',
+          id: 'chess-elo',
           title: '📈 ELO Calculator',
           description: 'Estimate your new rating after a game or tournament using customizable ELO formulas.',
-          href: '/chess/tools/elo',
+          href: '/chess/elo',
         },
         // Clock
         {
@@ -76,12 +70,6 @@ const content = {
           href: '/converter/yaml',
         },
         {
-          id: 'braille-morse-converter',
-          title: '💬 Braille & Morse Code Converter',
-          description: 'Convert text to and from Braille or Morse code with accurate formatting and symbol support.',
-          href: '/converter/code',
-        },
-        {
           id: 'color-tools',
           title: '🎨 Color Converter',
           description: 'Convert HEX, RGB, and HSL formats — visually.',
@@ -90,7 +78,7 @@ const content = {
         {
           id: 'string-tools',
           title: '🔤 String Utilities',
-          description: 'Transform, decode, and clean text or encoded strings.',
+          description: 'Transform, decode, and clean text or encoded strings to braille/morse.',
           href: '/converter/strings',
         },
         // Dev
@@ -133,13 +121,6 @@ const content = {
           description: 'Redact sensitive content visually or permanently — all offline.',
           href: '/editor/redact',
         },
-        // Generator
-        {
-          id: 'qrcode-generator',
-          title: '📷 QR Code Generator',
-          description: 'Generate QR codes from text, links, or contact info.',
-          href: '/generator/qrcode',
-        },
         // GitHub
         {
           id: 'github-languages',
@@ -165,6 +146,12 @@ const content = {
           title: '🔎 Image OCR',
           description: 'Extract and copy text from images using built-in OCR technology.',
           href: '/images/ocr',
+        },
+        {
+          id: 'image-qrcode',
+          title: '📷 QR Code Generator',
+          description: 'Generate QR codes from text, links, or contact info.',
+          href: '/images/qrcode',
         },
         // Other
         {

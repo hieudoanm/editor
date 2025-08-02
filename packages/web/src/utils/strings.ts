@@ -21,15 +21,24 @@ export const uppercase = (str: string) => str.toUpperCase();
 
 export const lowercase = (str: string) => str.toLowerCase();
 
+export enum FormatStyle {
+  Capitalise = 'capitalise',
+  Deburr = 'deburr',
+  Kebabcase = 'kebabcase',
+  Lowercase = 'lowercase',
+  Snakecase = 'snakecase',
+  Uppercase = 'uppercase',
+}
+
 export const strings = (str: string) => {
   return {
-    format: (style: string): string => {
-      if (style === 'capitalise') return capitalise(str);
-      if (style === 'deburr') return deburr(str);
-      if (style === 'kebabcase') return kebabcase(str);
-      if (style === 'lowercase') return lowercase(str);
-      if (style === 'snakecase') return snakecase(str);
-      if (style === 'uppercase') return uppercase(str);
+    format: (style: FormatStyle): string => {
+      if (style === FormatStyle.Capitalise) return capitalise(str);
+      if (style === FormatStyle.Deburr) return deburr(str);
+      if (style === FormatStyle.Kebabcase) return kebabcase(str);
+      if (style === FormatStyle.Lowercase) return lowercase(str);
+      if (style === FormatStyle.Snakecase) return snakecase(str);
+      if (style === FormatStyle.Uppercase) return uppercase(str);
       return str;
     },
   };

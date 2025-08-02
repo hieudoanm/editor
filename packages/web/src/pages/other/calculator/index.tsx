@@ -41,6 +41,7 @@ const AnglePage: NextPage = () => {
           <div className="flex flex-col items-center justify-center gap-y-4 md:gap-y-8">
             <Glass.Select
               name="measurement"
+              className="w-full"
               value={measurement}
               onChange={(event: ChangeEvent<HTMLSelectElement>) => {
                 setState((previous) => ({ ...previous, measurement: event.target.value as Measurement }));
