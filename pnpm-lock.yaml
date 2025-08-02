@@ -79,9 +79,9 @@ importers:
         specifier: 8.38.0
         version: 8.38.0(eslint@9.32.0(jiti@2.4.2))(typescript@5.9.2)
 
-  packages/cli/go.dev/cobra: {}
-
   packages/cli/go.dev/gh: {}
+
+  packages/cli/go.dev/micro: {}
 
   packages/extensions/chess:
     devDependencies:

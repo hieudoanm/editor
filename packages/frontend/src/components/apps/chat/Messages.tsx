@@ -8,7 +8,9 @@ import { marked } from 'marked';
 import { FC, useEffect } from 'react';
 import { PiCopyDuotone } from 'react-icons/pi';
 
-export type Message = { role: 'ai' | 'user'; text: string; loading: boolean; model: GeminiModel | OpenRouterModel };
+type Role = 'ai' | 'user';
+
+export type Message = { role: Role; text: string; loading: boolean; model: GeminiModel | OpenRouterModel };
 
 export const Messages: FC<{ messages: Message[] }> = ({ messages = [] }) => {
   useEffect(() => {
