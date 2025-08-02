@@ -1,15 +1,16 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { Glass } from '@editor/components/shared/Glass';
 import { addZero } from '@editor/utils/number/format';
 import { ONE_MINUTE, ONE_SECOND } from '@editor/utils/time';
 import { FC, useEffect, useState } from 'react';
 import { FaArrowsRotate, FaMinimize, FaPause, FaPlay } from 'react-icons/fa6';
 
-type ClockSide = 'white' | 'black';
+type ChessClockSide = 'white' | 'black';
 
 type ClockState = {
   full: boolean;
   running: boolean;
-  current: ClockSide | '';
+  current: ChessClockSide | '';
   timeControl: { white: string; black: string };
   milliseconds: { white: number; black: number };
   increment: { white: number; black: number };
@@ -17,7 +18,7 @@ type ClockState = {
 
 const ONE_UNIT: number = 10;
 
-export const Clock: FC = () => {
+export const ChessClock: FC = () => {
   const initial: ClockState = {
     full: false,
     running: false,
@@ -31,8 +32,8 @@ export const Clock: FC = () => {
 
   const [timer, setTimer] = useState<any>(null);
 
-  const click = (side: ClockSide) => {
-    const otherSide: ClockSide = side === 'white' ? 'black' : 'white';
+  const click = (side: ChessClockSide) => {
+    const otherSide: ChessClockSide = side === 'white' ? 'black' : 'white';
     setClock((previous) => {
       const { milliseconds } = previous;
       const newMilliseconds: number = milliseconds[side] + previous.increment[side] * ONE_SECOND;
@@ -112,22 +113,22 @@ export const Clock: FC = () => {
 
   return (
     <>
-      <div className="rounded border border-neutral-800 p-4 md:p-8">
+      <div className="">
         <form
           onSubmit={(event) => {
             event.preventDefault();
             setClock((previous) => ({ ...previous, full: true }));
           }}
-          className="flex w-full flex-col gap-y-2 md:gap-y-4">
-          <div className="flex items-center rounded border border-neutral-800">
+          className="flex w-full flex-col gap-y-4 md:gap-y-8">
+          <div className="flex items-center">
             <label htmlFor="white" className="px-4">
               <strong>White</strong>
             </label>
-            <select
+            <Glass.Select
               id="white"
               name="white"
               style={{ textAlignLast: 'right' }}
-              className="grow appearance-none px-4 py-2 text-right"
+              className="grow appearance-none"
               value={clock.timeControl.white}
               onChange={(event) => {
                 const newTimeControl: string = event.target.value;
@@ -171,13 +172,13 @@ export const Clock: FC = () => {
                 <option value="45+0">45 + 0</option>
                 <option value="60+0">60 + 0</option>
               </optgroup>
-            </select>
+            </Glass.Select>
           </div>
-          <div className="flex items-center rounded border border-neutral-800">
+          <div className="flex items-center">
             <label htmlFor="black" className="px-4">
               <strong>Black</strong>
             </label>
-            <select
+            <Glass.Select
               name="black"
               style={{ textAlignLast: 'right' }}
               className="grow appearance-none px-4 py-2 text-right"
@@ -225,13 +226,13 @@ export const Clock: FC = () => {
                 <option value="45+0">45 + 0</option>
                 <option value="60+0">60 + 0</option>
               </optgroup>
-            </select>
+            </Glass.Select>
           </div>
-          <button
+          <Glass.Button
             type="submit"
             className="cursor-pointer rounded border border-neutral-800 bg-neutral-900 py-2 font-semibold text-neutral-100">
             Start
-          </button>
+          </Glass.Button>
         </form>
       </div>
       <div

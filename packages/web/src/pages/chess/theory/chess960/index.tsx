@@ -10,10 +10,10 @@ const Chess960Page: NextPage = () => {
       <Head>
         <title>Chess960</title>
       </Head>
-      <div className="flex h-screen w-screen flex-col">
+      <div className="flex min-h-screen w-screen flex-col">
         <Navbar />
         <Divider />
-        <div className="container mx-auto flex grow items-center justify-center p-8">
+        <div className="container mx-auto p-8">
           <Chess960 />
         </div>
       </div>

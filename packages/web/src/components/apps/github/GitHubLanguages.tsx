@@ -9,11 +9,11 @@ type GitHubLanguage = Record<string, string | number | boolean | string[]>;
 export const GitHubLanguages: FC<{
   ref: RefObject<HTMLDivElement | null>;
   repository: string;
-}> = ({ ref = null, repository = 'hieudoanm/hieudoanm.github.io' }) => {
+}> = ({ ref = null, repository = 'hieudoanm/hieudoanm' }) => {
   const url = `https://api.github.com/repos/${repository}/languages`;
   const urlSearchParams = new URLSearchParams();
   urlSearchParams.set('url', url);
-  const proxyUrl = `https://hieudoanm-reverse-proxy.vercel.app/api?${urlSearchParams.toString()}`;
+  const proxyUrl = `https://microscopes.vercel.app/api/reverse/proxy?${urlSearchParams.toString()}`;
   const { isPending, error, data } = useQuery({
     queryKey: [`repository-${repository}`],
     queryFn: async () => {

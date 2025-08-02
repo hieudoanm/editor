@@ -1,5 +1,6 @@
 import { Chessboard } from '@editor/components/apps/chess/ChessBoard';
 import openings from '@editor/json/chess/openings.json';
+import { simplifyPGN } from '@editor/utils/chess/pgn';
 import { copy } from '@editor/utils/copy';
 import { Chess } from 'chess.js';
 import { NextPage } from 'next';
@@ -10,11 +11,6 @@ export type Opening = {
   eco: string;
   name: string;
   pgn: string;
-};
-
-const simplifyPGN = (pgn: string) => {
-  const endIndex = pgn.lastIndexOf(']') + 1;
-  return pgn.slice(endIndex).replaceAll('*', '').trim();
 };
 
 export const Openings: NextPage = () => {

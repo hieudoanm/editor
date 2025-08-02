@@ -8,11 +8,8 @@ const links = [
     id: 'chess',
     title: 'Chess',
     options: [
-      { id: 'chess-fen2png', href: '/chess/converter/fen2png', label: 'FEN to PNG' },
-      { id: 'chess-pgn2gif', href: '/chess/converter/pgn2gif', label: 'PGN to GIF' },
       { id: 'chess-chess960', href: '/chess/theory/chess960', label: 'Chess960' },
       { id: 'chess-openings', href: '/chess/theory/openings', label: 'Openings' },
-      { id: 'chess-clock', href: '/chess/tools/clock', label: 'Clock' },
       { id: 'chess-elo', href: '/chess/tools/elo', label: 'ELO' },
     ],
   },
@@ -40,9 +37,10 @@ const links = [
     id: 'dev',
     title: 'Dev',
     options: [
-      { id: 'cli', href: 'dev/cli', label: 'CLI' },
+      { id: 'cli', href: '/dev/cli', label: 'Command Line Interface (CLI)' },
       { id: 'openapi2postmanv2', href: '/dev/openapi/postmanv2', label: 'OpenAPI to PostmanV2' },
       { id: 'reverse-proxy', href: '/dev/reverse/proxy', label: 'Reverse Proxy' },
+      { id: 'uuid', href: '/dev/uuid', label: 'Universally Unique Identifier (UUID)' },
     ],
   },
   {
@@ -52,14 +50,6 @@ const links = [
       { id: 'manifest', href: '/editor/manifest', label: 'Manifest' },
       { id: 'markup', href: '/editor/markup', label: 'Markup' },
       { id: 'redact', href: '/editor/redact', label: 'Redact' },
-    ],
-  },
-  {
-    id: 'generator',
-    title: 'Generator',
-    options: [
-      { id: 'qrcode', href: '/generator/qrcode', label: 'QRCode' },
-      { id: 'uuid', href: '/generator/uuid', label: 'UUID' },
     ],
   },
   {
@@ -76,6 +66,7 @@ const links = [
     options: [
       { id: 'filter', href: '/images/filter', label: 'Filter' },
       { id: 'ocr', href: '/images/ocr', label: 'OCR' },
+      { id: 'qrcode', href: '/images/qrcode', label: 'QRCode' },
     ],
   },
   {

@@ -44,12 +44,12 @@ const handler = async (request: NextApiRequest, response: NextApiResponse) => {
   }
 
   const targetUrl: string = request.query.url as string;
-  const decodedUrl: string = decodeURI(targetUrl);
-  logger.info(`decodedUrl=${decodedUrl}`);
-
   if (!targetUrl) {
     return response.status(400).json({ error: "Missing 'url' query parameter" });
   }
+
+  const decodedUrl: string = decodeURI(targetUrl);
+  logger.info(`decodedUrl=${decodedUrl}`);
 
   const body = ['GET', 'HEAD'].includes(method || '') ? undefined : request.body;
   const { data: fetchResponse, error } = await tryCatch(fetch(targetUrl, { method, body }));
