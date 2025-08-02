@@ -8,20 +8,16 @@ const Block: FC<{
   commonName?: string;
 }> = ({ number = 0, mass = 0, symbol = '', name = '', commonName }) => {
   return (
-    <div className="relative aspect-square w-16 transform rounded rounded-lg border border-neutral-800 bg-neutral-900 text-neutral-100 transition-all duration-100 ease-linear hover:z-10 hover:scale-[2]">
-      {number > 0 ? (
+    <div className="relative aspect-square w-16 transform rounded-lg border border-white/20 bg-white/10 text-neutral-100 shadow-lg backdrop-blur-md transition-all duration-100 ease-linear hover:z-10 hover:scale-[2]">
+      {number > 0 && (
         <div className="absolute top-2 left-2">
           <p className="truncate text-center text-[8px]">{number}</p>
         </div>
-      ) : (
-        <></>
       )}
-      {mass > 0 ? (
+      {mass > 0 && (
         <div className="absolute top-2 right-2" title={mass.toString()}>
           <p className="truncate text-center text-[8px]">{Math.round(mass)}</p>
         </div>
-      ) : (
-        <></>
       )}
       <div className="flex h-full w-full items-center justify-center text-sm">
         <p className="text-sm font-black text-red-500">{symbol}</p>
@@ -39,7 +35,7 @@ export const PeriodicTable: FC = () => {
   return (
     <div className="flex flex-col gap-y-2">
       <div className="text-center">
-        <p className="truncate">Periodic Table</p>
+        <p className="truncate">Periodic Table (Period / Group)</p>
       </div>
       <div className="scroll-none overflow-auto">
         <table>
@@ -51,7 +47,7 @@ export const PeriodicTable: FC = () => {
           <tbody>
             <tr>
               <td className="p-2">
-                <span className="whitespace-nowrap">Period / Group</span>
+                <span className="whitespace-nowrap">P / G</span>
               </td>
               <td className="p-2 whitespace-nowrap" align="center">
                 1
@@ -108,7 +104,7 @@ export const PeriodicTable: FC = () => {
                 18
               </td>
               <td className="p-2" align="center">
-                <span className="whitespace-nowrap">Group / Period</span>
+                <span className="whitespace-nowrap">G / P</span>
               </td>
             </tr>
             <tr>

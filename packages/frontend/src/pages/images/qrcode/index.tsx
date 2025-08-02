@@ -1,5 +1,6 @@
 import { Divider } from '@editor/components/shared/Divider';
 import { Glass } from '@editor/components/shared/Glass';
+import { Linear } from '@editor/components/shared/Linear';
 import { Navbar } from '@editor/components/shared/Navbar';
 import { download } from '@editor/utils/download';
 import { toDataURL } from 'qrcode';
@@ -29,39 +30,42 @@ const QRCode: FC = () => {
   };
 
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-between">
-      {/* Navbar */}
-      <Navbar />
-      {/* Divider */}
-      <Divider />
-      <div className="container mx-auto flex w-full grow flex-col items-center justify-center gap-y-8 p-8">
-        <div className="flex w-full justify-center gap-x-4">
-          <Glass.Input id="url" name="url" placeholder="URL" className="grow" value={url} />
-          <Glass.Button
-            onClick={() => {
-              generate();
-            }}>
-            Generate
-          </Glass.Button>
-          {dataURL && (
+    <div className="h-screen">
+      <Linear.Background />
+      <div className="relative z-10 flex h-full flex-col">
+        <Navbar />
+        <Divider />
+        <div className="container mx-auto flex w-full grow flex-col items-center justify-center gap-y-8 p-8">
+          <div className="flex w-full flex-col justify-center gap-4 md:flex-row md:gap-8">
+            <Glass.Input id="url" name="url" placeholder="URL" className="grow" value={url} />
             <Glass.Button
               type="button"
-              className="cursor-pointer rounded-full border border-neutral-800 px-4 py-2"
+              className="w-full md:w-auto"
               onClick={() => {
-                download({ content: dataURL, format: 'jpg', filename: 'qrcode' }).image();
+                generate();
               }}>
-              Download
+              Generate
             </Glass.Button>
+            {dataURL && (
+              <Glass.Button
+                type="button"
+                className="w-full md:w-auto"
+                onClick={() => {
+                  download({ content: dataURL, format: 'jpg', filename: 'qrcode' }).image();
+                }}>
+                Download
+              </Glass.Button>
+            )}
+          </div>
+          {dataURL && (
+            <div className="w-full">
+              <div
+                className="mx-auto aspect-square w-full max-w-md overflow-hidden rounded-2xl border border-neutral-800 bg-contain bg-center bg-no-repeat"
+                style={{ backgroundImage: `url(${dataURL})` }}
+              />
+            </div>
           )}
         </div>
-        {dataURL && (
-          <div className="mx-auto flex w-full flex-col gap-y-8">
-            <div
-              className="mx-auto aspect-square w-full max-w-72 overflow-hidden rounded-2xl border border-neutral-800 bg-contain bg-center bg-no-repeat"
-              style={{ backgroundImage: `url(${dataURL})` }}
-            />
-          </div>
-        )}
       </div>
     </div>
   );

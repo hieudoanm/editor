@@ -10,10 +10,8 @@ const StatusPage = () => {
       <div className="relative z-10 flex flex-col">
         <Navbar />
         <Divider />
-        <div className="grow overflow-auto">
-          <div className="container mx-auto p-4 md:p-8">
-            <Status />
-          </div>
+        <div className="container mx-auto grow overflow-auto p-4 md:p-8">
+          <Status />
         </div>
       </div>
     </div>

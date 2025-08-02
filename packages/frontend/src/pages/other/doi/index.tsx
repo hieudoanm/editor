@@ -83,6 +83,7 @@ const DOIPage: NextPage = () => {
             id="doi"
             name="doi"
             placeholder="https://doi.org/10.1016/j.smrv.2009.04.001"
+            className="grow"
             value={doi}
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
               setState((previous) => ({ ...previous, doi: event.target.value }));
