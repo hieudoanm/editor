@@ -1,30 +1,32 @@
 import { Glass } from '@editor/components/shared/Glass';
 import { Navbar } from '@editor/components/shared/Navbar';
+import { INTIIAL_YAML } from '@editor/constants/initial';
 import { braillify } from '@editor/utils/braille';
 import { morsify } from '@editor/utils/morse';
 import { FormatStyle, strings } from '@editor/utils/strings';
 import { useState } from 'react';
+import { parse } from 'yaml';
 
-type Style = 'braille' | 'morse' | FormatStyle;
+type Style = 'braille' | 'morse' | 'yaml2json' | FormatStyle;
 
-const format = (from: string, style: 'braille' | 'morse' | FormatStyle) => {
+const format = (from: string, style: Style) => {
   if (style === 'braille') return braillify(from);
   if (style === 'morse') return morsify(from);
+  if (style === 'yaml2json') return JSON.stringify(parse(from), null, 2);
   return strings(from).format(style);
 };
 
-const INITIAL_TEXT = 'Hello, World!';
-const INITIAL_STYLE = 'braille';
+const INITIAL_STYLE = 'yaml2json';
 
 const StringsPage = () => {
-  const [{ from = INITIAL_TEXT, to = format(INITIAL_TEXT, INITIAL_STYLE), style = INITIAL_STYLE }, setState] =
+  const [{ from = INTIIAL_YAML, to = format(INTIIAL_YAML, INITIAL_STYLE), style = INITIAL_STYLE }, setState] =
     useState<{
       from: string;
       to: string;
       style: Style;
     }>({
-      from: INITIAL_TEXT,
-      to: format(INITIAL_TEXT, INITIAL_STYLE),
+      from: INTIIAL_YAML,
+      to: format(INTIIAL_YAML, INITIAL_STYLE),
       style: INITIAL_STYLE,
     });
 
@@ -56,6 +58,9 @@ const StringsPage = () => {
             <option value="lowercase">lowercase</option>
             <option value="snakecase">snake_case</option>
             <option value="uppercase">UPPERCASE</option>
+          </optgroup>
+          <optgroup label="YAML">
+            <option value="yaml2json">YAML to JSON</option>
           </optgroup>
         </Glass.Select>
         <div className="grid grow grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">

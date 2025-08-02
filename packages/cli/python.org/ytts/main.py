@@ -110,7 +110,7 @@ def summarise_transcript(video_transcript: str) -> str:
     try:
         system_prompt = "Summarize the following transcript in 3 concise bullet points using Markdown list format (- point):"
         user_prompt = f"{system_prompt}\n\n{video_transcript}"
-        url = "https://microscopes.vercel.app/api/genai"
+        url = "https://micro24.vercel.app/api/genai"
         headers = {
             "Accept": "application/json",
             "Content-Type": "application/json",

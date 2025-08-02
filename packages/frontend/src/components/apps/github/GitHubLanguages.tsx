@@ -13,7 +13,7 @@ export const GitHubLanguages: FC<{
   const url = `https://api.github.com/repos/${repository}/languages`;
   const urlSearchParams = new URLSearchParams();
   urlSearchParams.set('url', url);
-  const proxyUrl = `https://microscopes.vercel.app/api/reverse/proxy?${urlSearchParams.toString()}`;
+  const proxyUrl = `https://micro24.vercel.app/api/reverse/proxy?${urlSearchParams.toString()}`;
   const { isPending, error, data } = useQuery({
     queryKey: [`repository-${repository}`],
     queryFn: async () => {

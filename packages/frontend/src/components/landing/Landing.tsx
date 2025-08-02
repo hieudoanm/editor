@@ -64,12 +64,6 @@ const content = {
           href: '/converter/json',
         },
         {
-          id: 'yaml-converter',
-          title: '📄 YAML Tools',
-          description: 'Edit and convert YAML safely with real-time linting.',
-          href: '/converter/yaml',
-        },
-        {
           id: 'color-tools',
           title: '🎨 Color Converter',
           description: 'Convert HEX, RGB, and HSL formats — visually.',

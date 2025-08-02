@@ -6,7 +6,7 @@ import { tryCatch } from '@editor/utils/try-catch';
 import { NextPage } from 'next';
 import { useState } from 'react';
 
-const PROXY_BASE_URL: string = 'https://microscopes.vercel.app';
+const PROXY_BASE_URL: string = 'https://micro24.vercel.app';
 
 const urlToCurl = (
   options: { url: string; method: string; headers: Record<string, string> } = { url: '', method: 'GET', headers: {} },

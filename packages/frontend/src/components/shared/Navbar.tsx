@@ -28,7 +28,6 @@ const links = [
       { id: 'csv', href: '/converter/csv', label: 'CSV' },
       { id: 'json', href: '/converter/json', label: 'JSON' },
       { id: 'strings', href: '/converter/strings', label: 'Strings' },
-      { id: 'yaml', href: '/converter/yaml', label: 'YAML' },
     ],
   },
   {
